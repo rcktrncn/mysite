@@ -1,0 +1,24 @@
+/* ホーム用 CSS */
+
+/* class */
+div.rireki {
+}
+
+ul.rireki {
+	list-style-type: circle;
+}
+
+ul.rirekiblock {
+	list-style-type: disc;
+}
+
+/* class 用スタイル */
+ul.rireki  > li {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+ul.rirekiblock  li {
+	font-size: 80%;
+	font-weight: normal;
+}

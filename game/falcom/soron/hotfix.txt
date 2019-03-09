@@ -1,0 +1,19 @@
+so-tutrial-basic005		武器の購入、両手杖追加
+so-tutrial-weapon001	クエストから取得、修正
+		アイテムから取得、修正
+so-tutrial-weapon002	マクロを組まずに、修正
+so-tutrial-weapon004	必要パラメーター、修正
+		武器スキルのレベル上げ更新
+so-tutrial-search001	検索画面修正
+		一部画像を差し替え
+		その他2.プレイヤーの色などについて更新
+so-tutrial-search002	画像を差し替え
+		検索条件を更新
+		その他2.ホストの横のアイコンについて更新
+so-tutrial-search004	画像を差し替え
+so-tutrial-class005		クラスのレベル上げ更新
+so-tutrial-class001		クエスト、アイテムから取得を更新
+so-tutrial-class002		マクロを組まずに使用更新
+		特殊クラススキルの効果を切る修正
+so-tutrial-link			Gabriel,Rouge,SOSS追加
+

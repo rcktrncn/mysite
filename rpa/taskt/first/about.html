@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "first_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>tasktとは？ - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <div class="collapse navbar-collapse">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown active">
+	              <a class="nav-link dropdown-toggle"  href="index.html" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="install.html">インストールと実行</a>
+					<a class="dropdown-item" href="quickstart.html">簡単な使い方</a>
+	              </div>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link">コマンド一覧</a>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link">サンプル</a>
+	            </li>
+				<li class="nav-item">
+	            	<a class="nav-link">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+
+
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+		<h1>taskt とは？</h1>
+		<p><a href="http://www.taskt.net/" target="_blank">taskt</a> とは、無料で使える RPA です。</p>
+		<p>もっと厳密な説明をすると、オープンソースで開発されている無料の RPA です。ライセンスとしては Apache Lisence 
+		Version 2.0 らしいです。</p>
+		<p>個人での利用はもちろん、商用での利用も可能です。</p>
+		<section>
+			<h2>taskt で何ができるか</h2>
+			<p>taskt は無料で使える RPA ですが、いろいろなことができます。</p>
+			<p>例えば、下のような感じです。</p>
+			<ul>
+				<li>Excel の作業を自動化する</li>
+				<li>ウェブサイトからの情報を取得してファイルとして保存する</li>
+				<li>たくさんのファイルを開き、同じ操作をさせる</li>
+				<li>キーボードやマウスの操作の自動化</li>
+				<li>などなど</li>
+			</ul>
+		</section>
+		<section>
+			<h2>taskt の利点と欠点は？</h2>
+			<p>taskt は無料で使えますが、ほかの RPA と比べての利点・欠点があります。</p>
+			<p>利点はこんな感じです。</p>
+			<ul>
+				<li>無料で使える (会社の規模によらず無料)</li>
+				<li>編集画面がそんなに重たくない</li>
+				<li>工夫次第でだいたいのことが自動化できる</li>
+				<li>作ったデータが XML 形式なので扱いやすい (かも)</li>
+			</ul>
+			<p>欠点はこんな感じです。</p>
+			<ul>
+				<li>サポート体制がほぼない (英語が使えればチャットで質問できるらしいです)</li>
+				<li>マニュアル・説明書がほぼない (英語が読めれば説明が見れます)</li>
+				<li>画面の表示が英語 (3.2.0.0 時点)</li>
+				<li>いかにもプログラミングっぽい画面で、ビジュアル的にやや分かりづらい</li>
+			</ul>
+		</section>
+		<section>
+		<h2>taskt の実行環境</h2>
+		<p>正式な情報が載っていないのでわからいのですが、taskt の実行環境は下の表みたいな感じです。</p>
+			<p>Windows 7 以降なら動作するのですが、<a href="https://dotnet.microsoft.com/download/dotnet-framework/net48" target="_blank">.NET 
+			Framework 4.8</a> がインストールされていないと taskt 
+			が動かせないので注意してください。詳細は、インストールと実行を見てください。</p>
+		<table class="table">
+			<tr>
+				<td>OS</td>
+				<td>Windows 7, Windows 8.1, Windows 10<br>32 ビット、64 ビット</td>
+			</tr>
+			<tr>
+				<td>.NET Framework</td>
+				<td>4.8 が必須</td>
+			</tr>
+			<tr>
+				<td>HDD</td>
+				<td>インストールに約 40 MB 必要</td>
+			</tr>
+			<tr>
+				<td>メモリー</td>
+				<td>不明</td>
+			</tr>
+		</table>
+		</section>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

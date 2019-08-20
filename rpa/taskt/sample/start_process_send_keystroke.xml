@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="38a5604b-c899-4d75-afd4-57857d57bba2" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="メモ帳を実行し、文字と現在の時刻を出力し保存を促す" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="c28b9667-0099-48d7-9e04-8e3cfe58e5c8" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" v_Comment="メモ帳を実行" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StartProcessCommand" CommandID="aec68426-6b7f-42ed-9650-a16e7ae8b27d" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="notepad" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="1fb41a1f-d574-442f-a95a-dde7c8812d88" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" v_Comment="Hello World! と入力" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="62e50f70-a28a-479f-bebc-55738657c776" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="Hello World !" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="00edf2a9-9031-4afa-8fd6-f6fd0dfd024a" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" v_Comment="Enterキーを押し改行" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="f3d5ea3a-841e-4a99-89c9-ba250fdf7414" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{ENTER}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="91129333-0336-44a3-a7cd-6cd5d1358898" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" v_Comment="F5 キーを押し、日時を入力" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="9de05e62-7719-43a8-acfd-b2be0b547d65" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{F5}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="13b295ec-e1b2-42f4-9ed0-4db6def95536" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" v_Comment="Ctrl+S で保存しようとする" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="7dfd7958-b276-4a0e-8a1c-46692d56a726" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="^s" />
+    </ScriptAction>
+  </Commands>
+  <Variables />
+</Script>

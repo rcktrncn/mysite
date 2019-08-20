@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "menu_default.dwt" -->
+<!-- #BeginTemplate "sample_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>Schedule - taskt - らんの眼</title>
+<title>Run Process、Send Keystrokes サンプル - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -31,7 +31,7 @@
 	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
 	            </li>
 	            <li class="nav-item dropdown">
-	              <a class="nav-link dropdown-toggle"  href="../first/index.html" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <a class="nav-link dropdown-toggle" href="../first/index.html" id="dropdown_first" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
 	              <div class="dropdown-menu">
 	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
 	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
@@ -63,19 +63,18 @@
 	              	<a class="dropdown-item" href="../commands/index.html#anc_web">Web Browser Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_window">Window Commands</a>
 	              </div>
+
 	            </li>
-	            
-	            <li class="nav-item dropdown active">
-	            	<a class="nav-link dropdown-toggle" href="index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
 					<div class="dropdown-menu">
-					  <a class="dropdown-item" href="file_actions.html">File Actions</a>
-					  <a class="dropdown-item" href="options.html">Options</a>
-					  <a class="dropdown-item" href="script_actions.html">Script Actions</a>
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
 					</div>
 	            </li>
-
-	            <li class="nav-item">
-	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            <li class="nav-item active">
+	            	<a class="nav-link" href="index.html">サンプル</a>
 	            </li>
 				<li class="nav-item">
 	            	<a class="nav-link">小ネタ</a>
@@ -84,24 +83,20 @@
 	        </div>
 		</nav>
    </div>
-
-	<div class="container small">
+   
+    <div class="container small">
    	 <nav aria-label="breadcrumb">
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">その他機能</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">サンプル</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
-    		<li class="breadcrumb-item"><a href="action_scripts.html">Script Actions</a></li>
-
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		Schedule
-    		<!-- #EndEditable -->
-			</li>
+    		Run Process、Send Keystrokes<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -109,13 +104,35 @@
 		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
    </div>
 
+
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>Schedule</h1>
-		<p>Schedule では、Windows のタスクスケジューラーにスクリプトを登録できるみたいです。</p>
-		<p>そのため、作成したスクリプトを、毎日指定した時間に実行する、毎週○曜日に実行するといったことができるのでしょうが、試したことがありません。</p>
+		<h1>Run Process、Send Keystrokes</h1>
+		<ol>
+			<li>メモ帳を実行</li>
+			<li>キーボードから「Hello World !」と入力</li>
+			<li>Enter キーを押し、改行</li>
+			<li>F5 キーを押し、現在の日時を入力</li>
+			<li>Ctrl+S で保存しようとする</li>
+		</ol>
+		<p><a href="start_process_send_keystroke.xml">スクリプトをダウンロード</a></p>
 		<p>
-		<img alt="" height="470" src="../image/3.2.0/menu/schedule.png" width="630" class="img-fluid"></p>
+		<img alt="" height="586" src="../image/3.2.0/sample/start_process_send_keystrokes/start_process_send_keystroke.png" width="981" class="img-fluid"></p>
+		<p>Run Process でメモ帳を実行</p>
+		<p>
+		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/001.png" width="633" class="img-fluid"></p>
+		<p>Send Keystrokes で「Hello World !」</p>
+		<p>
+		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/002.png" width="633" class="img-fluid"></p>
+		<p>Send Keystrokes で Enter キーを入力</p>
+		<p>
+		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/003.png" width="633" class="img-fluid"></p>
+		<p>Send Keystrokes で F5 キーを押し、日時を入力</p>
+		<p>
+		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/004.png" width="633" class="img-fluid"></p>
+		<p>Send Keystrokes で Ctrl+S を入力し、保存しようとする</p>
+		<p>
+		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/006.png" width="633" class="img-fluid"></p>
 	<!-- #EndEditable -->
 	</div>
 

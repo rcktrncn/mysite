@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="350a52f9-a4fa-424b-877e-ee2964f4f086" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="リスト・配列の操作" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="1677308e-f066-4dd7-bd60-b7f6be0a52e1" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" v_Comment="3 回ループし、ユーザーからの入力をリスト [lst] に入れる" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginNumberOfTimesLoopCommand" CommandID="4ed6ab64-7b36-47cf-b06a-ab4c7890830f" CommandName="BeginNumberOfTimesLoopCommand" IsCommented="false" SelectionName="Loop Number Of Times" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_LoopParameter="3" v_LoopStart="0" />
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="51112aa9-aeaa-4e50-9a8c-e5a47feaaa88" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" v_Comment="ユーザーからの入力を変数 [tmp] に入れる" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="UserInputCommand" CommandID="821ff886-bdd6-4140-9022-1138cab349be" CommandName="UserInputCommand" IsCommented="false" SelectionName="Prompt for Input" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_InputHeader="何か入力してください" v_InputDirections="[Loop.CurrentIndex] 個目の値">
+          <v_UserInputConfig>
+            <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+              <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="U4erInpu午Para51Table082319.125104" msdata:UseCurrentLocale="true">
+                <xs:complexType>
+                  <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="U4erInpu午Para51Table082319.125104">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Type" type="xs:string" minOccurs="0" />
+                          <xs:element name="Label" type="xs:string" minOccurs="0" />
+                          <xs:element name="Size" type="xs:string" minOccurs="0" />
+                          <xs:element name="DefaultValue" type="xs:string" minOccurs="0" />
+                          <xs:element name="UserInput" type="xs:string" minOccurs="0" />
+                          <xs:element name="ApplyToVariable" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:choice>
+                </xs:complexType>
+              </xs:element>
+            </xs:schema>
+            <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+              <DocumentElement>
+                <U4erInpu午Para51Table082319.125104 diffgr:id="U4erInpu午Para51Table082319.1251041" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                  <Type>TextBox</Type>
+                  <Label>値</Label>
+                  <Size>500,100</Size>
+                  <ApplyToVariable>tmp</ApplyToVariable>
+                </U4erInpu午Para51Table082319.125104>
+              </DocumentElement>
+            </diffgr:diffgram>
+          </v_UserInputConfig>
+        </ScriptCommand>
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="de9d0f02-c438-466f-9bdb-ba49efeca7bf" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" v_Comment="変数 [tmp] の値をリスト [lst] に入れる" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="AddToVariableCommand" CommandID="d4d51e6d-df62-44e1-8612-cc45294b9799" CommandName="AddToVariableCommand" IsCommented="false" SelectionName="Add To Variable" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="lst" v_Input="[tmp]" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndLoopCommand" CommandID="dee04169-db9b-4f62-a756-ff32b6565a5f" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="1b12462b-8703-4c4f-92b7-7886b5449c50" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" v_Comment="3 回ループして、リスト [lst] の値を表示" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginNumberOfTimesLoopCommand" CommandID="52595a36-3dbc-4d16-bddd-f9a17fdfb90f" CommandName="BeginNumberOfTimesLoopCommand" IsCommented="false" SelectionName="Loop Number Of Times" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_LoopParameter="3" v_LoopStart="0" />
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="38effd10-10f0-4da5-8829-d9605f8f8b33" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" v_Comment="表示" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="MessageBoxCommand" CommandID="89d83646-5fc0-4e7a-8a6d-0f812e9b2b14" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[Loop.CurrentIndex] 個目：[lst]" v_AutoCloseAfter="0" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="85617087-f6a1-414a-b250-f125dfb41939" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" v_Comment="リスト [lst] の次の値へ移動" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="SetVariableIndexCommand" CommandID="db99bf08-d6b7-4ac4-8f6a-b2d3c8c0c4d9" CommandName="SetVariableIndexCommand" IsCommented="false" SelectionName="Set Variable Index" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="lst" v_Index="[Loop.CurrentIndex]" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndLoopCommand" CommandID="4b73f9b6-e509-4894-bfac-f074520a0b5d" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+  </Commands>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>lst</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>tmp</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

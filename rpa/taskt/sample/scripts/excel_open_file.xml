@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="5c0bd75b-b28d-42c3-8fd3-a83405ab5391" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Excel ファイルを開き、セルの値を表示" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="6f7b09ca-0105-4ae8-bcc1-ca4db7b76645" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" v_Comment="Excel の実行" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelCreateApplicationCommand" CommandID="1dd1996e-5006-46b3-96cb-61f041b62baf" CommandName="ExcelOpenApplicationCommand" IsCommented="false" SelectionName="Create Excel Application" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="PauseCommand" CommandID="dcaf62cf-2af3-4b96-8d5e-e5bdba138146" CommandName="PauseCommand" IsCommented="false" SelectionName="Pause Script" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_PauseLength="5000" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="6208a5d6-9df7-4410-81db-9541f66d0ea6" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" v_Comment="excel_sample.xlsx を開く" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelOpenWorkbookCommand" CommandID="6566f9d7-42fe-4f07-926e-402b6d8189a5" CommandName="ExcelOpenWorkbookCommand" IsCommented="false" SelectionName="Open Workbook" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_FilePath="[Folder.ScriptPath]\excel_sample.xlsx" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="22aa693d-c8f6-4e83-8a44-c75bc3548e72" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" v_Comment="Sheet1 を選択" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelActivateSheetCommand" CommandID="57b57632-fd85-475a-9785-df8f04ac2ec4" CommandName="ExcelActivateSheetCommand" IsCommented="false" SelectionName="Activate Sheet" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_SheetName="Sheet1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="acb5f3a4-b93e-47d6-b879-53c0886263fe" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" v_Comment="A 列の行数を [rows] に入れる" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelGetLastRowCommand" CommandID="2852158f-4048-46e7-861f-511c1f8e3e2b" CommandName="ExcelGetLastRowCommand" IsCommented="false" SelectionName="Get Last Row Index" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_ColumnLetter="A" v_applyToVariableName="[rows]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="4f7ade74-d8bd-40ba-9b73-ed13968e0f99" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" v_Comment="1 行ずつ A 列のセルの値を表示" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginNumberOfTimesLoopCommand" CommandID="140d2036-1bc2-4b02-93d5-64d64d633b74" CommandName="BeginNumberOfTimesLoopCommand" IsCommented="false" SelectionName="Loop Number Of Times" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_LoopParameter="[rows]" v_LoopStart="0" />
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="CommentCommand" CommandID="e56cf4d4-c826-47a4-b0b8-3771386d9610" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" v_Comment="A 列の値を変数 [cellValue] へ入れる" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ExcelGetCellCommand" CommandID="f68adb97-db1a-4801-9662-61bc1fb06ff1" CommandName="ExcelGetCellCommand" IsCommented="false" SelectionName="Get Cell" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_ExcelCellAddress="A[Loop.CurrentIndex]" v_userVariableName="[cellValue]" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="MessageBoxCommand" CommandID="bd536439-4d75-45af-b510-13a101691000" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[cellValue]" v_AutoCloseAfter="0" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndLoopCommand" CommandID="f064f73c-b3b7-41f9-be84-65724ce0d8ea" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+  </Commands>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>cellValue</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>rows</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

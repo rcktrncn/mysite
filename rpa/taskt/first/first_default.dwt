@@ -75,8 +75,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            </li>
 				<li class="nav-item">
-	            	<a class="nav-link">小ネタ</a>
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>

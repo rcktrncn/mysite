@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="edc3d737-da0b-40fa-8a37-4ad83cb28340" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Stopwatch で時間測定" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="af5d20e1-692c-4709-b177-e8f40ea5907b" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" v_Comment="測定開始" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StopwatchCommand" CommandID="3a3e33a3-50cd-410f-99de-4c934811a6d9" CommandName="StopwatchCommand" IsCommented="false" SelectionName="Stopwatch" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_StopwatchName="sw" v_StopwatchAction="Start Stopwatch" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="0f91ef28-be94-4b73-8bd9-234153529b8f" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="時間を計っています&#xD;&#xA;測り終わりたければ、OK をクリックしてください" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="66a74d6b-f0bf-46ba-a72b-47f04aac8460" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" v_Comment="測定終了" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StopwatchCommand" CommandID="0f68e238-1625-4e6b-9397-dc5b49a7cb02" CommandName="StopwatchCommand" IsCommented="false" SelectionName="Stopwatch" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_StopwatchName="sw" v_StopwatchAction="Stop Stopwatch" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="eb61135c-9c21-412d-93c8-57f887748d7c" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" v_Comment="結果を変数 [kekka] に入れる " CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StopwatchCommand" CommandID="d5addde8-411b-4079-9022-421ce0cfb27b" CommandName="StopwatchCommand" IsCommented="false" SelectionName="Stopwatch" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_StopwatchName="sw" v_StopwatchAction="Measure Stopwatch" v_userVariableName="kekka" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="9702407d-8834-4f15-8366-89f054dd3ebd" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="時間は [kekka] でした" v_AutoCloseAfter="0" />
+    </ScriptAction>
+  </Commands>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>kekka</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

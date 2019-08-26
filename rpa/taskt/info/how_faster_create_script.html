@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>小ネタ - taskt - らんの眼</title>
+<title>スクリプトを素早く作るコツはあるか - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -100,8 +100,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		<!-- #EndEditable -->
-			</li>
+    		スクリプトを素早く作るコツはあるか<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -112,22 +111,36 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-	<h1>小ネタ</h1>
-			<h2>taskt について</h2>
-			<ul>
-				<li><a href="what_automation_can.html">taskt が使えるクリックの自動化について</a></li>
-				<li><a href="compare_other_rpa.html">ほかの RPA と比較して taskt はどうなのか</a></li>
-				<li><a href="can_i_use_when_robot_run.html">ロボット実行中にほかの作業をしてもいいか</a></li>
-				<li><a href="sleep_when_robot_run.html">
-				長時間ロボットを動かして、途中でスリープ状態にならないか </a></li>
-			</ul>
-		<h2>スクリプトファイル</h2>
-		<ul>
-			<li><a href="downoad_script.html">スクリプトのダウンロードと実行方法</a></li>
-			<li><a href="download_official_sample.html">
-			公式サイトからサンプルスクリプトをダウンロードする</a></li>
-			<li><a href="how_faster_create_script.html">スクリプトを素早く作るコツはあるか</a></li>
-		</ul>
+	<h1>スクリプトを素早く作るコツはあるか</h1>
+		<p>RPA で自動化をするためにスクリプトを作り、試しに動かし、不具合があれば修正し、……という作業は意外と時間かかり面倒くさい作業です。</p>
+		<p>「このスクリプトが完成したら時間が短縮できる！」と長時間頑張り続けるのもいいのですが、スクリプトを素早く作るコツはあるのでしょうか？</p>
+		<p>結論から言うと、<big><strong>そんなものはない</strong></big>です (たぶん)。</p>
+		<p>taskt の場合、Record の機能を利用すれば、素早く作ることはできますが、正確性に欠けます (<a href="what_automation_can.html">taskt 
+		が使えるクリック自動化方法ついて</a>)。</p>
+		<p>ほかの RPA でも言えることですが、<strong>やりたい作業を 1 つずつ作っていく</strong>しかなさそうです。</p>
+		<ol>
+			<li>○○をクリック</li>
+			<li>次に××をクリック</li>
+			<li>次に「△△と入力」</li>
+		</ol>
+		<p>というように、やりたい作業の手順を 1 つずつ把握する、もしくはちゃんとメモをし、それを 1 つずつスクリプトにしていくしかありません。</p>
+		<p>あくまでも管理人個人の感想ですが、適当に作ってあとからアレコレ修正するよりも、1 つずつ作っていった方が、結果的に時間が短い気がします。</p>
+		<p>それ以上に、不具合が出てそれを修正するために頭を悩ます負担が減るのも大きいのかもしれません。</p>
+		<h2>補足</h2>
+		<p>補足ですが、taskt 
+		の場合、マウスカーソルを特定の位置動かしてクリックするといった操作が弱いので、なるべくキーボード操作に置き換えるようにした方が良いです。</p>
+		<p>ほかにも、ある作業をするための手順というのを複数知っていると便利です。</p>
+		<p>例えば、ある作業をする方法が 3 つあったとします。</p>
+		<ol>
+			<li>マウスで 3 回クリックするが、画面の位置が変わりスクリプトにしづらい</li>
+			<li>キーボード操作で 5 回キーを押すが、ショートカットキーなどが使えない場面がある</li>
+			<li>キーボード操作で 10 回キーを押すが、ショートカットキーなどを組み合わせると確実にスクリプトにできる</li>
+		</ol>
+		<p>この場合、どれをスクリプトにするのが簡単かというと、間違いなく 3 番目の 10 回キーを押す方法です。</p>
+		<p>10 
+		回キーを押す操作を行わせるので、スクリプトを実行したときの作業時間は長くなりますが、実際に作業をするのはコンピューターですし、そもそも自動化できなければ 
+		RPA (taskt) を使う意味がありません。</p>
+		<p>そのため、「人間ならばもっと効率よくできるのに……」と思っても、<strong>RPA が理解できる効率の悪い作業をあえてさせる</strong>という妥協も大切かもしれません。</p>
 	<!-- #EndEditable -->
 	</div>
 

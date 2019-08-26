@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>小ネタ - taskt - らんの眼</title>
+<title>ロボット実行中にほかの操作をしてもいいか - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -95,13 +95,11 @@
     		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
-		
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		<!-- #EndEditable -->
-			</li>
+    		ロボット実行中にほかの操作をしてもいいか<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -112,22 +110,28 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-	<h1>小ネタ</h1>
-			<h2>taskt について</h2>
-			<ul>
-				<li><a href="what_automation_can.html">taskt が使えるクリックの自動化について</a></li>
-				<li><a href="compare_other_rpa.html">ほかの RPA と比較して taskt はどうなのか</a></li>
-				<li><a href="can_i_use_when_robot_run.html">ロボット実行中にほかの作業をしてもいいか</a></li>
-				<li><a href="sleep_when_robot_run.html">
-				長時間ロボットを動かして、途中でスリープ状態にならないか </a></li>
-			</ul>
-		<h2>スクリプトファイル</h2>
-		<ul>
-			<li><a href="downoad_script.html">スクリプトのダウンロードと実行方法</a></li>
-			<li><a href="download_official_sample.html">
-			公式サイトからサンプルスクリプトをダウンロードする</a></li>
-			<li><a href="how_faster_create_script.html">スクリプトを素早く作るコツはあるか</a></li>
-		</ul>
+	<h1>ロボット実行中にほかの操作をしてもいいか</h1>
+			<p>ロボット (taskt 
+			のスクリプトを実行中)、ぼんやりとパソコンの画面を見ていてもいいですが、その時間に自分で別の作業をするともっと効率が良くなる気がしますよね。</p>
+			<p>しかし、基本的にはロボット実行中はパソコンに触れないでください。</p>
+			<p>もっと正確にいうと、<strong>ロボット実行中にマウスに触れたり、キーボード操作をしてはいけません</strong>。</p>
+			<p>たとえば、ロボット (スクリプト) が下のような操作をするとします。</p>
+			<ol>
+				<li>特定の位置にマウスカーソルを動かす</li>
+				<li>マウスを右クリックする</li>
+			</ol>
+			<p>もし、1 の命令が終了し、2 
+			の命令を実行する前にユーザーがマウスを動かしたら、ロボットは本来の予定と異なる場所をクリックしてします。</p>
+			<p>すると、それ以降のスクリプトも正常に動作しなくなり、大変なことになってしまいます。</p>
+			<p>そのため、基本的にはロボット実行中はパソコンに触れないでください。</p>
+			<p>
+			もし実行するスクリプトが、マウスやキーボード操作を一切行わないものならば、ほかの操作をしても問題ないのかもしれませんが、そんなスクリプトを実行する必要があるかはよくわかりません。</p>
+			<p>ロボット実行中はコーヒーブレイクとか、ロボット実行専用のパソコンを用意するとか、そんな感じで対処するといいかもしれません。</p>
+			<hr>
+		<section class="bg-light">
+			<h2>参考</h2>
+			<p><a href="sleep_when_robot_run.html">長時間ロボットを動かして、途中でスリープ状態にならないか</a></p>
+			</section>
 	<!-- #EndEditable -->
 	</div>
 

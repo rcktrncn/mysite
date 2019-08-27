@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "info_default.dwt" -->
+<!-- #BeginTemplate "reverse_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>小ネタ - taskt - らんの眼</title>
+<title>Windows キーを使ったショートカットを入力する - taskt - らんの眼</title>
+	<style type="text/css">
+.auto-style1 {
+	border-width: 0px;
+}
+</style>
 	<!-- #EndEditable -->
 	
 </head>
@@ -76,11 +81,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
-	            <li class="nav-item">
-	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            <li class="nav-item active">
+	            	<a class="nav-link" href="index.html">逆引き</a>
 	            </li>
-				<li class="nav-item active">
-	            	<a class="nav-link" href="index.html">小ネタ</a>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -92,16 +97,14 @@
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
-		
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		<!-- #EndEditable -->
-			</li>
+    		Windows キーを使ったショートカットを入力する<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -112,27 +115,39 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-	<h1>小ネタ</h1>
-			<h2>taskt について</h2>
+		<h1>Windows キーを使ったショートカットを入力する</h1>
+		<p>Windows キーを押しながら R を押すと、「プログラム名を指定して実行」という機能が呼び出せます。下の画像のような画面です。</p>
+		<p>
+		<img alt="" height="205" src="../image/3.2.0/reverse/winkey_shortcut/002.png" width="397" class="img-fluid"></p>
+		<p>ほかにも、Windows キーを押しながら M を押すと、すべての画面を最小化できます。</p>
+		<p>このように、Windows キーを押すショートカットを、taskt で実行するにはちょっと工夫が必要です。</p>
+		<p><a href="scripts/winkey_shoftcut.xml">スクリプトをダウンロード</a>
+		<a href="../info/downoad_script.html">
+		<img alt="スクリプトファイルのダウロードと実行" class="auto-style1" height="30" src="../image/question.png" width="30"></a></p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/winkey_shortcut/winkey_shortcut.png" width="979" class="img-fluid"></p>
+		<p>Send Keystrokes では Windows キーを使ったショートカットは入力できませんので、Send Advanced 
+		Keystrokes を使います。</p>
+		<p>Set Key ans Parameters を下の画像のように指定します。</p>
+		<ul>
+			<li>Windows (Left)、もしくは Windows (Right) を <strong>Key Down</strong> 
+			にする</li>
+			<li>ショートカットキー (下の例では R) を Key Press (Down + Up) にする</li>
+		</ul>
+		<p>Optional - Return all keys to 'UP' position after execution は Yes 
+		にした方が良いでしょう。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/reverse/winkey_shortcut/001.png" width="631" class="img-fluid"></p>
+		<p>Windows (Left) は必ず Key Down にしてください。Key Press や Key Up にすると動作しません。</p>
+		<hr>
+		<section class="bg-light">
+			<h2>参考</h2>
 			<ul>
-				<li><a href="what_automation_can.html">taskt が使えるクリックの自動化について</a></li>
-				<li><a href="compare_other_rpa.html">ほかの RPA と比較して taskt はどうなのか</a></li>
-				<li><a href="can_i_use_when_robot_run.html">ロボット実行中にほかの作業をしてもいいか</a></li>
-				<li><a href="sleep_when_robot_run.html">
-				長時間ロボットを動かして、途中でスリープ状態にならないか </a></li>
+				<li>
+				<a href="https://support.microsoft.com/ja-jp/help/12445/windows-keyboard-shortcuts" target="_blank">
+				Windows のキーボード ショートカット</a> (<a href="https://support.microsoft.com/ja-jp/help/12445/windows-keyboard-shortcuts" target="_blank">https://support.microsoft.com/ja-jp/help/12445/windows-keyboard-shortcuts</a>)</li>
 			</ul>
-		<h2>スクリプトファイル</h2>
-		<ul>
-			<li><a href="downoad_script.html">スクリプトのダウンロードと実行方法</a></li>
-			<li><a href="download_official_sample.html">
-			公式サイトからサンプルスクリプトをダウンロードする</a></li>
-			<li><a href="how_faster_create_script.html">スクリプトを素早く作るコツはあるか</a></li>
-		</ul>
-		<h2>命令関係</h2>
-		<ul>
-			<li><a href="ctrl_shift_shortcutkey.html">Shift、Ctrl、Alt 
-			などを複数押すショートカットキーはどう書けばいいか </a></li>
-		</ul>
+		</section>
 	<!-- #EndEditable -->
 	</div>
 

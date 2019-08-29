@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>Run Process、Send Keystrokes - taskt - らんの眼</title>
+<title>ペイントを操作する - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -99,7 +99,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		Run Process、Send Keystrokes<!-- #EndEditable --></li>
+    		ペイントを操作する<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -110,34 +110,104 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>Run Process、Send Keystrokes</h1>
+		<h1>ペイントを操作する</h1>
+		<p>ネタなスクリプトですが、ペイントで「Hello World」と書きます。</p>
 		<ol>
-			<li>メモ帳を実行</li>
-			<li>キーボードから「Hello World !」と入力</li>
-			<li>Enter キーを押し、改行</li>
-			<li>F5 キーを押し、現在の日時を入力</li>
-			<li>Ctrl+S で保存しようとする</li>
+			<li>ペイントを実行</li>
+			<li>キャンバスサイズを 640×480 にする</li>
+			<li>ブラシの種類、サイズを指定</li>
+			<li>「Hello World」と書く</li>
 		</ol>
-		<p><a href="scripts/start_process_send_keystroke.xml">スクリプトをダウンロード</a>
+		<p><a href="scripts/paint_hello_world.xml">スクリプトのダウンロード</a>
 		<a href="../info/downoad_script.html">
-		<img alt="スクリプトのダウンロードと実行方法" class="auto-style1" height="30" src="../image/question.png" width="30"></a></p>
+		<img alt="スクリプトのダウンロードと実行方法" class="auto-style1" height="30" src="../image/question.png" width="30" class="img-fluid"></a></p>
 		<p>
-		<img alt="" height="586" src="../image/3.2.0/sample/start_process_send_keystrokes/start_process_send_keystroke.png" width="981" class="img-fluid"></p>
-		<p>Run Process でメモ帳を実行</p>
+		<img alt="" height="589" src="../image/3.2.0/sample/paint_hello_world/paint_hello_world.png" width="979" class="img-fluid"></p>
 		<p>
-		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/001.png" width="633" class="img-fluid"></p>
-		<p>Send Keystrokes で「Hello World !」</p>
+		<img alt="" height="589" src="../image/3.2.0/sample/paint_hello_world/paint_hello_world_2.png" width="979" class="img-fluid"></p>
+		<p>変数 [fm]、[w] の宣言</p>
 		<p>
-		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/002.png" width="633" class="img-fluid"></p>
-		<p>Send Keystrokes で Enter キーを入力</p>
+		<img alt="" height="416" src="../image/3.2.0/sample/paint_hello_world/015.png" width="607" class="img-fluid"></p>
+		<p>ペイントの実行 (mspaint がペイントのプログラム名)</p>
 		<p>
-		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/003.png" width="633" class="img-fluid"></p>
-		<p>Send Keystrokes で F5 キーを押し、日時を入力</p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/001.png" width="631" class="img-fluid"></p>
+		<p>ペイントの画面のタイトルを変数 [fm] に代入し、UI Automation などで使用する</p>
 		<p>
-		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/004.png" width="633" class="img-fluid"></p>
-		<p>Send Keystrokes で Ctrl+S を入力し、保存しようとする</p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/002.png" width="631" class="img-fluid"></p>
+		<p>リボンインターフェースで Alt+R,E でキャンバスサイズの変更</p>
 		<p>
-		<img alt="" height="610" src="../image/3.2.0/sample/start_process_send_keystrokes/006.png" width="633" class="img-fluid"></p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/003.png" width="631" class="img-fluid"></p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/004.png" width="631" class="img-fluid"></p>
+		<p>UI Automation で ピクセル のラジオボタンをクリック</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/005.png" width="631" class="img-fluid"></p>
+		<p>Alt+H でキャンバスの横を 640 に変更</p>
+		<p>同様に Alt+V でキャンバスの高さを 480 に変更</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/006.png" width="631" class="img-fluid"></p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/007.png" width="631" class="img-fluid"></p>
+		<p>縦横比を維持するにチェックを入れてある場合、キャンバスの幅が 640 以外の数字になるので、その数字を Ctrl+C 
+		でクリップボードにコピー</p>
+		<p>そして、Get Clipboard Text を使い、変数 [w] にキャンバスの幅を入れる</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/008.png" width="631" class="img-fluid"></p>
+		<p>If Begin で変数 [w] が 640 ではないときだけ、処理をする判定</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/009.png" width="631" class="img-fluid"></p>
+		<p>UI Automation で OK をクリック</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/010.png" width="631" class="img-fluid"></p>
+		<p>シーケンスになっている部分</p>
+		<p>ペイントの画面の位置と大きさを変更する</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/sample/paint_hello_world/011.png" width="979" class="img-fluid"></p>
+		<p>ペイントの画面の位置を調整</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/012.png" width="631" class="img-fluid">」</p>
+		<p>ペイントの画面の大きさを調整</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/sample/paint_hello_world/013.png" width="631" class="img-fluid"></p>
+		<p>シーケンスになっている部分、Record を使用</p>
+		<p>マウスを動かし、「Hello World」と書く</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/sample/paint_hello_world/014.png" width="979" class="img-fluid"></p>
+		<h2>キャンバスサイズの変更画面</h2>
+		<p>
+		<img alt="" height="400" src="../image/3.2.0/sample/paint_hello_world/016.png" width="266" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<td>パーセント/ピクセル</td>
+				<td>Alt+B ではそれぞれを選択できないので、UI Automation を使う</td>
+			</tr>
+			<tr>
+				<td>水平方向</td>
+				<td>Alt+H<br>入力された値は、UI Automation では取得できない (バージョン 3.2.0.0 時点)</td>
+			</tr>
+			<tr>
+				<td>垂直方向</td>
+				<td>Alt+V</td>
+			</tr>
+			<tr>
+				<td>縦横比を維持する</td>
+				<td>Alt+M でチェックを入れる、外すは可能<br>UI Automation ではチェックの状態が取得できない 
+				(バージョン 3.2.0.0 時点)</td>
+			</tr>
+			<tr>
+				<td>OK</td>
+				<td>今回は UI Automation でクリック<br>実際は Send Keystrokes で ENTER 
+				を入力しても OK</td>
+			</tr>
+			<tr>
+				<td>キャンセル</td>
+				<td>今回はクリックしていないが、Send Keystrokes で ESC を入力すれば OK</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<h2>完成図</h2>
+		<p>
+		<img alt="" height="653" src="../image/3.2.0/sample/paint_hello_world/017.png" width="651" class="img-fluid"></p>
 	<!-- #EndEditable -->
 	</div>
 

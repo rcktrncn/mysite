@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>逆引き - taskt - らんの眼</title>
+<title>半角スペースを入力する - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -99,8 +99,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		<!-- #EndEditable -->
-			</li>
+    		半角スペースを入力する<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -111,17 +110,31 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>逆引き</h1>
-		<h2>キーボード入力</h2>
-		<ul>
-			<li><a href="type_like_enter_tab.html">数字やアルファベット以外の特殊なキーを入力する</a></li>
-			<li><a href="how_shortcut_send.html">ショートカットキーを使う</a></li>
-			<li><a href="shift_press_select.html">Shift+矢印キーで範囲選択をする</a></li>
-			<li><a href="winkey_shoftcut.html">Windows キーを使ったショートカットを入力する</a></li>
-			<li><a href="type_key_manytimes.html">同じキーを連続で入力する</a></li>
-			<li><a href="type_space.html">半角スペースを入力する</a></li>
-			<li><a href="type_brackets.html">カッコを入力する</a></li>
-		</ul>
+		<h1>半角スペースを入力する</h1>
+		<p>Send Keystrokes で半角スペースだけを入力する場合、現在の IME モードがオン (全角入力) かオフ (半角入力) 
+		かでやり方が異なります。</p>
+		<h2>IME モードがオフ (半角入力) の場合</h2>
+		<p>IME モードがオフ (半角入力) の場合、Send Keystrokes で半角スペースを (&nbsp; ) で囲みます。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/reverse/type_space/001.png" width="631" class="img-fluid"></p>
+		<p>余談ですが、バージョン 3.2.0.0 時点では、Send Keystrokes で {SPACE} 
+		のように指定しても、スペースを入力できません。</p>
+		<h2>IME モードがオン (全角入力) の場合</h2>
+		<p>IME モードがオン (全角入力) の場合、Send Keystrokes だと半角スペース自体が無視されるのでやり方を変え、<strong>Send Advaneced Keystrokes</strong> を使います。</p>
+		<p>下のように、Shift キーを押しながらスペースキーを押す操作を指定することで、半角スペースを入力します。このとき、Shift は Key 
+		Down、スペースは Key Press (Down + Up) で指定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/reverse/type_space/002.png" width="631" class="img-fluid"></p>
+		<p>余談ですが、バージョン 3.2.0.0 時点では、Send Keystrokes で {SPACE} 
+		のように指定しても、スペースを入力できません。そのため、Send Keystrokes で +{SPACE} のような指定はできません。</p>
+		<hr>
+		<section class="bg-light">
+			<h2>参考</h2>
+			<ul>
+				<li><a href="type_like_enter_tab.html">数字やアルファベット以外のキーを入力する</a></li>
+				<li><a href="how_shortcut_send.html">ショートカットキーを使う</a></li>
+			</ul>
+		</section>
 	<!-- #EndEditable -->
 	</div>
 

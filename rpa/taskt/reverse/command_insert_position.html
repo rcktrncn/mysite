@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>カッコを入力する - taskt - らんの眼</title>
+<title>命令の挿入位置を選択中の行の下にする - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -99,7 +99,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		カッコを入力する<!-- #EndEditable --></li>
+    		命令の挿入位置を選択中の行の下にする<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -110,61 +110,25 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>カッコを入力する</h1>
-		<p>Send Keystrokes では ( ) は入力した内容をまとめるための記号で、{ } は特殊なキーを指定するための記号で、[ ] 
-		は変数の記号でした。</p>
-		<p>これらのカッコを入力するには少し工夫が必要です。</p>
-		<table class="table">
-			<tr>
-				<th>カッコ</th>
-				<th>入力方法</th>
-			</tr>
-			<tr>
-				<td>(<br>丸カッコ、小カッコ</td>
-				<td>+8&nbsp;&nbsp;&nbsp; (Shift を押しながら 8)<br>{(}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>)<br>丸カッコ、小カッコ</td>
-				<td>+9&nbsp;&nbsp;&nbsp; (Shift を押しながら 9)<br>{)}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>[<br>ブラケット、角カッコ、大カッコ</td>
-				<td>[</td>
-			</tr>
-			<tr>
-				<td>]<br>ブラケット、角カッコ、大カッコ</td>
-				<td>]</td>
-			</tr>
-			<tr>
-				<td>{<br>波カッコ、中カッコ</td>
-				<td>+[&nbsp;&nbsp;&nbsp; (Shift を押しながら { )<br>{{}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>}<br>波カッコ、中カッコ</td>
-				<td>+]&nbsp;&nbsp;&nbsp; (Shift を押しながら } )<br>{}}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-		</table>
-		<p>&nbsp;</p>
+		<h1>命令の挿入位置を選択中の行の下にする</h1>
+		<p>taskt の初期設定では、新しく挿入した命令は一番下に挿入されます。</p>
+		<p>たとえば、下のような命令を書いたときならば、Send Keystrokes [Send 'F' to …… の下に挿入されます。</p>
 		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_brackets/001.png" width="631" class="img-fluid"></p>
-		<p>キーボードからこれらのカッコを入力するときと同じキーを指定すればよいです。</p>
-		<p>ただし、[ と ] については Send Keystrokes で 1 
-		つずつ指定しないと、変数と解釈されてエラーになるときがあるので注意してください。</p>
-		<hr>
-		<section class="bg-light">
-		<h2>参考</h2>
-		<ul>
-			<li><a href="type_like_enter_tab.html">数字やアルファベット以外のキーを入力する</a></li>
-			<li><a href="type_space.html">半角スペースを入力する</a></li>
-			<li>
-			<a href="https://www.benricho.org/symbol/kigou_03.html" target="_blank">
-			カッコの読み方</a> (<a href="https://www.benricho.org/symbol/kigou_03.html" target="_blank">https://www.benricho.org/symbol/kigou_03.html</a>)</li>
-		</ul>
-		</section>
+		<img alt="" height="589" src="../image/3.2.0/reverse/command_insert_position/001.png" width="979" class="img-fluid"></p>
+		<p>しかし、長いスクリプトを編集していると、現在のカーソルの位置に挿入したいときもあります。</p>
+		<p>まず、メニューの Settings Manager をクリックします。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/command_insert_position/005.png" width="979" class="img-fluid"></p>
+		<p>Application タブの <strong>New Commands Insert Below Selected Command 
+		にチェックを入れ</strong>、OK をクリックします。</p>
+		<p>
+		<img alt="" height="722" src="../image/3.2.0/reverse/command_insert_position/006.png" width="625" class="img-fluid"></p>
+		<p>この設定後、たとえば下のように Send Keystrokes [Send 'C' to …… を選択中に命令を入力すると……</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/command_insert_position/001.png" width="979" class="img-fluid"></p>
+		<p>選択された命令の下に入力されます。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/command_insert_position/004.png" width="979" class="img-fluid"></p>
 	<!-- #EndEditable -->
 	</div>
 

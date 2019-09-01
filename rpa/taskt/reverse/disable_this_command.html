@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>カッコを入力する - taskt - らんの眼</title>
+<title>特定の命令を一時的に無効化する - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -99,7 +99,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		カッコを入力する<!-- #EndEditable --></li>
+    		特定の命令を一時的に無効化する<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -110,61 +110,23 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>カッコを入力する</h1>
-		<p>Send Keystrokes では ( ) は入力した内容をまとめるための記号で、{ } は特殊なキーを指定するための記号で、[ ] 
-		は変数の記号でした。</p>
-		<p>これらのカッコを入力するには少し工夫が必要です。</p>
-		<table class="table">
-			<tr>
-				<th>カッコ</th>
-				<th>入力方法</th>
-			</tr>
-			<tr>
-				<td>(<br>丸カッコ、小カッコ</td>
-				<td>+8&nbsp;&nbsp;&nbsp; (Shift を押しながら 8)<br>{(}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>)<br>丸カッコ、小カッコ</td>
-				<td>+9&nbsp;&nbsp;&nbsp; (Shift を押しながら 9)<br>{)}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>[<br>ブラケット、角カッコ、大カッコ</td>
-				<td>[</td>
-			</tr>
-			<tr>
-				<td>]<br>ブラケット、角カッコ、大カッコ</td>
-				<td>]</td>
-			</tr>
-			<tr>
-				<td>{<br>波カッコ、中カッコ</td>
-				<td>+[&nbsp;&nbsp;&nbsp; (Shift を押しながら { )<br>{{}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>}<br>波カッコ、中カッコ</td>
-				<td>+]&nbsp;&nbsp;&nbsp; (Shift を押しながら } )<br>{}}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-		</table>
-		<p>&nbsp;</p>
+		<h1>特定の命令を一時的に無効化する</h1>
+		<p>スクリプトを編集していると、特定の命令だけを一時的に無効化したいときがあると思います。</p>
+		<p>たとえば、下の選択中の Send Keystrokes [Send 'C' to …… を無効化したいときは、</p>
 		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_brackets/001.png" width="631" class="img-fluid"></p>
-		<p>キーボードからこれらのカッコを入力するときと同じキーを指定すればよいです。</p>
-		<p>ただし、[ と ] については Send Keystrokes で 1 
-		つずつ指定しないと、変数と解釈されてエラーになるときがあるので注意してください。</p>
-		<hr>
-		<section class="bg-light">
-		<h2>参考</h2>
-		<ul>
-			<li><a href="type_like_enter_tab.html">数字やアルファベット以外のキーを入力する</a></li>
-			<li><a href="type_space.html">半角スペースを入力する</a></li>
-			<li>
-			<a href="https://www.benricho.org/symbol/kigou_03.html" target="_blank">
-			カッコの読み方</a> (<a href="https://www.benricho.org/symbol/kigou_03.html" target="_blank">https://www.benricho.org/symbol/kigou_03.html</a>)</li>
-		</ul>
-		</section>
+		<img alt="" height="589" src="../image/3.2.0/reverse/disable_this_command/001.png" width="979" class="img-fluid"></p>
+		<p>選択中の命令の上で右クリックし、出てきたメニューから <strong>Disable Selected Code</strong> 
+		をクリックします。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/disable_this_command/002.png" width="979" class="img-fluid"></p>
+		<p>残念ながら、バージョン 3.2.0.0 ではこの操作をした段階では選択中の命令の見た目に変化がありません。</p>
+		<p>しかし、別の命令を選択すると、今 Disable Selected Code を選択した Send Keystrokes [Send 
+		'C' to …… は緑色に変わっており、スクリプト実行中にこの命令は無視されます。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/disable_this_command/003.png" width="979" class="img-fluid"></p>
+		<p>無効化を解除するには、再度選択して右クリックし、出てきたメニューから Enable Selected Code をクリックします。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/disable_this_command/004.png" width="979" class="img-fluid"></p>
 	<!-- #EndEditable -->
 	</div>
 

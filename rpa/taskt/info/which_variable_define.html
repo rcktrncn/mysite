@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "reverse_default.dwt" -->
+<!-- #BeginTemplate "info_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>カッコを入力する - taskt - らんの眼</title>
+<title>変数の宣言はVariable ManagerとNew Variableのどちらがいいか - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -76,11 +76,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
-	            <li class="nav-item active">
-	            	<a class="nav-link" href="index.html">逆引き</a>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
 	            </li>
-				<li class="nav-item">
-	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+				<li class="nav-item active">
+	            	<a class="nav-link" href="index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -92,14 +92,14 @@
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		カッコを入力する<!-- #EndEditable --></li>
+    		変数の宣言は Variable Manager と New Variable のどちらがいいか<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -110,60 +110,34 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>カッコを入力する</h1>
-		<p>Send Keystrokes では ( ) は入力した内容をまとめるための記号で、{ } は特殊なキーを指定するための記号で、[ ] 
-		は変数の記号でした。</p>
-		<p>これらのカッコを入力するには少し工夫が必要です。</p>
-		<table class="table">
-			<tr>
-				<th>カッコ</th>
-				<th>入力方法</th>
-			</tr>
-			<tr>
-				<td>(<br>丸カッコ、小カッコ</td>
-				<td>+8&nbsp;&nbsp;&nbsp; (Shift を押しながら 8)<br>{(}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>)<br>丸カッコ、小カッコ</td>
-				<td>+9&nbsp;&nbsp;&nbsp; (Shift を押しながら 9)<br>{)}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>[<br>ブラケット、角カッコ、大カッコ</td>
-				<td>[</td>
-			</tr>
-			<tr>
-				<td>]<br>ブラケット、角カッコ、大カッコ</td>
-				<td>]</td>
-			</tr>
-			<tr>
-				<td>{<br>波カッコ、中カッコ</td>
-				<td>+[&nbsp;&nbsp;&nbsp; (Shift を押しながら { )<br>{{}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-			<tr>
-				<td>}<br>波カッコ、中カッコ</td>
-				<td>+]&nbsp;&nbsp;&nbsp; (Shift を押しながら } )<br>{}}&nbsp;&nbsp;&nbsp; 
-				(途中に半角スペースを入れてはいけません)</td>
-			</tr>
-		</table>
-		<p>&nbsp;</p>
+		<h1>変数の宣言は Variable Manager と New Variable のどちらがいいか</h1>
+		<p>taskt で変数を宣言・使用する場合、Variable Manager で宣言する方法と、New Variable 
+		で宣言する方法があります。</p>
+		<div class="row">
+			<p class="col-md">
+			<img alt="" height="416" src="../image/3.2.0/info/which_variable_define/001.png" width="607" class="img-fluid"></p>
+			<p class="col-md">
+			<img alt="" height="618" src="../image/3.2.0/info/which_variable_define/002.png" width="631" class="img-fluid"></p>
+		</div>
+		<p>どちらも変数が宣言でき、基本的には作られる変数に違いはありません。</p>
+		<p>ただし、あくまでも管理人の個人的な感覚ですが、Variable Manager で宣言した方が簡単です。</p>
+		<p>理由としては、命令を入力する画面で、下のように ▼ をクリックすると Variable Manager 
+		で宣言した変数が一覧に表示されます。</p>
 		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_brackets/001.png" width="631" class="img-fluid"></p>
-		<p>キーボードからこれらのカッコを入力するときと同じキーを指定すればよいです。</p>
-		<p>ただし、[ と ] については Send Keystrokes で 1 
-		つずつ指定しないと、変数と解釈されてエラーになるときがあるので注意してください。</p>
+		<img alt="" height="618" src="../image/3.2.0/info/which_variable_define/003.png" width="631" class="img-fluid"></p>
+		<p>同じように、変数が使える部分で Insert Variable をクリックすると、Variable Manager 
+		で宣言した変数を選択することができます。</p>
+		<p>
+		<img alt="" height="273" src="../image/3.2.0/info/which_variable_define/004.png" width="353" class="img-fluid"></p>
+		<p>どちらも New Variable で宣言した変数は表示されません。</p>
+		<p>一覧に表示されないだけで、毎回キーボードで [var2] のように入力すれば良いだけですが、多少でも楽をしたければ Variable 
+		Manager で宣言した方が良いと思います。</p>
 		<hr>
 		<section class="bg-light">
-		<h2>参考</h2>
-		<ul>
-			<li><a href="type_like_enter_tab.html">数字やアルファベット以外のキーを入力する</a></li>
-			<li><a href="type_space.html">半角スペースを入力する</a></li>
-			<li>
-			<a href="https://www.benricho.org/symbol/kigou_03.html" target="_blank">
-			カッコの読み方</a> (<a href="https://www.benricho.org/symbol/kigou_03.html" target="_blank">https://www.benricho.org/symbol/kigou_03.html</a>)</li>
-		</ul>
+			<h2>参考</h2>
+			<ul>
+				<li><a href="../menu/variable_manager.html">Variable Manager</a></li>
+			</ul>
 		</section>
 	<!-- #EndEditable -->
 	</div>

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "reverse_default.dwt" -->
+<!-- #BeginTemplate "info_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>%, +, ^ を入力する - taskt - らんの眼</title>
+<title>一度作ったらスクリプトの手直しは不要か - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -76,11 +76,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
-	            <li class="nav-item active">
-	            	<a class="nav-link" href="index.html">逆引き</a>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
 	            </li>
-				<li class="nav-item">
-	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+				<li class="nav-item active">
+	            	<a class="nav-link" href="index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -92,14 +92,14 @@
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		%, +, ^ を入力する<!-- #EndEditable --></li>
+    		一度作ったらスクリプトの手直しは不要か<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -110,36 +110,36 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>%, +, ^ を入力する</h1>
-		<p>Send Keystrokes で %、+、^ はそれぞれ Alt、Shift、Ctrl に相当します。</p>
-		<p>ショートカットを入力するときは、これらの記号を組み合わせるのですが、% や + などを入力するには、下のようにします。</p>
-		<table class="table">
-			<tr>
-				<th>記号</th>
-				<th>指定方法</th>
-			</tr>
-			<tr>
-				<td>%</td>
-				<td>+5&nbsp;&nbsp;&nbsp; (Shift を押しながら 5)<br>{%}&nbsp;&nbsp;&nbsp; 
-				(半角スペースを入れないでください)</td>
-			</tr>
-			<tr>
-				<td>+</td>
-				<td>{ADD}<br>{+}&nbsp;&nbsp;&nbsp;&nbsp; (半角スペースを入れないでください)</td>
-			</tr>
-			<tr>
-				<td>^</td>
-				<td>調べたのですが分かりません<br>{^} を指定したらなぜか &amp; 
-				が入力されたのは管理人のパソコンだけの現象なのでしょうか</td>
-			</tr>
-		</table>
-		<p></p>
-		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_hat_percent_plus/001.png" width="631"></p>
+		<h1>一度作ったらスクリプトの手直しは不要か</h1>
+		<p>taskt に限らず、RPA は<strong>プログラミング不要</strong>でいろいろできる便利なロボットであると説明されることが多いです。</p>
+		<p>しかし、プログラミングが不要 (なように感じるだけ) ですが、<strong>RPA の実態はプログラム</strong>です。</p>
+		<p>そのため一般的なプログラム開発と同じで、一度作ったら終わりではなく、定期的に手直しや修正が必要なものだと思ってください。</p>
+		<p>たとえば、下のような理由で手直しが必要になるかもしれません。</p>
+		<ul>
+			<li>処理する書類の書式が変わった</li>
+			<li>RPA が操作するプログラムがバージョンアップし、操作方法が変わった</li>
+			<li>RPA 自体がバージョンアップし、やり方が変わった</li>
+			<li>ウェブサイトのデザインが変わった</li>
+			<li>Windows の更新により操作方法が変わった、機能が変わった</li>
+		</ul>
+		<p>つまり、定期的な手直し・修正が必要なので、後日修正しようとしたときに備えて taskt (RPA) 
+		のスクリプトを作る必要があります。もし、そのような作業を怠ると、ブラックボックスになった Excel 
+		マクロや、秘伝のソースで作り上げられた謎プログラムのようなものになってしまうでしょう。</p>
+		<p>では、taskt の場合、定期的な手直し・修正ができるように何をすれば良いでしょうか。</p>
+		<ul>
+			<li>スクリプトファイルにコメントを入れる (Add Code Comment)</li>
+			<li>仕様書を残す</li>
+		</ul>
+		<p>……こんなことをしておけば、大丈夫かもしれません。</p>
 		<hr>
 		<h2>参考</h2>
 		<ul>
-			<li><a href="how_shortcut_send.html">ショートカットを入力する</a></li>
+			<li>
+			<a href="https://www.itmedia.co.jp/enterprise/articles/1811/01/news005.html" target="_blank">
+			せっかく作ったRPAが逆効果？　「野良ロボット」にご注意を</a> (<a href="https://www.itmedia.co.jp/enterprise/articles/1811/01/news005.html" target="_blank">https://www.itmedia.co.jp/enterprise/articles/1811/01/news005.html</a>)</li>
+			<li>
+			<a href="https://dmc-service.com/rpa-make-business-rigid" target="_blank">
+			RPA はExcelレガシー問題を再発させる？</a> (<a href="https://dmc-service.com/rpa-make-business-rigid" target="_blank">https://dmc-service.com/rpa-make-business-rigid</a>)</li>
 		</ul>
 	<!-- #EndEditable -->
 	</div>

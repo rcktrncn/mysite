@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "info_default.dwt" -->
+<!-- #BeginTemplate "reverse_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,12 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>ボタンやメニューのアンダーラインの意味は何? - taskt - らんの眼</title>
-	<style type="text/css">
-	.auto-style1 {
-		text-decoration: underline;
-	}
-	</style>
+<title>複数の命令を選択する - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -81,11 +76,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
-	            <li class="nav-item">
-	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            <li class="nav-item active">
+	            	<a class="nav-link" href="index.html">逆引き</a>
 	            </li>
-				<li class="nav-item active">
-	            	<a class="nav-link" href="index.html">小ネタ</a>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -97,14 +92,14 @@
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		ボタンやメニューのアンダーラインの意味は何?<!-- #EndEditable --></li>
+    		複数の命令を選択する<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -115,31 +110,42 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>ボタンやメニューのアンダーラインの意味は何?</h1>
-		<p>いろいろなソフトのメニューやボタンを見ると、アルファベットにアンダーラインが付いているものがあります。</p>
-		<p>例えば、メモ帳ならば「ファイル(<span class="auto-style1">F</span>)]のような感じで、「ファイル」の後に 
-		"(<span class="auto-style1">F</span>)" と付いています。</p>
+		<h1>複数の命令を選択する</h1>
+		<p>たとえば複数の命令をまとめて移動させたり、削除したいときはマウスとキーボードを併用して命令を選択します。</p>
+		<h2>○○から××まで</h2>
+		<p>○○の命令から××の命令までをまとめて選択したい場合は、Shift を使います。</p>
+		<p>例えば、下のスクリプトで、2 行目の Send Keystrokes [Send 'B' to…… から 4 行目の Send 
+		Keystorkes [Send 'E' to…… までを選択したい場合、上の Send Keystrokes [Send 'B' to…… 
+		をクリックします。</p>
 		<p>
-		<img alt="" height="638" src="../image/3.2.0/info/what_means_underline/001.png" width="827" class="img-fluid"></p>
-		<p>例えば、Word のとある画面だと、「日本語用のフォント(<span class="auto-style1">T</span>):」や「既定に設定(<span class="auto-style1">D</span>)」のように、設定項目やボタンにもアルファベットが付いています。</p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/select_multi_commands/001.png" width="979" class="img-fluid"></p>
+		<p>次に、Shift を押しながら、Send Keystrokes [Send 'E' to…… をクリックします。</p>
+		<p>すると、2 行目から 4 行目のすべての命令をまとめて選択できます。</p>
 		<p>
-		<img alt="" height="585" src="../image/3.2.0/info/what_means_underline/002.png" width="507" class="img-fluid"></p>
-		<p>実はこのアルファベット、ショートカットキーを意味しており、「ファイル(<span class="auto-style1">F</span>)」ならば、Alt+F 
-		でメニュー中の「ファイル」をクリックしたのと同じ意味になります。</p>
-		<p>同様に、「日本語用のフォント(<span class="auto-style1">T</span>):」ならば、Alt+T 
-		で、「既定に設定(<span class="auto-style1">D</span>)」ならば Alt+D 
-		でクリックしたのと同じ意味になります。</p>
-		<p>これらのショートカットを利用すると、taskt でソフトを操作するスクリプトが簡単に作れます。</p>
-		<p>Alt を押しながらのショートカットは、Send Keystrokes で % のあとにアルファベットを指定すると、Alt+○ 
-		の意味になります。下の画像は Alt+F の意味です。</p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/select_multi_commands/002.png" width="979" class="img-fluid"></p>
+		<p>ちなみに、逆向きで 4 行目をはじめに選択し、次に Shift を押しながら 2 行目の選択しても同じです。</p>
+		<h2>○○と××を選択</h2>
+		<p>とびとびの命令をまとめて選択するときは、Ctrl を使います。</p>
+		<p>例えば、下のスクリプトで、2 行目の Send Keystrokes [Send 'B' to…… と 4 行目の Send 
+		Keystorkes [Send 'E' to…… の 2 つを選択したい場合、まず Send Keystrokes [Send 'B' 
+		to…… をクリックします。</p>
 		<p>
-		<img alt="" height="618" src="../image/3.2.0/info/what_means_underline/003.png" width="631" class="img-fluid"></p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/select_multi_commands/003.png" width="979" class="img-fluid"></p>
+		<p>次に、Ctrl を押しながら、Send Keystrokes [Send 'E' to…… をクリックします。</p>
+		<p>すると、2 行目と 4 行目の命令をまとめて選択できます。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/select_multi_commands/004.png" width="979" class="img-fluid"></p>
+		<p>この操作も上の命令から順番に選択する必要はなく、Ctrl を押しながら好きな順番で選択してよいです。</p>
 		<hr>
 		<section class="bg-light">
-			<h2>
-			参考</h2>
+			<h2>参考</h2>
 			<ul>
-				<li><a href="../reverse/how_shortcut_send.html">ショートカットキーを入力する</a></li>
+				<li><a href="disable_this_command.html">特定の命令を一時的に無効化する</a></li>
+				<li><a href="swap_command.html">命令の位置を動かす</a></li>
+				<li><a href="copy_paste_command.html">命令をコピペする</a></li>
+				<li><a href="delete_command.html">命令を削除する</a></li>
+				<li><a href="https://dekiru.net/article/13394/" target="_blank">
+				パソコンで複数のファイルを選択する方法</a> (<a href="https://dekiru.net/article/13394/" target="_blank">https://dekiru.net/article/13394/</a>)</li>
 			</ul>
 		</section>
 	<!-- #EndEditable -->

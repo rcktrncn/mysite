@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "info_default.dwt" -->
+<!-- #BeginTemplate "reverse_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,12 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>ボタンやメニューのアンダーラインの意味は何? - taskt - らんの眼</title>
-	<style type="text/css">
-	.auto-style1 {
-		text-decoration: underline;
-	}
-	</style>
+<title>命令をコピペする - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -81,11 +76,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
-	            <li class="nav-item">
-	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            <li class="nav-item active">
+	            	<a class="nav-link" href="index.html">逆引き</a>
 	            </li>
-				<li class="nav-item active">
-	            	<a class="nav-link" href="index.html">小ネタ</a>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -97,14 +92,14 @@
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		ボタンやメニューのアンダーラインの意味は何?<!-- #EndEditable --></li>
+    		命令をコピペする<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -115,32 +110,53 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>ボタンやメニューのアンダーラインの意味は何?</h1>
-		<p>いろいろなソフトのメニューやボタンを見ると、アルファベットにアンダーラインが付いているものがあります。</p>
-		<p>例えば、メモ帳ならば「ファイル(<span class="auto-style1">F</span>)]のような感じで、「ファイル」の後に 
-		"(<span class="auto-style1">F</span>)" と付いています。</p>
+		<h1>命令をコピペする</h1>
+		<p>スクリプト中にある命令をコピペ (コピー&amp;ペースト、複製) する方法は、キーボードを使う方法と、マウスを使う方法の 2 つあります。</p>
+		<p>どちらの方法でも、命令が貼り付けられる位置は、現在選択中の命令の下になります。これは、taskt の 
+		<a href="command_insert_position.html">New Commands Insert Below 
+		Selected Command の設定</a>に関係なく、そうなります。</p>
+		<p>また、taskt の画面を 2 つ開いて起き、別のスクリプトの命令をコピペすることはできません (バージョン 3.2.0.0 時点)。</p>
+		<h2>キーボードを使う</h2>
+		<p>例えば、下のスクリプトについて、Send Keystrokes [Send 'B' to…… をコピーし、Send Keystrokes 
+		[Send 'C' to…… の下にペーストします。</p>
+		<p>まず、コピーする Send Keystrokes [Send 'B' to…… をクリックし、選択します。</p>
 		<p>
-		<img alt="" height="638" src="../image/3.2.0/info/what_means_underline/001.png" width="827" class="img-fluid"></p>
-		<p>例えば、Word のとある画面だと、「日本語用のフォント(<span class="auto-style1">T</span>):」や「既定に設定(<span class="auto-style1">D</span>)」のように、設定項目やボタンにもアルファベットが付いています。</p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/copy_paste_command/001.png" width="979" class="img-fluid"></p>
+		<p>次に、Ctrl+C を押し、コピーします。すると、taskt の画面下に一瞬「○ item(s) copied to 
+		clipbord!」と表示されます。「○個の命令をクリップボードにコピーしました」というような意味です。</p>
 		<p>
-		<img alt="" height="585" src="../image/3.2.0/info/what_means_underline/002.png" width="507" class="img-fluid"></p>
-		<p>実はこのアルファベット、ショートカットキーを意味しており、「ファイル(<span class="auto-style1">F</span>)」ならば、Alt+F 
-		でメニュー中の「ファイル」をクリックしたのと同じ意味になります。</p>
-		<p>同様に、「日本語用のフォント(<span class="auto-style1">T</span>):」ならば、Alt+T 
-		で、「既定に設定(<span class="auto-style1">D</span>)」ならば Alt+D 
-		でクリックしたのと同じ意味になります。</p>
-		<p>これらのショートカットを利用すると、taskt でソフトを操作するスクリプトが簡単に作れます。</p>
-		<p>Alt を押しながらのショートカットは、Send Keystrokes で % のあとにアルファベットを指定すると、Alt+○ 
-		の意味になります。下の画像は Alt+F の意味です。</p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/copy_paste_command/002.png" width="979" class="img-fluid"></p>
+		<p>次に、Send Keystrokes [Send 'C' to…… をクリックし、選択します。</p>
 		<p>
-		<img alt="" height="618" src="../image/3.2.0/info/what_means_underline/003.png" width="631" class="img-fluid"></p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/copy_paste_command/003.png" width="979" class="img-fluid"></p>
+		<p>そして、Ctrl+V を押すと、先ほどコピーした Send Keystrokes [Send 'B' to…… が、Send 
+		Keystrokes [Send 'C' to…… の下に貼り付けられます。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/copy_paste_command/004.png" width="979" class="img-fluid"></p>
+		<p>Ctrl+C を押す前に、<a href="select_multi_commands.html">複数の命令を選択</a>しておけば、複数の命令をまとめてコピペできます。</p>
+		<h2>マウスを使う</h2>
+		<p>例えば、下のスクリプトについて、Send Keystrokes [Send 'B' to…… をコピーし、Send Keystrokes 
+		[Send 'C' to…… の下にペーストします。</p>
+		<p>まず、コピーしたい Send Keystrokes [Send 'B' to…… を右クリックし、表示されたメニューから Copy 
+		Selected Action(S) をクリックします。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/copy_paste_command/005.png" width="979" class="img-fluid"></p>
+		<p>次に、命令を貼り付ける Send Keystrokes [Send 'C' to…… を右クリックし、表示されたメニューから Paste 
+		Selected Action(s) をクリックします。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/copy_paste_command/006.png" width="979" class="img-fluid"></p>
+		<p>すると、コピーした Send Keystrokes [Send 'B' to…… が、Send Keystorkes [Send 'C' 
+		to…… の下に貼り付けられます。</p>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/copy_paste_command/004.png" width="979" class="img-fluid"></p>
+		<p>Copy Selected Action(s) をクリックする前に、<a href="select_multi_commands.html">複数の命令を選択</a>しておけば、複数の命令をまとめてコピペできます。</p>
 		<hr>
 		<section class="bg-light">
-			<h2>
-			参考</h2>
-			<ul>
-				<li><a href="../reverse/how_shortcut_send.html">ショートカットキーを入力する</a></li>
-			</ul>
+		<h2>参考</h2>
+		<ul>
+			<li><a href="select_multi_commands.html">複数の命令を選択する</a></li>
+			<li><a href="command_insert_position.html">命令の挿入位置を選択中の行の下にする</a></li>
+		</ul>
 		</section>
 	<!-- #EndEditable -->
 	</div>

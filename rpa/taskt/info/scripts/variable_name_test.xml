@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="2e94de1d-ca6b-447f-9971-e28aebf0561c" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[foo], [[bar]], [1abc], [+A+]" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="74e5f723-1ebc-4f45-bf02-0a447a7127b9" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[Foo], [bar]" v_AutoCloseAfter="0" />
+    </ScriptAction>
+  </Commands>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>[bar]</VariableName>
+      <VariableValue xsi:type="xsd:string">barbar</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>+A+</VariableName>
+      <VariableValue xsi:type="xsd:string">AAA</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>1abc</VariableName>
+      <VariableValue xsi:type="xsd:string">hello</VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>foo</VariableName>
+      <VariableValue xsi:type="xsd:string">foofoo</VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

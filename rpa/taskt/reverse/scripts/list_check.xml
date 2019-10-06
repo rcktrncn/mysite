@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="7d39aa73-a00e-471a-8231-128d0f019881" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="vListのリストに値を入れる" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="AddToVariableCommand" CommandID="68d2ac27-ea8c-48f9-880e-b4f33931f2a7" CommandName="AddToVariableCommand" IsCommented="false" SelectionName="Add To Variable" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vList" v_Input="1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="AddToVariableCommand" CommandID="6e462462-be41-46e7-bf6d-b4a161c831c0" CommandName="AddToVariableCommand" IsCommented="false" SelectionName="Add To Variable" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vList" v_Input="2" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="AddToVariableCommand" CommandID="60d4f47f-e8e1-4451-9a62-dfba961fe036" CommandName="AddToVariableCommand" IsCommented="false" SelectionName="Add To Variable" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="vList" v_Input="3" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="1ab494cc-359e-4019-aa4e-7c9eaff1552c" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" v_Comment="vNotListの判定" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginIfCommand" CommandID="ec1d1efd-88ce-4df5-ace5-4cd9a74d2710" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Variable Compare">
+        <v_IfActionParameterTable>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I1Ac午ionPara26Table100319.122633" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element name="I1Ac午ionPara26Table100319.122633">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                        <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <I1Ac午ionPara26Table100319.122633 diffgr:id="I1Ac午ionPara26Table100319.1226331" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                <Parameter_x0020_Value>[vNotList.Type]</Parameter_x0020_Value>
+              </I1Ac午ionPara26Table100319.122633>
+              <I1Ac午ionPara26Table100319.122633 diffgr:id="I1Ac午ionPara26Table100319.1226332" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                <Parameter_x0020_Value>is equal to</Parameter_x0020_Value>
+              </I1Ac午ionPara26Table100319.122633>
+              <I1Ac午ionPara26Table100319.122633 diffgr:id="I1Ac午ionPara26Table100319.1226333" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                <Parameter_x0020_Value>LIST</Parameter_x0020_Value>
+              </I1Ac午ionPara26Table100319.122633>
+              <I1Ac午ionPara26Table100319.122633 diffgr:id="I1Ac午ionPara26Table100319.1226334" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Case Sensitive</Parameter_x0020_Name>
+                <Parameter_x0020_Value>No</Parameter_x0020_Value>
+              </I1Ac午ionPara26Table100319.122633>
+            </DocumentElement>
+          </diffgr:diffgram>
+        </v_IfActionParameterTable>
+      </ScriptCommand>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="MessageBoxCommand" CommandID="6e008714-c404-4244-916b-0df737ff6b6a" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vNotList はリストです [vNotList.Type]" v_AutoCloseAfter="0" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ElseCommand" CommandID="cb9e2f74-b5d5-4d8a-85ca-07938e2d72cd" CommandName="ElseCommand" IsCommented="false" SelectionName="Else" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="MessageBoxCommand" CommandID="1cd16761-d39c-477a-8b7c-30f6bdc0b808" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vNotList はリストではないです  [vNotList.Type]" v_AutoCloseAfter="0" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndIfCommand" CommandID="179d89d8-ae99-4b99-ba06-e22ce71a55e2" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="e0ba5d51-3b1f-42ff-b001-941fc9380132" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" v_Comment="vListの判定" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginIfCommand" CommandID="12207077-c53d-49a4-8402-7f6c05e40a3e" CommandName="BeginIfCommand" IsCommented="false" SelectionName="Begin If" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_IfActionType="Variable Compare">
+        <v_IfActionParameterTable>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="I1Ac午ionPara26Table100319.122633">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="I1Ac午ionPara26Table100319.122633" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="I1Ac午ionPara26Table100319.122633" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <I1Ac午ionPara26Table100319.122633 diffgr:id="I1Ac午ionPara26Table100319.1226331" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Value1</Parameter_x0020_Name>
+                <Parameter_x0020_Value>[vList.Type]</Parameter_x0020_Value>
+              </I1Ac午ionPara26Table100319.122633>
+              <I1Ac午ionPara26Table100319.122633 diffgr:id="I1Ac午ionPara26Table100319.1226332" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Operand</Parameter_x0020_Name>
+                <Parameter_x0020_Value>is equal to</Parameter_x0020_Value>
+              </I1Ac午ionPara26Table100319.122633>
+              <I1Ac午ionPara26Table100319.122633 diffgr:id="I1Ac午ionPara26Table100319.1226333" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Value2</Parameter_x0020_Name>
+                <Parameter_x0020_Value>LIST</Parameter_x0020_Value>
+              </I1Ac午ionPara26Table100319.122633>
+              <I1Ac午ionPara26Table100319.122633 diffgr:id="I1Ac午ionPara26Table100319.1226334" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+                <Parameter_x0020_Name>Case Sensitive</Parameter_x0020_Name>
+                <Parameter_x0020_Value>No</Parameter_x0020_Value>
+              </I1Ac午ionPara26Table100319.122633>
+            </DocumentElement>
+          </diffgr:diffgram>
+        </v_IfActionParameterTable>
+      </ScriptCommand>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="MessageBoxCommand" CommandID="2bb9eb31-1685-4819-9e0d-d7098206f19b" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vList はリストです [vList.Type]" v_AutoCloseAfter="0" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ElseCommand" CommandID="4a131049-3170-42af-bb84-7d440f1e02cc" CommandName="ElseCommand" IsCommented="false" SelectionName="Else" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="MessageBoxCommand" CommandID="f15072cf-3d93-4a75-9350-035d55c94516" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="vList はリストではないです [vList.Type]" v_AutoCloseAfter="0" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndIfCommand" CommandID="7a6cdf5e-89ca-45f6-892f-e577c421a20b" CommandName="EndIfCommand" IsCommented="false" SelectionName="End If" DefaultPause="0" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+  </Commands>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>vList</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>vNotList</VariableName>
+      <VariableValue xsi:type="xsd:string">abc</VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

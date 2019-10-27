@@ -35,7 +35,7 @@
       <ScriptCommand xsi:type="CommentCommand" CommandID="420d3d7a-8d72-4b69-b584-c408581cb56b" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" v_Comment="Sheet1 にデータを入力" CommandEnabled="true" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="VariableCommand" CommandID="215d3783-26b2-4f72-9e1b-250c10ebef3c" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="fm" v_Input="Book1 - Excel" />
+      <ScriptCommand xsi:type="VariableCommand" CommandID="215d3783-26b2-4f72-9e1b-250c10ebef3c" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="fm" v_Input="[Env.ActiveWindowTitle]" />
     </ScriptAction>
     <ScriptAction>
       <ScriptCommand xsi:type="BeginListLoopCommand" CommandID="cc1d2bf6-98a3-493e-a82b-6f1cd2a33003" CommandName="BeginListLoopCommand" IsCommented="false" SelectionName="Loop List" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" CommandEnabled="true" v_LoopParameter="[itemList]" />

@@ -57,6 +57,7 @@
 	              	<a class="dropdown-item" href="../commands/index.html#anc_misc">Misc Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_nlg">NLG Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_remote">Remote Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_system">System Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_task">Task Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_text">Text File Commands</a>
@@ -95,7 +96,7 @@
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
     		<li class="breadcrumb-item"><a href="index.html">その他機能</a></li>
-    		
+    		    		    		    		
     		<!-- #BeginEditable "breadcrumb2" -->
     		<li class="breadcrumb-item"><a href="options.html">Options</a></li>
 
@@ -116,7 +117,7 @@
 		<h1>Settings Manager</h1>
 		<p>Settings Manager では taskt の各種設定ができます。</p>
 		<p>
-		<img alt="" height="714" src="../image/3.2.0/menu/setting_manager_application.png" width="627" class="img-fluid"></p>
+		<img alt="" height="733" src="../image/3.3.0/menu/application.png" width="639" class="img-fluid"></p>
 		<p>
 		設定項目がタブで分かれています。</p>
 		<table class="table">
@@ -136,14 +137,19 @@
 				<td><a href="#anc_server">Server</a></td>
 				<td>tasktServer の設定です</td>
 			</tr>
+			<tr>
+				<td><a href="#anc_local_listener">Local Listener</a></td>
+				<td>自分のコンピューターの taskt とそのスクリプトを、外部からの要求で動かすための設定です<br>バージョン 
+				3.3.0.0 で追加されました</td>
+			</tr>
 		</table>
 		<p>&nbsp;</p>
 		<section>
 			<h2 id="anc_application">Application</h2>
 			<p>Application の設定項目の詳細です。</p>
 		<p>
-		<img alt="" height="714" src="../image/3.2.0/menu/setting_manager_application.png" width="627" class="img-fluid"></p>
-			<table>
+		<img alt="" height="733" src="../image/3.3.0/menu/application.png" width="639" class="img-fluid"></p>
+			<table class="table">
 				<tr>
 					<th>設定項目</th>
 					<th>意味</th>
@@ -213,7 +219,7 @@
 		<h2 id="anc_automation">Automation Engine</h2>
 		<p>スクリプトを実行するロボットの設定などができます。</p>
 		<p>
-		<img alt="" height="714" src="../image/3.2.0/menu/setting_manager_application_engine.png" width="627" class="img-fluid"></p>
+		<img alt="" height="733" src="../image/3.3.0/menu/automation_engine.png" width="639" class="img-fluid"></p>
 		<table class="table">
 			<tr>
 				<th>設定項目</th>
@@ -274,7 +280,7 @@
 		<p><a href="https://github.com/saucepleez/tasktServer" target="_blank">
 		tasktServer</a> は taskt のスクリプトの実行をサーバー上で管理できるソフトウェアらしいです。</p>
 			<p>
-			<img alt="" height="714" src="../image/3.2.0/menu/setting_manager_server.png" width="628" class="img-fluid"></p>
+			<img alt="" height="733" src="../image/3.3.0/menu/server.png" width="639" class="img-fluid"></p>
 		<table class="table">
 			<tr>
 				<th>設定項目</th>
@@ -307,6 +313,48 @@
 			</table>
 		</section>
 		<p>&nbsp;</p>
+		<section>
+		<h2 id="anc_local_listener">Local Listener</h2>
+		<p>Local Listener では、別の taskt や REST API により、自分のコンピューターの taskt を動かすための設定があるようです。</p>
+		<p>この項目はバージョン 3.3.0.0 から追加されました。</p>
+		<p>
+		<img alt="" height="733" src="../image/3.3.0/menu/local_listener.png" width="639" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>設定項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Start Listening on Startup</td>
+				<td>taskt を起動した段階で通信を有効にする設定だと思います</td>
+			</tr>
+			<tr>
+				<td>Local Listening Enabled</td>
+				<td>外部との通信を有効にする設定だと思います</td>
+			</tr>
+			<tr>
+				<td>Listening Port</td>
+				<td>ポート番号です</td>
+			</tr>
+			<tr>
+				<td>Require Authentication Key</td>
+				<td>よくわかりません</td>
+			</tr>
+			<tr>
+				<td>Enable IP Varification</td>
+				<td>許可する IP アドレスを制限できるのでしょうか?<br>カンマ区切りで複数の IP アドレスを指定できるようです</td>
+			</tr>
+			<tr>
+				<td>Start Listening</td>
+				<td>通信を開始する</td>
+			</tr>
+			<tr>
+				<td>Stop Listening</td>
+				<td>通信を終了する</td>
+			</tr>
+		</table>
+		</section>
+		<p></p>
 	<!-- #EndEditable -->
 	</div>
 

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>Save Workbook - taskt - らんの眼</title>
+<title>End If - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -102,7 +102,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		<a href="index.html#anc_excel">Excel Commands</a> / Save Workbook<!-- #EndEditable --></li>
+    		<a href="index.html#anc_if">If Commands</a> / End If<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -112,20 +112,18 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>Save Workbook</h1>
-		<p>Excel ファイルを上書き保存します。</p>
+		<h1>End If</h1>
+		<p><a href="if_begin_if.html">Begin If</a> 命令で指定した条件が成り立った場合の命令の終了、もしくは 
+		<a href="if_else.html">Else</a> 命令を使い <a href="if_begin_if.html">Begin 
+		If</a> 命令で指定した条件が成り立たなかった場合の命令の終了を意味します。</p>
+		<p>通常は、<a href="if_begin_if.html">Begin If</a> 命令を入力すると、それと対になる End If 
+		命令が自動的に入力されます。</p>
 		<p>
-		<img alt="" class="img-fluid" height="618" src="../image/3.3.0/commands/excel/save_workbook.png" width="631"></p>
+		<img alt="" class="img-fluid" height="618" src="../image/3.3.0/commands/if/end_if.png" width="631"></p>
 		<table class="table">
 			<tr>
 				<th>項目</th>
 				<th>意味</th>
-			</tr>
-			<tr>
-				<td>Please Enter the instance name</td>
-				<td>操作する Excel のインスタンス名を入力します<br>インスタンス名は 
-				<a href="excel_create_excel_application.html">Create Excel 
-				Application</a> で指定したものを入力してください</td>
 			</tr>
 			<tr>
 				<td>Comment Field (Optional)</td>
@@ -133,29 +131,14 @@
 			</tr>
 		</table>
 		<p>&nbsp;</p>
-		<p><a href="excel_open_workbook.html">Open Workbook</a> 命令で Excel 
-		ファイルを開いていた場合、その Excel ファイルを上書き保存します。</p>
-		<p>もし、開いている Excel ファイルが読み取り専用で保存できない場合でもエラーは発生しません。この場合、エラーは発生しませんが、当然 
-		Excel ファイルは保存されていません。</p>
-		<p>もし、<a href="excel_add_workbook.html">Add Workbook</a> 命令で新規で作られた 
-		Excel ファイルの場合、おそらく「ドキュメント」に Book1.xlsx という名前で保存されます。</p>
-		<p>「ドキュメント」に Book1.xlsx が存在しない場合、確認の画面などは表示されません。</p>
-		<p>
-		もし、すでに同じ名前のファイルが存在した場合、下のような上書きするかどうかを確認する画面が表示されます。そして、いずれかのボタンをクリックするまで、スクリプト中の次の命令は実行されません。</p>
-		<p>
-		<img alt="" class="img-fluid" height="123" src="../image/command/excel_file_overwrite_dialog.png" width="453"></p>
-		<p>この画面で、上書きをする (はい をクリック) とエラーは発生しませんが、上書きをしない (はい 以外をクリック) とエラーが発生します。</p>
+		<p><a href="if_begin_if.html">Begin If</a> 命令と End If 命令、<a href="if_else.html">Else</a> 
+		命令と End If 命令の間に、ほかの命令がなくても、エラーにはなりません。</p>
 		<hr>
 		<section class="bg-light">
 			<h2>参考</h2>
 			<ul>
-				<li><a href="excel_create_excel_application.html">Create Excel 
-				Application</a></li>
-				<li><a href="excel_add_workbook.html">Add Workbook</a></li>
-				<li><a href="excel_open_workbook.html">Open Workbook</a></li>
-				<li><a href="excel_save_workbook_as.html">Save Workbook As</a></li>
-				<li><a href="https://dekiru.net/article/16613/" target="_blank">
-				Excel の既定のファイルの保存場所を変更する</a> (URL：<a href="https://dekiru.net/article/16613/" target="_blank">https://dekiru.net/article/16613/</a>)</li>
+				<li><a href="if_begin_if.html">Begin If</a></li>
+				<li><a href="if_else.html">Else</a></li>
 			</ul>
 		</section>
 	<!-- #EndEditable -->

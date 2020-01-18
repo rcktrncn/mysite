@@ -46,6 +46,8 @@
 	              	<a class="dropdown-item" href="index.html#anc_api">API Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_data">Data Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_dictionary">Dictionary Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_engine">Engine Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_error">Error Handling Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_excel">Excel Commands</a>
@@ -56,7 +58,9 @@
 	              	<a class="dropdown-item" href="index.html#anc_loop">Loop Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_misc">Misc Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_outlook">Outlook Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_regex">Regex Commands</a>
 	                <a class="dropdown-item" href="index.html#anc_remote">Remote Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_system">System Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_task">Task Commands</a>
@@ -133,10 +137,12 @@
 			<li>Get Word Count (単語の数を数える)</li>
 			<li>Get Wor Length (文字数を数える)</li>
 			<li>Log Data</li>
+			<li>Math Calculation (バージョン 3.4.0.0 で追加)</li>
 			<li>Modify Variable (大文字・小文字・Base64 変換など)</li>
 			<li>Parse Dataset Row</li>
 			<li>Parse JSON Array</li>
 			<li>Parse JSON Object (JSON をパースする)</li>
+			<li>ParseJSON Model (バージョン 3.4.0.0 で追加)</li>
 			<li>PDF Extraction</li>
 			<li>RegEx Extraction (正規表現)</li>
 			<li>Replace Text (文字を置換する)</li>
@@ -160,10 +166,31 @@
 			<li>Get BotStore Data</li>
 			<li>Pause Script (次の命令まで一定時間待つ)</li>
 			<li>Set Engine Delay (命令と命令の間隔を変える)</li>
+			<li>Set Engine Preference (バージョン 3.4.0.0 で追加)</li>
 			<li>Show Engine Context</li>
 			<li>Stopwatch (時間を測る)</li>
 			<li>Upload BotStore Data</li>
 		</ul>
+		</section>
+		<section>
+		<h2 id="anc_datatable">DataTable Commands</h2>
+			<p>よくわかりません。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Add DataRow</li>
+				<li>Create DataTable</li>
+				<li>Filter DataTable</li>
+				<li>Remove DataRow</li>
+			</ul>
+		</section>
+		<section>
+		<h2 id="anc_dictionary">Dictionary Commands</h2>
+			<p>よくわかりません。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Add Dictionary Item</li>
+				<li>Create Dictionary</li>
+				<li>Get Dictionary Item</li>
+				<li>Load Dictionary</li>
+			</ul>
 		</section>
 		<section>
 		<h2 id="anc_error">Error Handling Commands (例外処理、エラー発生時の処理)</h2>
@@ -181,6 +208,8 @@
 		<ul>
 			<li><a href="excel_active_sheet.html">Activate Sheet</a> (シートを選択する)</li>
 			<li><a href="excel_add_workbook.html">Add Workbook</a> (ワークブックを追加する)</li>
+			<li>Append Cell (バージョン 3.4.0.0 で追加)</li>
+			<li>Append Row (バージョン 3.4.0.0 で追加)</li>
 			<li><a href="excel_close_excel_application.html">Close Excel Application</a> (Excel を終了する)</li>
 			<li>Create Dataset (データセットを作る?)</li>
 			<li><a href="excel_create_excel_application.html">Create Excel Application</a> (Excel を実行する)</li>
@@ -188,12 +217,15 @@
 			<li><a href="excel_delete_row.html">Delete Row</a> (行を消す)</li>
 			<li><a href="excel_get_cell.html">Get Cell</a> (セルの値を取得する)</li>
 			<li><a href="excel_get_last_row_index.html">Get Last Row Index</a> (最後の行が何行目か調べる)</li>
+			<li>Get Range (バージョン 3.4.0.0 で追加)</li>
+			<li>Get Range Ad Datatable (バージョン 3.4.0.0 で追加)</li>
 			<li><a href="excel_go_to_cell.html">Go To Cell</a> (指定したセルにカーソルを移動する)</li>
 			<li><a href="excel_open_workbook.html">Open Workbook</a> (Excel ファイルを開く)</li>
 			<li><a href="excel_run_macro.html">Run Macro</a> (マクロを実行する)</li>
 			<li><a href="excel_save_workbook.html">Save Workbook</a> (Excel ファイルを保存する)</li>
 			<li><a href="excel_save_workbook_as.html">Save Workbook As</a> (Excel ファイルを名前を付けて保存する)</li>
 			<li><a href="excel_set_cell.html">Set Cell</a> (セルに値を書き込む)</li>
+			<li>Write Range (バージョン 3.4.0.0 で追加)</li>
 		</ul>
 		</section>
 		<section>
@@ -222,6 +254,7 @@
 			<p>プログラミング的な説明だと if 文、条件分岐です。</p>
 			<ul>
 				<li><a href="if_begin_if.html">Begin If</a> (if 開始)</li>
+				<li>Begin Multi If (複数条件の if、バージョン 3.4.0.0 で追加)</li>
 				<li><a href="if_else.html">Else</a> (else)</li>
 				<li><a href="if_end_if.html">End If</a> (if 終了)</li>
 			</ul>
@@ -255,9 +288,11 @@
 				<li>End Loop (ループ終了)</li>
 				<li>Exit Loop (ループを強制的に抜ける、break)</li>
 				<li>Loop Continuously (無限ループ)</li>
-				<li>Loop Excel Dataset (Excel のデータセットを見ながらループを繰り返す)</li>
+				<li>Loop Excel Dataset (Excel のデータセットを見ながらループを繰り返す、<strong>バージョン 
+				3.4.0.0 で廃止</strong>)</li>
 				<li>Loop List (配列・リストの先頭から末尾までのループ、for-each、for-in)</li>
 				<li>Loop Number Of Times (指定した回数繰り返すループ)</li>
+				<li>Next Loop</li>
 			</ul>
 		</section>
 		<section>
@@ -265,6 +300,7 @@
 			<p>いろいろな命令です。</p>
 			<ul>
 				<li>Add Code Comment (コメント、説明を挿入する)</li>
+				<li>Encryption Command (バージョン 3.4.0.0 で追加)</li>
 				<li>Get Clipboard Text (クリップボードにある文字を取得する)</li>
 				<li>Send SMTP Email (SMTP でメールを送る)</li>
 				<li>Sequence Command (シーケンスを作る、命令をまとめる)</li>
@@ -282,6 +318,13 @@
 			</ul>
 		</section>
 		<section>
+		<h2 id="anc_outlook">Outlook Commands</h2>
+			<p>Outlook を操作する命令だと思います。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Send Outlook Email (Outlook でメールが送れるのでしょうか)</li>
+			</ul>
+		</section>
+		<section>
 			<h2 id="anc_program">Programs/Process Commands 
 			(プログラム・ソフトウェアを操作する命令)</h2>
 			<p>ほかのソフト (プログラム) を操作するための命令です。</p>
@@ -292,8 +335,16 @@
 				<li>Stop Process (ソフト・プログラムを終了する)</li>
 			</ul>
 			</section>
+		<section>
+		    <h2 id="anc_regex">Regex Commands</h2>
+			<p>よくわかりません。名前からして正規表現です。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Get Regex Matches</li>
+			</ul>
+		  </section>
+
 			<section>
-			<h2 id="anc_remote">Remote Commands (?)</h2>
+			<h2 id="anc_remote">Remote Commands</h2>
 			<p>よくわかりません。バージョン 3.3.0.0 で追加されました。</p>
 			<ul>
 				<li>Remote API</li>
@@ -301,7 +352,6 @@
 			</ul>
 		
 		</section>
-		
 		<section>
 			<h2 id="anc_system">System Commands (OS・パソコン本体に関係する命令)</h2>
 			<p>OS (Windows) の情報や、パソコンの情報を取得したりできます。</p>
@@ -366,7 +416,7 @@
 				<li>Move Window (ソフトの画面を移動する)</li>
 				<li>Resize Window (ソフトの画面の大きさを変更する)</li>
 				<li>Set Window State (ソフトの最大化、最小化をする)</li>
-				<li>Wit For Window To Exist</li>
+				<li>Wait For Window To Exist</li>
 			</ul>
 		</section>
 		<p>&nbsp;</p>

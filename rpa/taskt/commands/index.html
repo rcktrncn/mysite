@@ -142,7 +142,7 @@
 			<li>Parse Dataset Row</li>
 			<li>Parse JSON Array</li>
 			<li>Parse JSON Object (JSON をパースする)</li>
-			<li>ParseJSON Model (バージョン 3.4.0.0 で追加)</li>
+			<li>Parse JSON Model (バージョン 3.4.0.0 で追加)</li>
 			<li>PDF Extraction</li>
 			<li>RegEx Extraction (正規表現)</li>
 			<li>Replace Text (文字を置換する)</li>
@@ -208,7 +208,7 @@
 		<ul>
 			<li><a href="excel_active_sheet.html">Activate Sheet</a> (シートを選択する)</li>
 			<li><a href="excel_add_workbook.html">Add Workbook</a> (ワークブックを追加する)</li>
-			<li>Append Cell (バージョン 3.4.0.0 で追加)</li>
+			<li>Append Cell (作業中のセルの 1 つ下に書き込む、バージョン 3.4.0.0 で追加)</li>
 			<li>Append Row (バージョン 3.4.0.0 で追加)</li>
 			<li><a href="excel_close_excel_application.html">Close Excel Application</a> (Excel を終了する)</li>
 			<li>Create Dataset (データセットを作る?)</li>
@@ -217,8 +217,8 @@
 			<li><a href="excel_delete_row.html">Delete Row</a> (行を消す)</li>
 			<li><a href="excel_get_cell.html">Get Cell</a> (セルの値を取得する)</li>
 			<li><a href="excel_get_last_row_index.html">Get Last Row Index</a> (最後の行が何行目か調べる)</li>
-			<li>Get Range (バージョン 3.4.0.0 で追加)</li>
-			<li>Get Range Ad Datatable (バージョン 3.4.0.0 で追加)</li>
+			<li>Get Range (指定した範囲の値をまとめて取得する、バージョン 3.4.0.0 で追加)</li>
+			<li>Get Range As Datatable (バージョン 3.4.0.0 で追加)</li>
 			<li><a href="excel_go_to_cell.html">Go To Cell</a> (指定したセルにカーソルを移動する)</li>
 			<li><a href="excel_open_workbook.html">Open Workbook</a> (Excel ファイルを開く)</li>
 			<li><a href="excel_run_macro.html">Run Macro</a> (マクロを実行する)</li>
@@ -254,7 +254,7 @@
 			<p>プログラミング的な説明だと if 文、条件分岐です。</p>
 			<ul>
 				<li><a href="if_begin_if.html">Begin If</a> (if 開始)</li>
-				<li>Begin Multi If (複数条件の if、バージョン 3.4.0.0 で追加)</li>
+				<li>Begin Multi If (複数条件の if、<span class="small">バージョン 3.4.0.0 で追加</span>)</li>
 				<li><a href="if_else.html">Else</a> (else)</li>
 				<li><a href="if_end_if.html">End If</a> (if 終了)</li>
 			</ul>
@@ -337,7 +337,7 @@
 			</section>
 		<section>
 		    <h2 id="anc_regex">Regex Commands</h2>
-			<p>よくわかりません。名前からして正規表現です。バージョン 3.4.0.0 で追加されました。</p>
+			<p>よくわかりません。名前からして正規表現に関するものだと思います。バージョン 3.4.0.0 で追加されました。</p>
 			<ul>
 				<li>Get Regex Matches</li>
 			</ul>
@@ -391,12 +391,14 @@
 		<section>
 			<h2 id="anc_web">Web Browser Commands (ウェブブラウザーを操作する命令)</h2>
 			<p>ウェブブラウザーを操作する命令です。</p>
+			<p>Selenium を使っているので、検索エンジンで調べるときに、taskt で調べるよりも、Selenium 
+			で調べた方が有用な情報が見つかるかもしれません。</p>
 			<p>バージョン 3.2.0.0 の時点で Chrome と Internet Explorer に対応しているみたいです。</p>
 			<ul>
 				<li>Close Browser (ウェブブラウザーを終了する)</li>
 				<li>Create Browser (ウェブブラウザーを実行する)</li>
 				<li>Element Action (ウェブページの要素に対する操作)</li>
-				<li>Execute Script</li>
+				<li>Execute Script (JavaScript を実行する)</li>
 				<li>Get Browser Info (ウェブブラウザーが持っている情報を取得する)</li>
 				<li>Navigate Back (前のページに戻る)</li>
 				<li>Navigate Forwared (先のページに進む)</li>
@@ -419,7 +421,15 @@
 				<li>Wait For Window To Exist</li>
 			</ul>
 		</section>
-		<p>&nbsp;</p>
+		<hr>
+		<section class="bg-light">
+		<h2>参考</h2>
+			<ul>
+				<li>
+				<a href="http://oss.infoscience.co.jp/seleniumhq/index.html" target="_blank">
+				Selenium</a> (URL：<a href="http://oss.infoscience.co.jp/seleniumhq/index.html" target="_blank">http://oss.infoscience.co.jp/seleniumhq/index.html</a>)</li>
+			</ul>
+		</section>
 	<!-- #EndEditable -->
 	</div>
 

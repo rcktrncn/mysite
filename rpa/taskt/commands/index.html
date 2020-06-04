@@ -52,6 +52,7 @@
 	              	<a class="dropdown-item" href="index.html#anc_error">Error Handling Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_excel">Excel Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_folder">Folder Operation Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_if">If Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_image">Image Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_input">Input Commands</a>
@@ -68,6 +69,7 @@
 	              	<a class="dropdown-item" href="index.html#anc_variable">Variable Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_web">Web Browser Commands</a>
 	              	<a class="dropdown-item" href="index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_word">Word Commands</a>
 	              </div>
 	            </li>
 	            
@@ -134,21 +136,24 @@
 		<ul>
 			<li>Date Calculation (日付の計算をする)</li>
 			<li>Format Data (日付の書式を変更する)</li>
+			<li>Get List Count (リストの要素数を取得する?、バージョン 3.5.0.0 で追加)</li>
+			<li>Get List Item (リストの個別の要素を取得する?、バージョン 3.5.0.0 で追加)</li>
 			<li>Get Word Count (単語の数を数える)</li>
 			<li>Get Wor Length (文字数を数える)</li>
 			<li>Log Data</li>
 			<li>Math Calculation (バージョン 3.4.0.0 で追加)</li>
 			<li>Modify Variable (大文字・小文字・Base64 変換など)</li>
 			<li>Parse Dataset Row</li>
-			<li>Parse JSON Array</li>
+			<li>Parse JSON Array (JSON の配列をパースする)</li>
 			<li>Parse JSON Object (JSON をパースする)</li>
+			<li>Parse JSON Item (バージョン 3.4.0.0 か 3.5.0.0 で追加)</li>
 			<li>Parse JSON Model (バージョン 3.4.0.0 で追加)</li>
 			<li>PDF Extraction</li>
 			<li>RegEx Extraction (正規表現)</li>
 			<li>Replace Text (文字を置換する)</li>
 			<li>Split Text (文字を分割する)</li>
 			<li>Substring (文字の一部を取り出す)</li>
-			<li>Text Extraction</li>
+			<li>Text Extraction (文字を検索し、特定の範囲を取り出す)</li>
 		</ul>
 		</section>
 		<section>
@@ -158,6 +163,30 @@
 			<li>Define Database Connection</li>
 			<li>Execute Database Query</li>
 		</ul>
+		</section>
+		<section>
+		<h2 id="anc_datatable">DataTable Commands</h2>
+			<p>よくわかりません。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Add DataRow</li>
+				<li>Create DataTable</li>
+				<li>Filter DataTable</li>
+				<li>Get DataRow (バージョン 3.5.0.0 で追加)</li>
+				<li>Get DataRow Count (バージョン 3.5.0.0 で追加)</li>
+				<li>Get DataRow Value (バージョン 3.5.0.0 で追加)</li>
+				<li>Remove DataRow</li>
+				<li>Write DataRow Value (バージョン 3.5.0.0 で追加)</li>
+			</ul>
+		</section>
+		<section>
+		<h2 id="anc_dictionary">Dictionary Commands</h2>
+			<p>よくわかりません。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Add Dictionary Item</li>
+				<li>Create Dictionary</li>
+				<li>Get Dictionary Item</li>
+				<li>Load Dictionary</li>
+			</ul>
 		</section>
 		<section>
 		<h2 id="anc_engine">Engine Commands (taskt のロボットに関する処理)</h2>
@@ -173,32 +202,13 @@
 		</ul>
 		</section>
 		<section>
-		<h2 id="anc_datatable">DataTable Commands</h2>
-			<p>よくわかりません。バージョン 3.4.0.0 で追加されました。</p>
-			<ul>
-				<li>Add DataRow</li>
-				<li>Create DataTable</li>
-				<li>Filter DataTable</li>
-				<li>Remove DataRow</li>
-			</ul>
-		</section>
-		<section>
-		<h2 id="anc_dictionary">Dictionary Commands</h2>
-			<p>よくわかりません。バージョン 3.4.0.0 で追加されました。</p>
-			<ul>
-				<li>Add Dictionary Item</li>
-				<li>Create Dictionary</li>
-				<li>Get Dictionary Item</li>
-				<li>Load Dictionary</li>
-			</ul>
-		</section>
-		<section>
 		<h2 id="anc_error">Error Handling Commands (例外処理、エラー発生時の処理)</h2>
 		<p>プログラマー的な説明だと例外処理です。</p>
 		<ul>
 			<li>Catch Exception (catch)</li>
 			<li>End Try (例外処理の終了)</li>
 			<li>Finally (finally)</li>
+			<li>Throw Exception (例外を発生させる?、バージョン 3.5.0.0 で追加)</li>
 			<li>Try (例外処理の開始)</li>
 		</ul>
 		</section>
@@ -225,7 +235,9 @@
 			<li><a href="excel_save_workbook.html">Save Workbook</a> (Excel ファイルを保存する)</li>
 			<li><a href="excel_save_workbook_as.html">Save Workbook As</a> (Excel ファイルを名前を付けて保存する)</li>
 			<li><a href="excel_set_cell.html">Set Cell</a> (セルに値を書き込む)</li>
+			<li>Split Range By Column (バージョン 3.5.0.0 で追加)</li>
 			<li>Write Range (バージョン 3.4.0.0 で追加)</li>
+			<li>Write Row (バージョン 3.5.0.0 で追加)</li>
 		</ul>
 		</section>
 		<section>
@@ -233,10 +245,23 @@
 		<p>ファイルの移動、コピー、削除などを行います。</p>
 		<ul>
 			<li>Delete File (ファイルを削除する)</li>
+			<li>File Extraction (バージョン 3.5.0.0 で追加)</li>
+			<li>Get Files (バージョン 3.5.0.0 で追加)</li>
 			<li>Move/Copy File (ファイルの移動、コピーをする)</li>
 			<li>Rename File (ファイル名を変更する)</li>
-			<li>Wait For File</li>
+			<li>Wait For File (ファイルが存在するまで一定時間待つ)</li>
 		</ul>
+		</section>
+		<section>
+		<h2 id="anc_folder">Folder Operation Commands (フォルダーを操作する)</h2>
+			<p>フォルダーの作成、削除などを行います。バージョン 3.5.0.0 で追加されました。</p>
+			<ul>
+				<li>Create Folder (フォルダーを作成する)</li>
+				<li>Delete Folder (フォルダーを削除する)</li>
+				<li>Get Folders</li>
+				<li>Move/Copy Folder (フォルダーの移動、コピーをする)</li>
+				<li>Rename Folder (フォルダーの名前を変更する)</li>
+			</ul>
 		</section>
 		<section>
 		<h2 id="anc_ie">IE Browser Commands (Internet Explorer を操作する)</h2>
@@ -254,7 +279,7 @@
 			<p>プログラミング的な説明だと if 文、条件分岐です。</p>
 			<ul>
 				<li><a href="if_begin_if.html">Begin If</a> (if 開始)</li>
-				<li>Begin Multi If (複数条件の if、<span class="small">バージョン 3.4.0.0 で追加</span>)</li>
+				<li>Begin Multi If (複数条件の if、バージョン 3.4.0.0 で追加)</li>
 				<li><a href="if_else.html">Else</a> (else)</li>
 				<li><a href="if_end_if.html">End If</a> (if 終了)</li>
 			</ul>
@@ -285,6 +310,8 @@
 			<h2 id="anc_loop">Loop Commands (繰り返し、ループの処理)</h2>
 			<p>プログラミング的な説明だと、ループです。繰り返し何かを実行するときの命令です。</p>
 			<ul>
+				<li>Begin Loop (バージョン 3.5.0.0 で追加)</li>
+				<li>Begin Multi Loop (バージョン 3.5.0.0 で追加)</li>
 				<li>End Loop (ループ終了)</li>
 				<li>Exit Loop (ループを強制的に抜ける、break)</li>
 				<li>Loop Continuously (無限ループ)</li>
@@ -321,7 +348,15 @@
 		<h2 id="anc_outlook">Outlook Commands</h2>
 			<p>Outlook を操作する命令だと思います。バージョン 3.4.0.0 で追加されました。</p>
 			<ul>
-				<li>Send Outlook Email (Outlook でメールが送れるのでしょうか)</li>
+				<li>Delete Outlook Emails (Outlook のメールを削除する?、バージョン 3.5.0.0 で追加)</li>
+				<li>Forward Outlook Emails (Outlook のメールを転送する?、バージョン 3.5.0.0 
+				で追加)</li>
+				<li>Get Outlook Emails (バージョン 3.5.0.0 で追加)</li>
+				<li>Move/Copy Outlook Emails (Outlook のメールの移動・コピーをする?、バージョン 
+				3.5.0.0 で追加)</li>
+				<li>Reply To Outlook Emails (Oulook のメールへ返信する?、バージョン 3.5.0.0 
+				で追加)</li>
+				<li>Send Outlook Email (Outlook でメールを送信する?)</li>
 			</ul>
 		</section>
 		<section>
@@ -390,10 +425,10 @@
 		</section>
 		<section>
 			<h2 id="anc_web">Web Browser Commands (ウェブブラウザーを操作する命令)</h2>
-			<p>ウェブブラウザーを操作する命令です。</p>
+			<p>ウェブブラウザーを操作する命令です。バージョン 3.2.0.0 の時点で Chrome と Internet Explorer に対応しているみたいです。</p>
+			<p>別途 Chrome をパソコンにインストールしてください。</p>
 			<p>Selenium を使っているので、検索エンジンで調べるときに、taskt で調べるよりも、Selenium 
 			で調べた方が有用な情報が見つかるかもしれません。</p>
-			<p>バージョン 3.2.0.0 の時点で Chrome と Internet Explorer に対応しているみたいです。</p>
 			<ul>
 				<li>Close Browser (ウェブブラウザーを終了する)</li>
 				<li>Create Browser (ウェブブラウザーを実行する)</li>
@@ -421,6 +456,24 @@
 				<li>Wait For Window To Exist</li>
 			</ul>
 		</section>
+		<section>
+		<h2 id="anc_word">Word Commands</h2>
+			<p>Word を操作するコマンドです。バージョン 3.5.0.0 で追加されました。</p>
+			<ul>
+				<li>Add Document</li>
+				<li>Append DataTable</li>
+				<li>Append Image (画像を挿入する?)</li>
+				<li>Append Text (文字を挿入する?)</li>
+				<li>Close Word Application (Word を閉じる)</li>
+				<li>Create Word Application (Word を開く)</li>
+				<li>Export To PDF (PDF 形式でファイルを出力する?)</li>
+				<li>Open Document (Word のファイルを開く)</li>
+				<li>Read Document</li>
+				<li>Replace Text</li>
+				<li>Save Document (Word のファイルを上書き保存する)</li>
+				<li>Save Document As (Word のファイルを名前を付けて保存する)</li>
+			</ul>
+		</section>
 		<hr>
 		<section class="bg-light">
 		<h2>参考</h2>
@@ -428,6 +481,9 @@
 				<li>
 				<a href="http://oss.infoscience.co.jp/seleniumhq/index.html" target="_blank">
 				Selenium</a> (URL：<a href="http://oss.infoscience.co.jp/seleniumhq/index.html" target="_blank">http://oss.infoscience.co.jp/seleniumhq/index.html</a>)</li>
+				<li>
+				<a href="https://www.google.com/intl/ja_jp/chrome/" target="_blank">
+				Google Chrome</a> (URL：<a href="https://www.google.com/intl/ja_jp/chrome/" target="_blank">https://www.google.com/intl/ja_jp/chrome/</a>)</li>
 			</ul>
 		</section>
 	<!-- #EndEditable -->

@@ -42,7 +42,7 @@
 	            <li class="nav-item dropdown">
 	              <a class="nav-link dropdown-toggle" href="../commands/index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
 	              <div class="dropdown-menu">
-                  	<a class="dropdown-item" href="../commands/index.html">一覧</a>
+	              	<a class="dropdown-item" href="../commands/index.html">一覧</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_api">API Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_data">Data Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_database">Database Commands</a>
@@ -52,6 +52,7 @@
 	              	<a class="dropdown-item" href="../commands/index.html#anc_error">Error Handling Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_excel">Excel Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_folder">Folder Operation Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_if">If Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_image">Image Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_input">Input Commands</a>
@@ -68,6 +69,7 @@
 	              	<a class="dropdown-item" href="../commands/index.html#anc_variable">Variable Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_web">Web Browser Commands</a>
 	              	<a class="dropdown-item" href="../commands/index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_word">Word Commands</a>
 	              </div>
 	            </li>
 	            
@@ -118,8 +120,61 @@
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
 		<h1>バージョン履歴 v3.x.x.x</h1>
+		<h2>v3.5.0.0 (2020/05/14)</h2>
+		<p>バージョン 3.5.0.0 でも多くの命令が追加されました。</p>
+		<p>目玉としては、Word Commands が新たに追加されたことと、Outlook Commands への命令の追加でしょう。</p>
+		<ul>
+			<li>プルリクエストをマージした</li>
+			<li>Element Action の Select Option に変数を対応させた</li>
+			<li>Assembly Version とサンプルスクリプトのバージョンを更新した</li>
+			<li>Dictionary Commands のリソースを更新した</li>
+			<li>メタデータをたくさん修正した</li>
+			<li>MultiLoop、フォルダー操作、ファイル操作、リストのサンプルを作成した</li>
+			<li>ファイル名を修正した</li>
+			<li>サンプルスクリプトを追加した</li>
+			<li>Word Commands のサンプルスクリプトを追加した</li>
+			<li>RunTask 命令の不具合を修正し、新しいシステム変数を追加した?</li>
+			<li>変数一覧にルートパスを追加した?</li>
+			<li>Word Commands の更新をマージした?</li>
+			<li>Throw Exception 命令を追加し、バグを修正した</li>
+			<li>Get List Count 命令、Get List Item 命令を追加し、ブランチを修正した?</li>
+			<li>Split Range By Colmun 命令に 2 つ目のセルの場所のオプションを追加した?</li>
+			<li>Excel Write Row 命令を追加した</li>
+			<li>Write Data Row Value 命令、Excel Write Range 
+			命令を追加し、列名を指定するオプションを追加した?</li>
+			<li>Get Data Row Count 命令を追加し、Run Task 命令の不具合を修正した</li>
+			<li>Get Data Row 命令と Get Data Row Value 命令を追加した</li>
+			<li>Excel Commands と DataTable&nbsp; Commands のいくつかの不具合を修正した</li>
+			<li>Begin Multi Loop 命令を追加した</li>
+			<li>Get Range 命令の 2 つ目のセルを指定を任意指定にした?</li>
+			<li>Get Files 命令と Get Folders 命令を追加した</li>
+			<li>Begin List Loop 命令にメールの一覧を使えるようにした?</li>
+			<li>Load Dictionary 命令に変数のヘルパーを追加した?</li>
+			<li>Get Range 命令を上書きした?</li>
+			<li>Load Dictionary 命令を修正した</li>
+			<li>マイナーなループを修正した?</li>
+			<li>Load Dictionary 命令の不具合を修正した</li>
+			<li>PowerShell commands を削除した</li>
+			<li>RunTask 命令でタスクが終了したときの戻り値を受け取る変数を追加した?</li>
+			<li>Outlook Commands のサンプルスクリプトを追加した</li>
+			<li>Get Emails 命令を追加した</li>
+			<li>Begin Loop 命令を追加した?</li>
+			<li>Split Range By Column 命令を追加した</li>
+			<li>Command の説明を修正した?</li>
+			<li>Split Range 命令を始めた</li>
+			<li>Dictionary Commands の不具合を修正し、PowerShell Commands を始めた?</li>
+			<li>クリーンアップした</li>
+			<li>Word Commands を追加した</li>
+			<li>Outlook Commands の Reply To Outlook Emails 命令と Forward To 
+			Outlook Emails 命令を追加した</li>
+			<li>マイナーな修正</li>
+			<li>Create Folder 命令、Delete Folder 命令、Move/Copy Folder 命令が完成した</li>
+			<li>Try/Catch 構造の不具合を修正した</li>
+			<li>Extract File 命令を追加した</li>
+			<li>Element Clicks で何かをサポートしたらしい……?</li>
+		</ul>
 		<h2>v3.4.0.0 (2020/01/13)</h2>
-		<p>バージョン 3.4.0.0 では大幅に命令が追加されました。</p>
+		<p>バージョン 3.4.0.0 では多くの命令が追加されました。</p>
 		<p>DataTable Commands、Dictionary Commands、Outlook Commands、Regex 
 		Commands が追加されただけではなく、それぞれの命令セットにも命令が追加されています。</p>
 		<p>また、バージョン 3.0.0.0 ごろから変数のマーカーは [ ] でしたが、3.4.0.0 では { } 

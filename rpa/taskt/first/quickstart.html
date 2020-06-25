@@ -124,7 +124,7 @@
 		<p>メモ帳を起動し、「こんにちは」と入力し、デスクトップ上に hello というファイルで保存します。</p>
 		<p class="small">ここで紹介する手順をたどるのが面倒くさい方は <a href="hello.xml">hello.xml</a> 
 		をダウンロードして、taskt で開いてみてください。</p>
-		<p class="small">言わずもがなですが、事前に <a href="index.html">taskt をインストール</a>してください。</p>
+		<p class="small">言わずもがなですが、事前に <a href="install.html">taskt をインストール</a>してください。</p>
 		<section>
 		<h2>taskt を実行</h2>
 		<p>taskt を実行すると、下のような画面が表示されます。この画面で早速スクリプトを作っていけます。</p>
@@ -147,9 +147,11 @@
 		<p>Please enter the name or path to the program (ex. notepad, calc) 
 		の下にある入力エリアに「notepad」と入力します。「notepad」は半角で入力してください。
 		また、「notepad」と入力したあと <strong>Enter キーは押さないでください</strong>。</p>
+			<p>Please enter any arguments (if applicable) と Wait for the process 
+			to complete? は空欄で良いです。</p>
 		<p>下の OK をクリックします。</p>
 		<p>
-		<img alt="" height="619" src="../image/3.2.0/quickstart/process_notepad.png" width="633" class="img-fluid"></p>
+		<img alt="" class="img-fluid" height="618" src="../image/3.5.0/quickstart/start_process2.png" width="631"></p>
 		<p>
 		先ほどの画面が閉じられ、右側の領域に今作った Start Process の命令が表示されます。</p>
 			<p>
@@ -170,7 +172,7 @@
 		<p>
 		Send Keystrokes はキーボードからの入力やショートカットキーを入力するための命令です。</p>
 		<p>
-		<img alt="" height="619" src="../image/3.2.0/quickstart/send_keystrokes.png" width="633" class="img-fluid"></p>
+		<img alt="" class="img-fluid" height="618" src="../image/3.5.0/quickstart/send_keystrokes.png" width="631"></p>
 		<p>
 		はじめに、キーを入力するプログラム (ソフト) を指定します。</p>
 		<p>
@@ -185,9 +187,11 @@
 			<p>
 			Please Enter text to send の下の入力エリアに、「こんにちは」と入力します。</p>
 			<p>
+			Please Indicate if Text is Encrypted は「Not Encrypted」のままで良いです。</p>
+			<p>
 			その後、下の OK をクリックします。</p>
 			<p>
-			<img alt="" height="619" src="../image/3.2.0/quickstart/send_keystrokes_hello.png" width="633" class="img-fluid"></p>
+			<img alt="" class="img-fluid" height="618" src="../image/3.5.0/quickstart/send_keystrokes_hello.png" width="631"></p>
 		</section>
 		<section>
 		<h2>ショートカットキーを入力し、ファイルを保存する</h2>
@@ -203,7 +207,7 @@
 			<p>詳しいことは説明しませんが、「^s」は Ctrl キーを押しながら S キーを押すという意味になります。</p>
 			<p>下の OK をクリックします。</p>
 		<p>
-		<img alt="" height="619" src="../image/3.2.0/quickstart/send_keystrokes_ctrl_s.png" width="633" class="img-fluid"></p>
+		<img alt="" class="img-fluid" height="618" src="../image/3.5.0/quickstart/send_keystrokes_save.png" width="631"></p>
 		</section>
 		<section>
 		<h2>
@@ -230,12 +234,12 @@
 			Folder.Desktop とは、デスクトップの場所を意味する変数です。</p>
 		<p>
 		<img alt="" height="274" src="../image/3.2.0/quickstart/insert_a_variable.png" width="355" class="img-fluid"></p>
-		<p>すると、Please Enter text to send に [Folder.Desktop] と入力されています。</p>
+		<p>すると、Please Enter text to send に {Folder.Desktop} と入力されています。</p>
 			<p>その続きで「￥hello.txt」と半角で入力します。</p>
 			<p>「￥」を入力しても、下の画面のように勝手に \ になってしまいますが、気にしないでください。</p>
 			<p>入力したら、下の OK をクリックします。</p>
 			<p>
-			<img alt="" height="619" src="../image/3.2.0/quickstart/send_keystrokes_filename.png" width="633" class="img-fluid"></p>
+			<img alt="" class="img-fluid" height="618" src="../image/3.5.0/quickstart/send_keystrokes_path.png" width="631"></p>
 		</section>
 		<section>
 		<h2>Enter キーを押して保存する</h2>
@@ -249,18 +253,18 @@
 			<p>{ENTER} で Enter キーを押すという意味になります。</p>
 			<p>その後、下の OK をクリックします。</p>
 		<p>
-		<img alt="" height="618" src="../image/3.2.0/quickstart/insert_keystrokes_enter.png" width="633" class="img-fluid"></p>
+		<img alt="" class="img-fluid" height="618" src="../image/3.5.0/quickstart/send_keystrokes_enter.png" width="631"></p>
 			<p>
 			これでスクリプトは完成です。</p>
 			<p>
-			<img alt="" height="590" src="../image/3.2.0/quickstart/finish.png" width="981" class="img-fluid"></p>
+			<img alt="" class="img-fluid" height="589" src="../image/3.5.0/quickstart/script.png" width="979"></p>
 		</section>
 		<section>
 		<h2>スクリプトを保存する</h2>
 		<p>taskt の上のメニューから、<strong>File Actions</strong> をクリックし、<strong>Save</strong> 
 		をクリックします。</p>
 		<p>
-		<img alt="" height="590" src="../image/3.2.0/quickstart/save.png" width="981" class="img-fluid"></p>
+		<img alt="" class="img-fluid" height="589" src="../image/3.5.0/quickstart/menu_save.png" width="979"></p>
 			<p>
 			保存するスクリプトの名前は「hello」として、保存 をクリックします。</p>
 			<p class="small">
@@ -277,7 +281,7 @@
 		<p>
 		上のメニューの <strong>Save and Run</strong> をクリックします。</p>
 		<p>
-		<img alt="" height="590" src="../image/3.2.0/quickstart/finish.png" width="981" class="img-fluid"></p>
+		<img alt="" class="img-fluid" height="589" src="../image/3.5.0/quickstart/script.png" width="979"></p>
 			<ol>
 				<li>メモ帳が実行される</li>
 			<li>「こんにちは」と入力する</li>

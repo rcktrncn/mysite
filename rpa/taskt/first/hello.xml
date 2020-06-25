@@ -2,34 +2,19 @@
 <Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Commands>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandID="2192dd91-cdaf-4b1f-ac4f-8823d3e494b0" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="メモ帳を実行" CommandEnabled="true" />
+      <ScriptCommand xsi:type="StartProcessCommand" CommandID="1945ef40-134c-46d3-bd2e-6161d247fd24" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="notepad" v_WaitForExit="No" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="StartProcessCommand" CommandID="a618cde5-30d9-4043-b9fe-31bb3453d12d" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="notepad" />
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="321229e1-30b5-44a0-b6d8-b0ebc85375fc" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="こんにちは" v_EncryptionOption="Not Encrypted" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandID="7108b8e5-29ef-42af-9bce-fd43f7b47c01" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" v_Comment="「こんにちは」と入力" CommandEnabled="true" />
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="60fa8a49-7ed0-4300-8f21-02dee264b8a0" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="^s" v_EncryptionOption="Not Encrypted" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="SendKeysCommand" CommandID="944f56f0-6298-43d3-a35e-e1c78ecbf66b" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="こんにちは" />
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="ed03316d-bcfa-4157-a9a8-3aeb0c543f6d" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{Folder.Desktop}\hello.txt" v_EncryptionOption="Not Encrypted" />
     </ScriptAction>
     <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandID="6d2fcc38-3e9b-4e01-a6da-f5843bc2956b" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" v_Comment="Ctrl+S" CommandEnabled="true" />
-    </ScriptAction>
-    <ScriptAction>
-      <ScriptCommand xsi:type="SendKeysCommand" CommandID="2ed43ea9-dd13-4cec-8eca-f30c753b5ea5" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="^s" />
-    </ScriptAction>
-    <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandID="a9f07736-6485-422c-8a90-e132e43904b9" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" v_Comment="デスクトップに hello.txt というファイル名で" CommandEnabled="true" />
-    </ScriptAction>
-    <ScriptAction>
-      <ScriptCommand xsi:type="SendKeysCommand" CommandID="7d83e945-9449-4ee2-b68c-fb170a9fc708" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="[Folder.Desktop]\hello.txt" />
-    </ScriptAction>
-    <ScriptAction>
-      <ScriptCommand xsi:type="CommentCommand" CommandID="43d88761-dea3-451c-afa8-840212a5371c" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" v_Comment="Enter キーで保存" CommandEnabled="true" />
-    </ScriptAction>
-    <ScriptAction>
-      <ScriptCommand xsi:type="SendKeysCommand" CommandID="46dbc7b2-81ad-4171-833f-81dc70c80f5b" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{ENTER}" />
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="83858576-1cd3-4e55-84bc-ebb0c6252667" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{ENTER}" v_EncryptionOption="Not Encrypted" />
     </ScriptAction>
   </Commands>
   <Variables />

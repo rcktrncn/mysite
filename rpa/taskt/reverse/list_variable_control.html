@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>数字、アルファベット以外の特殊なキーを入力する - taskt - らんの眼</title>
+<title>リストの変数の特殊操作 - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -106,7 +106,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		数字、アルファベット以外の特殊なキーを入力する<!-- #EndEditable --></li>
+    		リストの変数の特殊操作<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -117,174 +117,92 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>数字、アルファベット以外の特殊なキーを入力する</h1>
-		<p>Send Keystrokes で数字やアルファベットは Please Enter text to sent に普通に入力すれば良いです。</p>
-		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_like_enter_tab/001.png" width="631" class="img-fluid"></p>
-		<p>では、Enter や F1 のようなキーはどのように入力するかというと、下の表を見てください。</p>
+		<h1>リストの変数の特殊操作</h1>
+		<p>リストの変数には、値の取得以外の特殊な操作が存在します。</p>
+		<p>知っていると、一般的なプログラムのような複雑なプログラムが書きやすくなります。</p>
+		<p>前提として、リストの名前が {var} として、下のような値が入っているものとします。</p>
 		<table class="table">
 			<tr>
-				<th>キー</th>
-				<th>書き方</th>
+				<th>要素</th>
+				<th>値</th>
 			</tr>
 			<tr>
-				<td>ESC</td>
-				<td>{ESCAPE}</td>
+				<td>0</td>
+				<td>RED</td>
 			</tr>
 			<tr>
-				<td>Enter</td>
-				<td>{ENTER}</td>
+				<td>1</td>
+				<td>GREEN</td>
 			</tr>
 			<tr>
-				<td>F1</td>
-				<td>{F1}</td>
-			</tr>
-			<tr>
-				<td>F2</td>
-				<td>{F2}</td>
-			</tr>
-			<tr>
-				<td>F3</td>
-				<td>{F3}</td>
-			</tr>
-			<tr>
-				<td>F4</td>
-				<td>{F4}</td>
-			</tr>
-			<tr>
-				<td>F5</td>
-				<td>{F5}</td>
-			</tr>
-			<tr>
-				<td>F6</td>
-				<td>{F6}</td>
-			</tr>
-			<tr>
-				<td>F7</td>
-				<td>{F7}</td>
-			</tr>
-			<tr>
-				<td>F8</td>
-				<td>{F8}</td>
-			</tr>
-			<tr>
-				<td>F9</td>
-				<td>{F9}</td>
-			</tr>
-			<tr>
-				<td>F10</td>
-				<td>{F10}</td>
-			</tr>
-			<tr>
-				<td>F11</td>
-				<td>{F11}</td>
-			</tr>
-			<tr>
-				<td>F12</td>
-				<td>{F12}</td>
-			</tr>
-			<tr>
-				<td>HOME</td>
-				<td>{HOME}</td>
-			</tr>
-			<tr>
-				<td>END</td>
-				<td>{END}</td>
-			</tr>
-			<tr>
-				<td>Insert, Ins</td>
-				<td>{INSERT}, {INS}</td>
-			</tr>
-			<tr>
-				<td>Delete, Del</td>
-				<td>{DELETE}, {DEL}</td>
-			</tr>
-			<tr>
-				<td>Backspace</td>
-				<td>{BACKSPACE}, {BS}</td>
-			</tr>
-			<tr>
-				<td>Tab</td>
-				<td>{TAB}</td>
-			</tr>
-			<tr>
-				<td>Page Up</td>
-				<td>{PGUP}</td>
-			</tr>
-			<tr>
-				<td>Page Down</td>
-				<td>{PGDN}</td>
-			</tr>
-			<tr>
-				<td>矢印上, ↑</td>
-				<td>{UP}</td>
-			</tr>
-			<tr>
-				<td>矢印右, →</td>
-				<td>{RIGHT}</td>
-			</tr>
-			<tr>
-				<td>矢印下, ↓</td>
-				<td>{DOWN}</td>
-			</tr>
-			<tr>
-				<td>矢印左, ←</td>
-				<td>{LEFT}</td>
-			</tr>
-			<tr>
-				<td>+</td>
-				<td>{ADD}</td>
-			</tr>
-			<tr>
-				<td>-</td>
-				<td>{SUBTRACT}</td>
-			</tr>
-			<tr>
-				<td>*</td>
-				<td>{MULTIPLY}</td>
-			</tr>
-			<tr>
-				<td>/</td>
-				<td>{DIVIDE}</td>
-			</tr>
-			<tr>
-				<td>Windows (田)</td>
-				<td>{WIN_KEY}</td>
-			</tr>
-		</table>
-		<p>ほとんどの場合、キーの正式な英語表記の左右に { と } をつけるだけです。</p>
-		<p>例えば、下の例ならば「123」と入力し Enter を押すので、メモ帳などでは改行されます。</p>
-		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_like_enter_tab/002.png" width="631" class="img-fluid"></p>
-		<p>また、ショートカットに使う Ctrl、Shift、Alt は下のような<a href="how_shortcut_send.html">記号に対応します</a>。</p>
-		<table class="table">
-			<tr>
-				<th>キー</th>
-				<th>記号</th>
-			</tr>
-			<tr>
-				<td>Ctrl</td>
-				<td>^</td>
-			</tr>
-			<tr>
-				<td>Shift</td>
-				<td>+</td>
-			</tr>
-			<tr>
-				<td>Alt</td>
-				<td>%</td>
+				<td>2</td>
+				<td>BLUE</td>
 			</tr>
 		</table>
 		<p>&nbsp;</p>
+		<p>リストの特殊な操作は下の表のようなものがあります。変数を意味するカッコは { } を使っているものとします。</p>
+		<table class="table">
+			<tr>
+				<th>操作</th>
+				<th>書き方</th>
+				<th>取得する値</th>
+			</tr>
+			<tr>
+				<td>リストの要素数</td>
+				<td>{var.Count}</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>リストの先頭の値</td>
+				<td>{var.First}</td>
+				<td>RED</td>
+			</tr>
+			<tr>
+				<td>リストの末尾の値</td>
+				<td>{var.Last}</td>
+				<td>BLUE</td>
+			</tr>
+			<tr>
+				<td>リストの 1 番目の値</td>
+				<td>{var[1]}</td>
+				<td>GREEN</td>
+			</tr>
+			<tr>
+				<td>リストのインデックス</td>
+				<td>{var.Index}</td>
+				<td>0 ～ 2<br>(状況によって変わる)</td>
+			</tr>
+			<tr>
+				<td>変数の種類</td>
+				<td>{var.Type}</td>
+				<td>LIST</td>
+			</tr>
+			<tr>
+				<td>JSON 形式</td>
+				<td>{var.ToJson}</td>
+				<td>[ "RED", "GREEN", "BLUE" ]</td>
+			</tr>
+			<tr>
+				<td>taskt の一括指定で使える形式</td>
+				<td>{var.ToPipe}</td>
+				<td>"RED"|"GREEN"|"BLUE"</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<p>「{var.」 のあとの大文字・小文字は正確に入力しないと動作しません。</p>
+		<p>{var[0]} のような指定は、変数を意味するカッコが [ ] だと動作しません。</p>
+		<p>{var.Index} については、ループ中や Set Variable Index 命令によって変化します。</p>
 		<hr>
-		<section>
-			<h2>参考</h2>
-			<ul>
-				<li><a href="how_shortcut_send.html">ショートカットキーを使う</a></li>
-				<li>
-				<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8" target="_blank">
-				SendKeys Class</a> (<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8" target="_blank">https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8</a>)</li>
-			</ul>
+		<section class="bg-light">
+		<h2>参考</h2>
+		<ul>
+			<li>
+			<a href="https://github.com/saucepleez/taskt/blob/development-branch/taskt/Sample%20Scripts/3.x%20Use%20Case%20Samples/Variable%20Manipulation%20[3.0.0.0].xml" target="_blank">
+			Variable Manipulation</a> (<a href="https://github.com/saucepleez/taskt/blob/development-branch/taskt/Sample%20Scripts/3.x%20Use%20Case%20Samples/Variable%20Manipulation%20[3.0.0.0].xml" target="_blank">https://github.com/saucepleez/taskt/blob/development-branch/taskt/Sample%20Scripts/3.x%20Use%20Case%20Samples/Variable%20Manipulation%20%5B3.0.0.0%5D.xml</a>)</li>
+			<li><a href="../info/which_variable_brackets_better.html">変数の囲いは [ ] 
+			と { } のどちらが良いか</a></li>
+			<li><a href="create_list_set_variable.html">リストの値をまとめて入れる</a></li>
+		</ul>
 		</section>
 	<!-- #EndEditable -->
 	</div>

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>数字、アルファベット以外の特殊なキーを入力する - taskt - らんの眼</title>
+<title>リストの値をまとめて入れる - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -106,7 +106,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		数字、アルファベット以外の特殊なキーを入力する<!-- #EndEditable --></li>
+    		リストの値をまとめて入れる<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -117,174 +117,47 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>数字、アルファベット以外の特殊なキーを入力する</h1>
-		<p>Send Keystrokes で数字やアルファベットは Please Enter text to sent に普通に入力すれば良いです。</p>
-		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_like_enter_tab/001.png" width="631" class="img-fluid"></p>
-		<p>では、Enter や F1 のようなキーはどのように入力するかというと、下の表を見てください。</p>
+		<h1>リストの値をまとめて入れる</h1>
+		<p>リスト変数は、空の変数に Add To Variable を使い、1 つずつ要素を追加して作ることもできますが、Set Variable 
+		でいっきに作ることも可能です。</p>
+		<p>変数 var に下のようなリストを作るときを考えます。</p>
 		<table class="table">
 			<tr>
-				<th>キー</th>
-				<th>書き方</th>
+				<th>要素</th>
+				<th>値</th>
 			</tr>
 			<tr>
-				<td>ESC</td>
-				<td>{ESCAPE}</td>
+				<td>0</td>
+				<td>RED</td>
 			</tr>
 			<tr>
-				<td>Enter</td>
-				<td>{ENTER}</td>
+				<td>1</td>
+				<td>GREEN</td>
 			</tr>
 			<tr>
-				<td>F1</td>
-				<td>{F1}</td>
-			</tr>
-			<tr>
-				<td>F2</td>
-				<td>{F2}</td>
-			</tr>
-			<tr>
-				<td>F3</td>
-				<td>{F3}</td>
-			</tr>
-			<tr>
-				<td>F4</td>
-				<td>{F4}</td>
-			</tr>
-			<tr>
-				<td>F5</td>
-				<td>{F5}</td>
-			</tr>
-			<tr>
-				<td>F6</td>
-				<td>{F6}</td>
-			</tr>
-			<tr>
-				<td>F7</td>
-				<td>{F7}</td>
-			</tr>
-			<tr>
-				<td>F8</td>
-				<td>{F8}</td>
-			</tr>
-			<tr>
-				<td>F9</td>
-				<td>{F9}</td>
-			</tr>
-			<tr>
-				<td>F10</td>
-				<td>{F10}</td>
-			</tr>
-			<tr>
-				<td>F11</td>
-				<td>{F11}</td>
-			</tr>
-			<tr>
-				<td>F12</td>
-				<td>{F12}</td>
-			</tr>
-			<tr>
-				<td>HOME</td>
-				<td>{HOME}</td>
-			</tr>
-			<tr>
-				<td>END</td>
-				<td>{END}</td>
-			</tr>
-			<tr>
-				<td>Insert, Ins</td>
-				<td>{INSERT}, {INS}</td>
-			</tr>
-			<tr>
-				<td>Delete, Del</td>
-				<td>{DELETE}, {DEL}</td>
-			</tr>
-			<tr>
-				<td>Backspace</td>
-				<td>{BACKSPACE}, {BS}</td>
-			</tr>
-			<tr>
-				<td>Tab</td>
-				<td>{TAB}</td>
-			</tr>
-			<tr>
-				<td>Page Up</td>
-				<td>{PGUP}</td>
-			</tr>
-			<tr>
-				<td>Page Down</td>
-				<td>{PGDN}</td>
-			</tr>
-			<tr>
-				<td>矢印上, ↑</td>
-				<td>{UP}</td>
-			</tr>
-			<tr>
-				<td>矢印右, →</td>
-				<td>{RIGHT}</td>
-			</tr>
-			<tr>
-				<td>矢印下, ↓</td>
-				<td>{DOWN}</td>
-			</tr>
-			<tr>
-				<td>矢印左, ←</td>
-				<td>{LEFT}</td>
-			</tr>
-			<tr>
-				<td>+</td>
-				<td>{ADD}</td>
-			</tr>
-			<tr>
-				<td>-</td>
-				<td>{SUBTRACT}</td>
-			</tr>
-			<tr>
-				<td>*</td>
-				<td>{MULTIPLY}</td>
-			</tr>
-			<tr>
-				<td>/</td>
-				<td>{DIVIDE}</td>
-			</tr>
-			<tr>
-				<td>Windows (田)</td>
-				<td>{WIN_KEY}</td>
-			</tr>
-		</table>
-		<p>ほとんどの場合、キーの正式な英語表記の左右に { と } をつけるだけです。</p>
-		<p>例えば、下の例ならば「123」と入力し Enter を押すので、メモ帳などでは改行されます。</p>
-		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_like_enter_tab/002.png" width="631" class="img-fluid"></p>
-		<p>また、ショートカットに使う Ctrl、Shift、Alt は下のような<a href="how_shortcut_send.html">記号に対応します</a>。</p>
-		<table class="table">
-			<tr>
-				<th>キー</th>
-				<th>記号</th>
-			</tr>
-			<tr>
-				<td>Ctrl</td>
-				<td>^</td>
-			</tr>
-			<tr>
-				<td>Shift</td>
-				<td>+</td>
-			</tr>
-			<tr>
-				<td>Alt</td>
-				<td>%</td>
+				<td>2</td>
+				<td>BLUE</td>
 			</tr>
 		</table>
 		<p>&nbsp;</p>
+		<p>このようなリストを作るとき、Set Variable 命令を下のようにします。</p>
+		<p>Insert Variable を {{RED|GREEN|BLUE}} と書きます。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/info/create_list_set_variable/create_list_set_variable.png" width="631"></p>
+		<p>こうすることで、1 つの命令だけで要素が 3 のリストを作ることができます。</p>
+		<p>この方法は、Set Variable 命令は使えます。</p>
+		<p>一方、<a href="../menu/variable_manager.html">Variable Manager</a> では使えないので注意してください 
+		(バージョン 3.5.0.0 時点)。</p>
+		<p>&nbsp;</p>
+		<p>余談ですがこの機能は taskt のバージョン 2.5.0.0 以降でしか使えません。</p>
 		<hr>
-		<section>
-			<h2>参考</h2>
-			<ul>
-				<li><a href="how_shortcut_send.html">ショートカットキーを使う</a></li>
-				<li>
-				<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8" target="_blank">
-				SendKeys Class</a> (<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8" target="_blank">https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8</a>)</li>
-			</ul>
+		<section class="bg-light">
+		<h2>参考</h2>
+		<ul>
+			<li><a href="../first/history_v2.html">バージョン履歴 v2.x.x.x</a></li>
+			<li><a href="../menu/variable_manager.html">Variable Manager</a></li>
+			<li><a href="list_variable_control.html">リストの変数の特殊操作</a></li>
+		</ul>
 		</section>
 	<!-- #EndEditable -->
 	</div>

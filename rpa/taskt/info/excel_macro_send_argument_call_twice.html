@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "reverse_default.dwt" -->
+<!-- #BeginTemplate "info_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>数字、アルファベット以外の特殊なキーを入力する - taskt - らんの眼</title>
+<title>Excelマクロに引数を渡して呼び出したときに2回実行してしまうのを防げるか - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -83,11 +83,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
-	            <li class="nav-item active">
-	            	<a class="nav-link" href="index.html">逆引き</a>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
 	            </li>
-				<li class="nav-item">
-	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+				<li class="nav-item active">
+	            	<a class="nav-link" href="index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -99,14 +99,14 @@
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		数字、アルファベット以外の特殊なキーを入力する<!-- #EndEditable --></li>
+    		Excel マクロに引数を渡して呼び出したときに 2 回実行してしまうのを防げるか<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -117,173 +117,43 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>数字、アルファベット以外の特殊なキーを入力する</h1>
-		<p>Send Keystrokes で数字やアルファベットは Please Enter text to sent に普通に入力すれば良いです。</p>
+		<h1>Excel マクロに引数を渡して呼び出したときに 2 回実行してしまうのを防げるか</h1>
+		<p>ここの内容は、taskt 以外に Excel VBA の知識も必要になってきます。</p>
+		<p>taskt の Run Macro 命令を下のように書くことによって、Excel マクロ (プロシージャー) 
+		に引数を指定することができます。</p>
+		<div class="row">
+			<p class="col">
+			<img alt=" " class="img-fluid" height="618" src="../image/info/excel_macro_send_argument/send_num.png" width="631"></p>
+			<p class="col">
+			<img alt=" " class="img-fluid" height="618" src="../image/info/excel_macro_send_argument/send_string.png" width="631"></p>
+		</div>
+		<p>しかし、このように Run Macro 命令を指定すると、Excel マクロが 2 回実行されるという不具合 (実は仕様?) があります 
+		(バージョン 3.5.0.0 時点)。</p>
+		<p>Excel マクロの呼び出しのときに、引数を渡しつつ、1 回だけ実行される方法はあるのでしょうか。</p>
+		<p>管理人が調べたところ、現時点では 2 回実行されるのを防ぐ方法はありません。</p>
+		<p>そもそも、Excel マクロを実行するとき、引数なしの Excel マクロ (プロシージャー) に対して、下のように「test ( 
+		)」と書いても 2 回実行されてしまいます。</p>
 		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_like_enter_tab/001.png" width="631" class="img-fluid"></p>
-		<p>では、Enter や F1 のようなキーはどのように入力するかというと、下の表を見てください。</p>
-		<table class="table">
-			<tr>
-				<th>キー</th>
-				<th>書き方</th>
-			</tr>
-			<tr>
-				<td>ESC</td>
-				<td>{ESCAPE}</td>
-			</tr>
-			<tr>
-				<td>Enter</td>
-				<td>{ENTER}</td>
-			</tr>
-			<tr>
-				<td>F1</td>
-				<td>{F1}</td>
-			</tr>
-			<tr>
-				<td>F2</td>
-				<td>{F2}</td>
-			</tr>
-			<tr>
-				<td>F3</td>
-				<td>{F3}</td>
-			</tr>
-			<tr>
-				<td>F4</td>
-				<td>{F4}</td>
-			</tr>
-			<tr>
-				<td>F5</td>
-				<td>{F5}</td>
-			</tr>
-			<tr>
-				<td>F6</td>
-				<td>{F6}</td>
-			</tr>
-			<tr>
-				<td>F7</td>
-				<td>{F7}</td>
-			</tr>
-			<tr>
-				<td>F8</td>
-				<td>{F8}</td>
-			</tr>
-			<tr>
-				<td>F9</td>
-				<td>{F9}</td>
-			</tr>
-			<tr>
-				<td>F10</td>
-				<td>{F10}</td>
-			</tr>
-			<tr>
-				<td>F11</td>
-				<td>{F11}</td>
-			</tr>
-			<tr>
-				<td>F12</td>
-				<td>{F12}</td>
-			</tr>
-			<tr>
-				<td>HOME</td>
-				<td>{HOME}</td>
-			</tr>
-			<tr>
-				<td>END</td>
-				<td>{END}</td>
-			</tr>
-			<tr>
-				<td>Insert, Ins</td>
-				<td>{INSERT}, {INS}</td>
-			</tr>
-			<tr>
-				<td>Delete, Del</td>
-				<td>{DELETE}, {DEL}</td>
-			</tr>
-			<tr>
-				<td>Backspace</td>
-				<td>{BACKSPACE}, {BS}</td>
-			</tr>
-			<tr>
-				<td>Tab</td>
-				<td>{TAB}</td>
-			</tr>
-			<tr>
-				<td>Page Up</td>
-				<td>{PGUP}</td>
-			</tr>
-			<tr>
-				<td>Page Down</td>
-				<td>{PGDN}</td>
-			</tr>
-			<tr>
-				<td>矢印上, ↑</td>
-				<td>{UP}</td>
-			</tr>
-			<tr>
-				<td>矢印右, →</td>
-				<td>{RIGHT}</td>
-			</tr>
-			<tr>
-				<td>矢印下, ↓</td>
-				<td>{DOWN}</td>
-			</tr>
-			<tr>
-				<td>矢印左, ←</td>
-				<td>{LEFT}</td>
-			</tr>
-			<tr>
-				<td>+</td>
-				<td>{ADD}</td>
-			</tr>
-			<tr>
-				<td>-</td>
-				<td>{SUBTRACT}</td>
-			</tr>
-			<tr>
-				<td>*</td>
-				<td>{MULTIPLY}</td>
-			</tr>
-			<tr>
-				<td>/</td>
-				<td>{DIVIDE}</td>
-			</tr>
-			<tr>
-				<td>Windows (田)</td>
-				<td>{WIN_KEY}</td>
-			</tr>
-		</table>
-		<p>ほとんどの場合、キーの正式な英語表記の左右に { と } をつけるだけです。</p>
-		<p>例えば、下の例ならば「123」と入力し Enter を押すので、メモ帳などでは改行されます。</p>
-		<p>
-		<img alt="" height="618" src="../image/3.2.0/reverse/type_like_enter_tab/002.png" width="631" class="img-fluid"></p>
-		<p>また、ショートカットに使う Ctrl、Shift、Alt は下のような<a href="how_shortcut_send.html">記号に対応します</a>。</p>
-		<table class="table">
-			<tr>
-				<th>キー</th>
-				<th>記号</th>
-			</tr>
-			<tr>
-				<td>Ctrl</td>
-				<td>^</td>
-			</tr>
-			<tr>
-				<td>Shift</td>
-				<td>+</td>
-			</tr>
-			<tr>
-				<td>Alt</td>
-				<td>%</td>
-			</tr>
-		</table>
-		<p>&nbsp;</p>
+		<img alt=" " class="img-fluid" height="618" src="../image/info/excel_macro_send_argument/send_void.png" width="631"></p>
+		<p>どうやら、Excel マクロ名 (プロシージャー名) を指定する Please Enter the macro name に カッコ ( 
+		) を付けてしまうと、2 回実行されるようです。</p>
+		<p>そのため、引数を渡せば確実に 2 回実行されてしまいます。</p>
+		<h2>暫定的な対処法</h2>
+		<p>バージョン 3.5.0.0 の時点では引数を渡すと Excel マクロが 2 回実行されるのは避けられません。</p>
+		<p>そのため、下のようなやり方で疑似的に引数を渡すしかないと思います。</p>
+		<ol>
+			<li>Set Cell 命令であらかじめ決めたセルに引数の値を書き込む</li>
+			<li>Run Macro 命令で Excel マクロを呼び出す</li>
+			<li>Excel マクロ (プロシージャー) の処理の先頭で、セルの値を</li>
+		</ol>
 		<hr>
-		<section>
-			<h2>参考</h2>
+		<section class="bg-light">
+		<h2>参考</h2>
 			<ul>
-				<li><a href="how_shortcut_send.html">ショートカットキーを使う</a></li>
 				<li>
-				<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8" target="_blank">
-				SendKeys Class</a> (<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8" target="_blank">https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8</a>)</li>
+				<a href="https://forum.uipath.com/t/execute-macro-2/63967" target="_blank">
+				Execute Macroで引数を渡すと、マクロは2回実行される？</a> (<a href="https://forum.uipath.com/t/execute-macro-2/63967" target="_blank">https://forum.uipath.com/t/execute-macro-2/63967</a>)<br>
+				(UiPath の情報です、taskt では使えません)</li>
 			</ul>
 		</section>
 	<!-- #EndEditable -->

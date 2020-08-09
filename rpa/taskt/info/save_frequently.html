@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>Excelマクロを呼び出したとき待ってくれるのか - taskt- らんの眼</title>
+<title>保存はこまめに&nbsp; - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -106,7 +106,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		Excel マクロを呼び出したとき待ってくれるのか<!-- #EndEditable --></li>
+    		保存はこまめに<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -117,24 +117,23 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>Excel マクロを呼び出したとき待ってくれるのか</h1>
-		<p>taskt で処理が終わるまで待たせるためには、Pause Script 命令や、Wait For File 
-		命令などを使って処理を待たせます。</p>
-		<p>Excel Commands の中に Run Macro 命令があり、これは Excel マクロを呼び出す命令です。</p>
-		<p>もし、呼び出したマクロが 10 秒や 20 秒かかる内容だった場合、taskt では Pause Script 
-		命令で終わるまで待たせる必要があるのでしょうか。</p>
-		<p>結論としては、Pause Script 命令を使用する必要はありません。</p>
-		<p>Run Macro 命令は、呼び出した Excel マクロの処理が終わるまで自動的に待ってくれます。</p>
-		<p>たとえば、下のような 30000 回 × 30000 回といったような時間がかかるマクロでも、taskt は自動的に待ってくれます。</p>
+		<h1>保存はこまめに</h1>
+		<p>taskt の編集画面はまだ発展途上なのか、いまいち親切ではありません。</p>
 		<p>
-		<img alt=" " class="img-fluid" height="185" src="../image/info/wait_excel_macro_finish/slow_excel_macro.png" width="448"></p>
-		<p>そのため、利用しているユーザーの気持ちまでは分かりませんが、スクリプトを作る側としては、Run Macro 命令で呼び出す Excel 
-		マクロの処理時間を気にする必要はありません。</p>
+		たとえば、スクリプトを変更して保存していなときに、別のスクリプトを開こうとか、新しいスクリプをと作ろうとかしたとき、「まだ保存されていませんが、保存しますか？」みたいなメッセージは表示されません。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="154" src="../image/info/save_frequently/save_dialog.png" width="350"></p>
+		<p>また、タイトルバーに変更があったことを意味する * が表示されることもありません。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="127" src="../image/info/save_frequently/non_save_asterisk.png" width="302"></p>
+		<p>そのため、編集中のスクリプトをうっかり保存せずに閉じないように、スクリプトはこまめに保存した方が良いです。</p>
+		<p>ただ、残念なことに一般的なソフトで保存するときに使う Ctrl+S のショートカットも使えないので、メニューから Save 
+		を定期的にクリックするか、Save and Run をクリックするしかありません。</p>
 		<hr>
 		<section class="bg-light">
 			<h2>参考</h2>
 			<ul>
-				<li><a href="../commands/excel_run_macro.html">Run Macro 命令</a></li>
+				<li><a href="../menu/file_actions.html">File Actions</a></li>
 			</ul>
 		</section>
 	<!-- #EndEditable -->

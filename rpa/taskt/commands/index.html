@@ -108,7 +108,7 @@
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		コマンド一覧<!-- #EndEditable --></li>
+    		<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -139,14 +139,14 @@
 			<li>Get List Count (リストの要素数を取得する、バージョン 3.5.0.0 で追加)</li>
 			<li>Get List Item (リストの個別の要素を取得する、バージョン 3.5.0.0 で追加)</li>
 			<li>Get Word Count (単語の数を数える)</li>
-			<li>Get Wor Length (文字数を数える)</li>
+			<li>Get Word Length (文字数を数える)</li>
 			<li>Log Data</li>
-			<li>Math Calculation (バージョン 3.4.0.0 で追加)</li>
+			<li>Math Calculation (数値計算をする、バージョン 3.4.0.0 で追加)</li>
 			<li>Modify Variable (大文字・小文字・Base64 変換など)</li>
 			<li>Parse Dataset Row</li>
-			<li>Parse JSON Array (JSON の配列をパースする)</li>
+			<li>Parse JSON Array (JSON の配列を taskt のリストに変換する)</li>
 			<li>Parse JSON Object (JSON をパースする)</li>
-			<li>Parse JSON Item (バージョン 3.4.0.0 か 3.5.0.0 で追加)</li>
+			<li>Parse JSON Item (JSON から値を取得する、バージョン 3.4.0.0 か 3.5.0.0 で追加)</li>
 			<li>Parse JSON Model (バージョン 3.4.0.0 で追加)</li>
 			<li>PDF Extraction</li>
 			<li>RegEx Extraction (正規表現)</li>
@@ -195,7 +195,7 @@
 			<li>Get BotStore Data</li>
 			<li>Pause Script (次の命令まで一定時間待つ)</li>
 			<li>Set Engine Delay (命令と命令の間隔を変える)</li>
-			<li>Set Engine Preference (バージョン 3.4.0.0 で追加)</li>
+			<li>Set Engine Preference (自動計算の設定を変更する、バージョン 3.4.0.0 で追加)</li>
 			<li>Show Engine Context</li>
 			<li>Stopwatch (時間を測る)</li>
 			<li>Upload BotStore Data</li>
@@ -364,8 +364,8 @@
 			(プログラム・ソフトウェアを操作する命令)</h2>
 			<p>ほかのソフト (プログラム) を操作するための命令です。</p>
 			<ul>
-				<li>Run Custom Code</li>
-				<li>Run Script</li>
+				<li>Run Custom Code (C# のソースコードを実行する)</li>
+				<li>Run Script (バッチファイルを実行する?)</li>
 				<li>Run Process (ソフト・プログラムを実行する)</li>
 				<li>Stop Process (ソフト・プログラムを終了する)</li>
 			</ul>
@@ -391,7 +391,7 @@
 			<h2 id="anc_system">System Commands (OS・パソコン本体に関係する命令)</h2>
 			<p>OS (Windows) の情報や、パソコンの情報を取得したりできます。</p>
 			<ul>
-				<li>Environment Variable</li>
+				<li>Environment Variable (OS の環境変数を取得する)</li>
 				<li>Launch Remote Desktop (リモート・デスクトップ を実行する)</li>
 				<li>OS Variable (Windows が持っている情報を取得する)</li>
 				<li>System Action (Windows の再起動、終了などをする)</li>
@@ -439,7 +439,7 @@
 				<li>Navigate Forwared (先のページに進む)</li>
 				<li>Navigate to URL (指定した URL のページへ移動)</li>
 				<li>Refresh (ウェブページを再読み込みする)</li>
-				<li>Switch Browser Window (ウェブページ中の対象フレームを変更する、バージョン 3.3.0.0 
+				<li>Switch Browser Frame (ウェブページ中の対象フレームを変更する、バージョン 3.3.0.0 
 				で追加)</li>
 				<li>Switch Browser Window</li>
 			</ul>
@@ -448,12 +448,12 @@
 			<h2 id="anc_window">Window Commands (ソフト・画面に対する操作)</h2>
 			<p>ソフト (プログラム) の画面に対する操作ができます。</p>
 			<ul>
-				<li>Activate Window (ソフトをアクティブにする、ソフトを一番前にする)</li>
-				<li>Close Window</li>
+				<li>Activate Window (ソフトをアクティブにする、ソフトの画面を一番前にする)</li>
+				<li>Close Window (ソフトを閉じる)</li>
 				<li>Move Window (ソフトの画面を移動する)</li>
 				<li>Resize Window (ソフトの画面の大きさを変更する)</li>
 				<li>Set Window State (ソフトの最大化、最小化をする)</li>
-				<li>Wait For Window To Exist</li>
+				<li>Wait For Window To Exist (ソフトの画面が表示されるまで一定時間待つ)</li>
 			</ul>
 		</section>
 		<section>

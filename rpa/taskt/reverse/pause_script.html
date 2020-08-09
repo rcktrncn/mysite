@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "info_default.dwt" -->
+<!-- #BeginTemplate "reverse_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>Excelマクロを呼び出したとき待ってくれるのか - taskt- らんの眼</title>
+<title>スクリプトの実行を一時的に止める - taskt - らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -83,11 +83,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
-	            <li class="nav-item">
-	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            <li class="nav-item active">
+	            	<a class="nav-link" href="index.html">逆引き</a>
 	            </li>
-				<li class="nav-item active">
-	            	<a class="nav-link" href="index.html">小ネタ</a>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -99,14 +99,14 @@
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		Excel マクロを呼び出したとき待ってくれるのか<!-- #EndEditable --></li>
+    		スクリプトの実行を一時的に止める<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -117,24 +117,24 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>Excel マクロを呼び出したとき待ってくれるのか</h1>
-		<p>taskt で処理が終わるまで待たせるためには、Pause Script 命令や、Wait For File 
-		命令などを使って処理を待たせます。</p>
-		<p>Excel Commands の中に Run Macro 命令があり、これは Excel マクロを呼び出す命令です。</p>
-		<p>もし、呼び出したマクロが 10 秒や 20 秒かかる内容だった場合、taskt では Pause Script 
-		命令で終わるまで待たせる必要があるのでしょうか。</p>
-		<p>結論としては、Pause Script 命令を使用する必要はありません。</p>
-		<p>Run Macro 命令は、呼び出した Excel マクロの処理が終わるまで自動的に待ってくれます。</p>
-		<p>たとえば、下のような 30000 回 × 30000 回といったような時間がかかるマクロでも、taskt は自動的に待ってくれます。</p>
+		<h1>スクリプトの実行を一時的に止める</h1>
+		<p>実行中のスクリプトを一時的に止めるには、パソコンの画面右下に出ている青い画面から <strong>Pause</strong>
+		<img alt=" " height="48" src="../image/3.5.0/menu/button_pause.png" width="48"> 
+		をクリックします。</p>
 		<p>
-		<img alt=" " class="img-fluid" height="185" src="../image/info/wait_excel_macro_finish/slow_excel_macro.png" width="448"></p>
-		<p>そのため、利用しているユーザーの気持ちまでは分かりませんが、スクリプトを作る側としては、Run Macro 命令で呼び出す Excel 
-		マクロの処理時間を気にする必要はありません。</p>
+		<img alt=" " class="img-fluid" height="220" src="../image/3.5.0/menu/script_execute.png" width="678"></p>
+		<p>すると、下に「Please select 'Resume' whe ready」と表示され、スクリプトの実行が止まります。</p>
+		<p>スクリプトを再開したいときは、<strong>Resume</strong>
+		<img alt=" " height="48" src="../image/3.5.0/menu/button_resume.png" width="48"> 
+		をクリックします。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="220" src="../image/3.5.0/menu/resume_script.png" width="678"></p>
 		<hr>
 		<section class="bg-light">
 			<h2>参考</h2>
 			<ul>
-				<li><a href="../commands/excel_run_macro.html">Run Macro 命令</a></li>
+				<li><a href="run_script.html">スクリプトを実行する</a></li>
+				<li><a href="stop_script.html">スクリプトを停止する</a></li>
 			</ul>
 		</section>
 	<!-- #EndEditable -->

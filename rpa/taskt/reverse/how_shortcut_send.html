@@ -118,7 +118,10 @@
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
 		<h1>ショートカットキーを使う</h1>
-		<p>Ctrl+S で保存、Ctrl+O で保存などのショートカットキーは、Send Keystrokes を使います。</p>
+		<p class="bg-warning">注意　ここの Send Keystrokes 命令の画像はバージョン 3.2.0.0 
+		のものです。バージョン 3.4.0.0 から Send Keystrokes 命令には Encrypt Text 
+		という項目が追加されていますが、内容に大きな違いはありません。</p>
+		<p>Ctrl+S で保存、Ctrl+O で保存などのショートカットキーは、<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>を使います。</p>
 		<p>ただし、書き方が特殊なので注意が必要です。</p>
 		<h2>具体例</h2>
 		<p>「^s」で Ctrl+S</p>
@@ -152,6 +155,7 @@
 				<td>%</td>
 			</tr>
 		</table>
+		<p>&nbsp;</p>
 		<p>慣れるまでは変な感じですが、慣れるしかありません。</p>
 		<p>また、Ctrl、Shift、Alt を複数使うショートカットキーについては、^、+、% の記号を<a href="../info/ctrl_shift_shortcutkey.html">書く順番に決まりはなさそう</a>です。</p>
 		<p>それと、Ctrl、Shift、Alt 以外のショートカットキーとしては、Windows キーがあります。<a href="winkey_shoftcut.html">Windows 
@@ -160,6 +164,8 @@
 		<section class="bg-light">
 			<h2>参考</h2>
 			<ul>
+				<li><a href="../commands/input_send_keystrokes.html">Send 
+				Keystrokes 命令</a></li>
 				<li><a href="../info/ctrl_shift_shortcutkey.html">Shift、Ctrl、Alt 
 				などを複数押すショートカットキーはどう書けばいいか</a></li>
 				<li><a href="winkey_shoftcut.html">Windows キーを使ったショートカットキーを入力する</a></li>

@@ -128,7 +128,12 @@
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
 		<h1>同じキーを連続で入力する</h1>
-		<p>例えば、Send Keystrokes で A を 3 回入力する場合、下のようにします。</p>
+		<p class="bg-warning">注意　ここの Send Keystrokes 命令の画像はバージョン 3.2.0.0 
+		のものです。バージョン 3.4.0.0 から Send Keystrokes 命令には Encrypt Text 
+		という項目が追加されていますが、内容に大きな違いはありません。</p>
+		<p class="bg-warning">ここの内容はバージョン 3.3.0.0 までの変数を意味する囲いが [ ] 
+		であるときの内容です。そのため、最新のバージョンには対応していない部分があります。</p>
+		<p>例えば、<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>で A を 3 回入力する場合、下のようにします。</p>
 		<p>
 		<img alt="" height="618" src="../image/3.2.0/reverse/type_key_manytimes/001.png" width="631" class="img-fluid"></p>
 		<p>しかし、下のように { A<span class="auto-style1">&nbsp;</span>3 } と書いてもいいです。このとき、全体を { と } で囲み、A と 3 の間には<strong>半角スペースを入れてください</strong>。</p>
@@ -158,10 +163,13 @@
 		<p>
 		<img alt="" class="img-fluid" height="618" src="../image/3.2.2/reverse/type_key_manytimes/006.png" width="631"></p>
 		<hr>
-		<section>
+		<section class="bg-light">
 			<h2>
 			参考</h2>
 			<ul>
+				<li>
+				<a href="../commands/input_send_keystrokes.html">Send Keystrokes 
+				命令</a></li>
 				<li>
 				<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8" target="_blank">
 				SendKeys Class</a> (<a href="https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8" target="_blank">https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.sendkeys?view=netframework-4.8</a>)</li>

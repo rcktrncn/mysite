@@ -118,26 +118,32 @@
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
 		<h1>半角スペースを入力する</h1>
-		<p>Send Keystrokes で半角スペースだけを入力する場合、現在の IME モードがオン (全角入力) かオフ (半角入力) 
+		<p class="bg-warning">注意　ここの Send Keystrokes 命令の画像はバージョン 3.2.0.0 
+		のものです。バージョン 3.4.0.0 から Send Keystrokes 命令には Encrypt Text 
+		という項目が追加されていますが、内容に大きな違いはありません。</p>
+		<p><a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>で半角スペースだけを入力する場合、現在の IME モードがオン (全角入力) かオフ (半角入力) 
 		かでやり方が異なります。</p>
 		<h2>IME モードがオフ (半角入力) の場合</h2>
-		<p>IME モードがオフ (半角入力) の場合、Send Keystrokes で半角スペースを (&nbsp; ) で囲みます。</p>
+		<p>IME モードがオフ (半角入力) の場合、<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>で半角スペースを (&nbsp; ) で囲みます。</p>
 		<p>
 		<img alt="" height="618" src="../image/3.2.0/reverse/type_space/001.png" width="631" class="img-fluid"></p>
-		<p>余談ですが、バージョン 3.2.0.0 時点では、Send Keystrokes で {SPACE} 
+		<p>余談ですが、バージョン 3.2.0.0 時点では、<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>で {SPACE} 
 		のように指定しても、スペースを入力できません。</p>
 		<h2>IME モードがオン (全角入力) の場合</h2>
-		<p>IME モードがオン (全角入力) の場合、Send Keystrokes だと半角スペース自体が無視されるのでやり方を変え、<strong>Send Advaneced Keystrokes</strong> を使います。</p>
+		<p>IME モードがオン (全角入力) の場合、<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>だと半角スペース自体が無視されるのでやり方を変え、<strong>Send Advaneced Keystrokes</strong> 
+		命令を使います。</p>
 		<p>下のように、Shift キーを押しながらスペースキーを押す操作を指定することで、半角スペースを入力します。このとき、Shift は Key 
 		Down、スペースは Key Press (Down + Up) で指定します。</p>
 		<p>
 		<img alt="" height="618" src="../image/3.2.0/reverse/type_space/002.png" width="631" class="img-fluid"></p>
-		<p>余談ですが、バージョン 3.2.0.0 時点では、Send Keystrokes で {SPACE} 
-		のように指定しても、スペースを入力できません。そのため、Send Keystrokes で +{SPACE} のような指定はできません。</p>
+		<p>余談ですが、バージョン 3.2.0.0 時点では、<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>で {SPACE} 
+		のように指定しても、スペースを入力できません。そのため、<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>で +{SPACE} のような指定はできません。</p>
 		<hr>
 		<section class="bg-light">
 			<h2>参考</h2>
 			<ul>
+				<li><a href="../commands/input_send_keystrokes.html">Send 
+				Keystrokes 命令</a></li>
 				<li><a href="type_like_enter_tab.html">数字やアルファベット以外のキーを入力する</a></li>
 				<li><a href="how_shortcut_send.html">ショートカットキーを使う</a></li>
 			</ul>

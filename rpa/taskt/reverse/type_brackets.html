@@ -118,7 +118,10 @@
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
 		<h1>カッコを入力する</h1>
-		<p>Send Keystrokes では ( ) は入力した内容をまとめるための記号で、{ } は特殊なキーを指定するための記号で、[ ] 
+		<p class="bg-warning">注意　ここの Send Keystrokes 命令の画像はバージョン 3.2.0.0 
+		のものです。バージョン 3.4.0.0 から Send Keystrokes 命令には Encrypt Text 
+		という項目が追加されていますが、内容に大きな違いはありません。</p>
+		<p><a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>では ( ) は入力した内容をまとめるための記号で、{ } は特殊なキーを指定するための記号で、[ ] 
 		は変数の記号でした。</p>
 		<p>これらのカッコを入力するには少し工夫が必要です。</p>
 		<table class="table">
@@ -159,12 +162,15 @@
 		<p>
 		<img alt="" height="618" src="../image/3.2.0/reverse/type_brackets/001.png" width="631" class="img-fluid"></p>
 		<p>キーボードからこれらのカッコを入力するときと同じキーを指定すればよいです。</p>
-		<p>ただし、[ と ] については Send Keystrokes で 1 
+		<p>ただし、[ と ] や { と } など、変数を意味する囲いについては  
+		<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>で 1 
 		つずつ指定しないと、変数と解釈されてエラーになるときがあるので注意してください。</p>
 		<hr>
 		<section class="bg-light">
 		<h2>参考</h2>
 		<ul>
+			<li><a href="../commands/input_send_keystrokes.html">Send Keystrokes 
+			命令</a></li>
 			<li><a href="type_like_enter_tab.html">数字やアルファベット以外のキーを入力する</a></li>
 			<li><a href="type_space.html">半角スペースを入力する</a></li>
 			<li>

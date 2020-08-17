@@ -131,9 +131,9 @@
 		</ul>
 		<p>
 		<img alt="" height="589" src="../image/3.2.0/reverse/shift_press_select/shift_press_select.png" width="979" class="img-fluid"></p>
-		<p>Shift を押しながら、矢印キーを押す操作は、Send Keystrokes で「+{RIGHT}」のように入力してもできません。</p>
-		<p>下の例のように、Send Advanced Keystrokes を使います。</p>
-		<p>Set Keys and Parameters は下のように設定します。</p>
+		<p>Shift を押しながら、矢印キーを押す操作は、Send Keystrokes 命令で「+{RIGHT}」のように入力してもできません。</p>
+		<p>下の例のように、Send Advanced Keystrokes 命令を使います。</p>
+		<p>Set Keys and Parameters 命令は下のように設定します。</p>
 		<ul>
 			<li>Shift は<strong> Key Down</strong> にする</li>
 			<li>矢印キー (下の画像では Right Arrow) は Key Press (Down + Up) にする</li>
@@ -142,11 +142,11 @@
 		にした方が良いでしょう。</p>
 		<p>
 		<img alt="" height="618" src="../image/3.2.0/reverse/shift_press_select/001.png" width="631" class="img-fluid"></p>
-		<p>Send Advanced Keystrokes が実行された直後、メモ帳は下のような状態になります。</p>
+		<p>Send Advanced Keystrokes 命令が実行された直後、メモ帳は下のような状態になります。</p>
 		<p>
 		<img alt="" height="638" src="../image/3.2.0/reverse/shift_press_select/002.png" width="827" class="img-fluid"></p>
-		<p>ちなみに、Send Keystrokes で「+{RIGHT}」のように指定すると、1 文字だけは選択できる可能性があります。</p>
-		<p>しかし、今回の例のように 3 文字など複数を選択するときは、Send Advanced Keystrokes を使い、Shift キーを 
+		<p>ちなみに、Send Keystrokes 命令で「+{RIGHT}」のように指定すると、1 文字だけは選択できる可能性があります。</p>
+		<p>しかし、今回の例のように 3 文字など複数を選択するときは、Send Advanced Keystrokes 命令を使い、Shift キーを 
 		Key Down にしたまま、必要な回数矢印キーを Key Press で入力させる必要があります。</p>
 		<p>最後に、元も子もない話になりますが、Word 
 		などで文章の一部を選択するとき、Shift+矢印キーを使うよりも、検索機能を使った方が便利かもしれません。</p>

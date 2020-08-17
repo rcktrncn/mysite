@@ -118,6 +118,9 @@
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
 		<h1>マウスカーソルを無視し右クリックする</h1>
+		<p class="bg-warning">注意　ここの Send Keystrokes 命令の画像はバージョン 3.2.0.0 
+		のものです。バージョン 3.4.0.0 から Send Keystrokes 命令には Encrypt Text 
+		という項目が追加されていますが、内容に大きな違いはありません。</p>
 		<p>マニアックな話ですが、マウスカーソルが現在ある位置を無視し、右クリックする方法です。Excel などで役に立つかもしれません。</p>
 		<p>例えば、下の画像のように Excel を操作しています。選択中のセルは A1 で、赤い丸のところにマウスカーソルがあると思ってください。</p>
 		<p>
@@ -133,13 +136,13 @@
 		<p>そのため、アプリケーションキーを押すと、マウスカーソルの位置を無視し A1 のセルを右クリックした状態になります。</p>
 		<p>
 		<img alt="" height="519" src="../image/3.2.0/info/right_click_ignore_mouse/003.png" width="541" class="img-fluid"></p>
-		<p>ただし、Send Keystrokes などの命令でアプリケーションキーを押すことはできません。</p>
+		<p>ただし、Send Keystrokes 命令などの命令でアプリケーションキーを押すことはできません。</p>
 		<p>しかし、実際には Windows のショートカットキーとして、Shift+F10 
 		が右クリック、アプリケーションキーに相当するショートカットです。</p>
-		<p>そのため、Send Keystrokes で下ように「+{F10}」とすることで、アプリケーションキーを押したのと同じ効果になります。</p>
+		<p>そのため、Send Keystrokes 命令で下ように「+{F10}」とすることで、アプリケーションキーを押したのと同じ効果になります。</p>
 		<p>
 		<img alt="" height="618" src="../image/3.2.0/info/right_click_ignore_mouse/004.png" width="631" class="img-fluid"></p>
-		<p>補足ですが、マウスの右クリックをするには Send Mouse Click を使います。</p>
+		<p>補足ですが、マウスの右クリックをするには Send Mouse Click 命令を使います。</p>
 		<p>
 		<img alt="" height="618" src="../image/3.2.0/info/right_click_ignore_mouse/005.png" width="631" class="img-fluid"></p>
 		<hr>

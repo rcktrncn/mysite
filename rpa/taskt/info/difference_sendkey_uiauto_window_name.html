@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- #BeginTemplate "reverse_default.dwt" -->
+<!-- #BeginTemplate "info_default.dwt" -->
 
 <head>
     <!-- Required meta tags -->
@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- #BeginEditable "doctitle" -->
-<title>逆引き - taskt - らんの眼</title>
+<title>Send Keystrokes・Activate WindowとUI Automationのソフト・画面名の解釈の違い - taskt - 
+らんの眼</title>
 	<!-- #EndEditable -->
 	
 </head>
@@ -83,11 +84,11 @@
 	            <li class="nav-item">
 	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
 	            </li>
-	            <li class="nav-item active">
-	            	<a class="nav-link" href="index.html">逆引き</a>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
 	            </li>
-				<li class="nav-item">
-	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+				<li class="nav-item active">
+	            	<a class="nav-link" href="index.html">小ネタ</a>
 	            </li>
 	          </ul>
 	        </div>
@@ -99,15 +100,14 @@
   		<ol class="breadcrumb">
     		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
     		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
-    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
     		
     		<!-- #BeginEditable "breadcrumb2" -->
     		<!-- #EndEditable -->
 
     		<li class="breadcrumb-item active" aria-current="page">
     		<!-- #BeginEditable "breadcrumb1" -->
-    		<!-- #EndEditable -->
-			</li>
+    		Send Keystrokes・Activate Window と UI Automation のソフト・画面名の解釈の違い<!-- #EndEditable --></li>
 			
   		</ol>
 	</nav>
@@ -118,56 +118,67 @@
 
 	<div class="container">
 	<!-- #BeginEditable "nav" -->
-		<h1>逆引き</h1>
-		<h2>スクリプトファイル操作関係</h2>
+		<h1>Send Keystrokes・Activate Window と UI Automation のソフト・画面名の解釈の違い</h1>
+		<p>taskt の命令で、ソフト・画面の名前を指定する Send Keystrokes 命令、Active Window 命令、UI 
+		Automation 命令は、ソフト・画面の名前を解釈する方法が異なります。</p>
+		<p>Send Keystrokes 命令や、Activate Window 命令は、ソフト・画面名の一部だけを指定しても OK です。</p>
+		<p>一方、UI Automation 命令は、ソフト・画面名を正確に指定しないとダメです。</p>
+		<p class="small">補足ですが、これ以降の説明は該当するソフト・画面がパソコン上に 1 
+		つしか存在しないという前提です。例えば「無題 - メモ帳」が複数存在した場合は動作が異なる可能性があります。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="625" src="../image/3.5.0/info/difference_sendkey_uiauto_window_name/notepad.png" width="826"></p>
+		<p>たとえば、上のメモ帳ならば、ソフト・画面名の指定は「無題 - メモ帳」と指定すれば OK です。</p>
+		<p>また、ソフト・画面名の一部が含まれていれば良いので、「メモ帳」や「無題」なども OK です。</p>
+		<div class="row">
+			<p class="col">
+			<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/info/difference_sendkey_uiauto_window_name/normal_sendkey.png" width="631"></p>
+			<p class="col">
+			<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/info/difference_sendkey_uiauto_window_name/memotyo_sendkey.png" width="631"></p>
+		</div>
+		<p>ただし、「メモ<strong>長</strong>」など、ソフト・画面に含まれていない文字が入っていると、エラーになります。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/info/difference_sendkey_uiauto_window_name/typo_sendkey.png" width="631"></p>
+		<p>また、ソフト・画面名の大文字小文字は区別します。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="434" src="../image/3.5.0/info/difference_sendkey_uiauto_window_name/fastcopy.png" width="331"></p>
+		<p>例えば、上の画像の FastCopy ならば、「FastCopy」や「Copy」などと指定すれば OK です。</p>
+		<p>しかし、下の例のように「fastcopy」と大文字・小文字を正確に入力していないとエラーになります。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/info/difference_sendkey_uiauto_window_name/case_fastcopy.png" width="631"></p>
+		<p>特に、Send Keystrokes 命令と UI Automation 命令はどちらも Input Commands 
+		にある命令なので、同じように使えると思いがちですが、間違えないように注意してください。</p>
+		<p>また、未検証ですがおそらく下ような命令も同じ系統になると思います。</p>
+		<h2>Send Keystrokes 命令や Activate Window 命令と同じ</h2>
 		<ul>
-			<li><a href="open_script.html">スクリプトファイルを開く</a></li>
-			<li><a href="save_script.html">スクリプトファイルを保存する</a></li>
-			<li><a href="saveas_script.html">スクリプトファイルを別名で保存する</a></li>
-			<li><a href="new_script.html">スクリプトファイルを新しく作る</a></li>
-			<li><a href="run_script.html">スクリプトを実行する</a></li>
-			<li><a href="stop_script.html">スクリプトの実行を止める</a></li>
-			<li><a href="pause_script.html">スクリプトの実行を一時的に止める</a></li>
+			<li>Send Keystrokes 命令</li>
+			<li>Send Advanced Keystrokes 命令</li>
+			<li>Activete Window 命令</li>
+			<li>Close Window 命令</li>
+			<li>Move Window 命令</li>
+			<li>Resize Window 命令</li>
+			<li>Set Window State 命令</li>
 		</ul>
-		<h2>エディター関係</h2>
+		<h2>UI Automation 命令と同じ</h2>
 		<ul>
-			<li><a href="command_insert_position.html">命令の挿入位置を選択中の行の下にする</a></li>
-			<li><a href="disable_this_command.html">特定の命令を一時的に無効化する</a></li>
-			<li><a href="swap_command.html">命令の位置を動かす</a></li>
-			<li><a href="copy_paste_command.html">命令をコピペする</a></li>
-			<li><a href="delete_command.html">命令を削除する</a></li>
-			<li><a href="select_multi_commands.html">複数の命令を選択する</a></li>
-			<li><a href="edit_command.html">命令を編集する</a></li>
-			<li><a href="command_right_click_menu.html">命令を右クリックしたときのメニューについて</a></li>
+			<li>UI Automation 命令</li>
+			<li>Begin If 命令の GUI Element Exists</li>
 		</ul>
-		<h2>キーボード入力関係</h2>
+		<h2>どちらとも異なる</h2>
 		<ul>
-			<li><a href="type_like_enter_tab.html">数字やアルファベット以外の特殊なキーを入力する</a></li>
-			<li><a href="how_shortcut_send.html">ショートカットキーを使う</a></li>
-			<li><a href="shift_press_select.html">Shift+矢印キーで範囲選択をする</a></li>
-			<li><a href="winkey_shoftcut.html">Windows キーを使ったショートカットを入力する</a></li>
-			<li><a href="type_key_manytimes.html">同じキーを連続で入力する</a></li>
-			<li><a href="type_space.html">半角スペースを入力する</a></li>
-			<li><a href="type_brackets.html">カッコを入力する</a></li>
-			<li><a href="type_hat_percent_plus.html">%, +, ^ を入力する</a></li>
-			<li><a href="type_symble.html">いろいろな記号を入力する</a></li>
+			<li>Wait For Window To Exists 命令</li>
+			<li>Env.ActiveWindowTitle の値</li>
 		</ul>
-		<h2>UI Automation 関係</h2>
-		<ul>
-			<li><a href="step_by_step_ui_automation.html">UI Automation 
-			でクリックさせる方法 </a></li>
-		</ul>
-		<h2>変数関係</h2>
-		<ul>
-			<li><a href="declare_variable.html">変数を用意する</a></li>
-			<li><a href="set_value_variable.html">変数に値を入れる</a></li>
-			<li><a href="create_list_set_variable.html">リストの値をまとめて入れる</a></li>
-			<li><a href="get_variable_value.html">変数の値を取り出す・表示する</a></li>
-			<li><a href="list_check.html">変数がリストかどうか判定する</a></li>
-			<li><a href="list_variable_control.html">リストの変数の特殊操作</a></li>
-			<li><a href="default_task_variables.html">Default Task Variables 
-			の値について</a></li>
-		</ul>
+		<hr>
+		<section class="bg-light">
+			<h2>参考</h2>
+			<ul>
+				<li><a href="../commands/input_send_keystrokes.html">Send 
+				Keystrokes 命令</a></li>
+				<li><a href="../commands/input_ui_automation.html">UI Automation 
+				命令</a></li>
+				<li><a href="difference_sendkey_uiauto_modal.html">Send Keystrokes・Activate Window と UI Automation のモーダルフォームの解釈の違い</a></li>
+			</ul>
+		</section>
 	<!-- #EndEditable -->
 	</div>
 

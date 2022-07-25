@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "commands_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>Begin If - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigate" aria-controls="#top_navigate" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="top_navigate">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle"  href="../first/index.html" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
+					<a class="dropdown-item" href="../first/quickstart.html">簡単な使い方</a>
+					<a class="dropdown-item" href="../first/update.html">アップデート</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown active">
+	              <a class="nav-link dropdown-toggle" href="index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="index.html">一覧</a>
+	              	<a class="dropdown-item" href="index.html#anc_api">API Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_data">Data Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_dictionary">Dictionary Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_engine">Engine Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_error">Error Handling Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_excel">Excel Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_folder">Folder Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_if">If Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_image">Image Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_input">Input Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_loop">Loop Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_misc">Misc Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_outlook">Outlook Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_regex">Regex Commands</a>
+	                <a class="dropdown-item" href="index.html#anc_remote">Remote Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_system">System Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_task">Task Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_text">Text File Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_variable">Variable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_web">Web Browser Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_word">Word Commands</a>
+	              </div>
+	            </li>
+	            
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
+					</div>
+	            </li>
+
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            </li>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+
+	<div class="container small">
+   	 <nav aria-label="breadcrumb">
+  		<ol class="breadcrumb">
+    		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
+    		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">コマンド一覧</a></li>
+    		
+    		<!-- #BeginEditable "breadcrumb2" -->
+    		<!-- #EndEditable -->
+
+    		<li class="breadcrumb-item active" aria-current="page">
+    		<!-- #BeginEditable "breadcrumb1" -->
+    		<a href="index.html#anc_if">If Commands</a> / Begin If<!-- #EndEditable --></li>
+			
+  		</ol>
+	</nav>
+	<p class="text-right">無料で使える RPA の  
+		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
+   </div>
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+		<h1>Begin If</h1>
+		<p>条件を指定し、条件が成り立つかどうかの結果に応じて行う命令を変更します。</p>
+		<p>Begin If 命令の場合、条件が成り立った場合の命令を、Begin If 命令の下に入力します。</p>
+		<p>
+		<img alt="" class="img-fluid" height="618" src="../image/3.3.0/commands/if/begin_if.png" width="631"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Please select type of If Command</td>
+				<td>Begin If で判定する条件の種類を指定します</td>
+			</tr>
+			<tr>
+				<td>Additional Parameters</td>
+				<td>条件の内容を入力します<br>Please select type of If Command 
+				で指定した種類に応じて変化します<br>書く項目の詳細は<a href="#anc_if_type">こちら</a>を見てください</td>
+			</tr>
+			<tr>
+				<td>Comment Field (Optional)</td>
+				<td>コメントを入力します<br>入力しなくても良いです</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<h2 id="anc_if_type">Please select type of If Command</h2>
+		<p>Please select type of If Command は下の表のような条件が選べます。</p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td><a href="#anc_value">Value</a></td>
+				<td>2 つの値や変数について比較します<br>数字の比較に関係する条件が選べます</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_date_compare">Date Compare</a></td>
+				<td>2 つの日付や日付が代入された変数についての比較します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_variable_compare">Variable Compare</a></td>
+				<td>2 つの値や変数について比較します<br>文字列の比較に関係する条件が選べます</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_variable_has_value">Variable Has Value</a></td>
+				<td>変数に値が代入されたかどうかを判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_variable_is_numeric">Variable Is Numeric</a></td>
+				<td>変数に代入された値が数字かどうかを判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_window_name_exists">Window Name Exists</a></td>
+				<td>指定したウィンドウの名前が存在するかを判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_active_window_name_is">Active Window Name Is</a></td>
+				<td>現在アクティブになっているウィンドウの名前を判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_file_exists">File Exists</a></td>
+				<td>指定したファイルが存在するかを判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_folder_exists">Folder Exists</a></td>
+				<td>指定したフォルダーが存在するかを判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_web_element_exists">Web Element Exists</a></td>
+				<td>ブラウザーに指定した要素が存在するかを判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_gui_element_exists">GUI Element Exists</a></td>
+				<td>ソフトの画面上に指定した要素が存在するかを判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_error_occured">Error Occured</a></td>
+				<td>指定した行の命令でエラーが発生したかを判定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_error_did_not_occur">Error Did Not Occur</a></td>
+				<td>指定した行の命令でエラーが発生していないことを判定します</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<h3 id="anc_value">Value</h3>
+		<p>Value は 2 つの数字の関係を判定するときに使います。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_value.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Value1</td>
+				<td>値を比較したい数字、または変数を入力します<br>変数を指定するときは、変数を意味する囲いで囲んでください</td>
+			</tr>
+			<tr>
+				<td>Operand</td>
+				<td>比較方法を選択します</td>
+			</tr>
+			<tr>
+				<td>Value2</td>
+				<td>値を比較したい数字、または変数を入力します<br>変数を指定するときは、変数を意味する囲いで囲んでください</td>
+			</tr>
+		</table>
+		<p>
+		&nbsp;</p>
+		<p>
+		Operand の各項目の意味は下の表のとおりです。</p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>is equal to</td>
+				<td>Value1 と Value2 が等しいか<br>Value1 == Value2</td>
+			</tr>
+			<tr>
+				<td>is greater than</td>
+				<td>Value1 が Value2 より大きいか<br>Value1 &gt; Value2</td>
+			</tr>
+			<tr>
+				<td>is greater than or equal to</td>
+				<td>Value1 が Value2 以上か<br>Value1 &gt;= Value2</td>
+			</tr>
+			<tr>
+				<td>is less than</td>
+				<td>Value1 が Value2 未満か<br>Value1 &lt; Value2</td>
+			</tr>
+			<tr>
+				<td>is less than or equal to</td>
+				<td>Value1 が Value2 以下か<br>Value1 &lt;= Value2</td>
+			</tr>
+			<tr>
+				<td>is not equal to</td>
+				<td>Value1 と Value2 が等しくないか<br>Value1 != Value2</td>
+			</tr>
+		</table>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_date_compare">Date Compare</h3>
+		<p>Date Compare は 2 つの日付を比較するときに使います。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_date_compare.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Value1</td>
+				<td>比較したい日にち、または変数を入力します<br>変数を指定するときは、変数を意味する囲いで囲んでください</td>
+			</tr>
+			<tr>
+				<td>Operand</td>
+				<td>比較方法を選択します</td>
+			</tr>
+			<tr>
+				<td>Value2</td>
+				<td>比較したい日にち、または変数を入力します<br>変数を指定するときは、変数を意味する囲いで囲んでください</td>
+			</tr>
+		</table>
+		<p>
+		&nbsp;</p>
+		<p>
+		Operand の各項目の意味は下の表のとおりです。</p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>is equal to</td>
+				<td>Value1 と Value2 が同じ日にちか<br>Value1 == Value2</td>
+			</tr>
+			<tr>
+				<td>is greater than</td>
+				<td>Value1 が Value2 より未来か<br>Value1 &gt; Value2</td>
+			</tr>
+			<tr>
+				<td>is greater than or equal to</td>
+				<td>Value1 が Value2 と同じ日にち、もしくは未来か<br>Value1 &gt;= Value2</td>
+			</tr>
+			<tr>
+				<td>is less than</td>
+				<td>Value1 が Value2 より過去か<br>Value1 &lt; Value2</td>
+			</tr>
+			<tr>
+				<td>is less than or equal to</td>
+				<td>Value1 が Value2 と同じ日にち、もしくは過去か<br>Value1 &lt;= Value2</td>
+			</tr>
+			<tr>
+				<td>is not equal to</td>
+				<td>Value1 と Value2 が異なる日にちか<br>Value1 != Value2</td>
+			</tr>
+		</table>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_variable_compare">Variable Compare</h3>
+		<p>Variable Compare は 2 つの文字列を比較するときに使います。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_variable_compare.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Value1</td>
+				<td>比較したい文字列、または変数を入力します<br>変数を指定するときは、変数を意味する囲いで囲んでください</td>
+			</tr>
+			<tr>
+				<td>Operand</td>
+				<td>比較方法を選択します</td>
+			</tr>
+			<tr>
+				<td>Value2</td>
+				<td>比較したい文字列、または変数を入力します<br>変数を指定するときは、変数を意味する囲いで囲んでください</td>
+			</tr>
+			<tr>
+				<td>Case Sensitive</td>
+				<td>大文字・小文字を区別するかを決めます<br>No ならば大文字・小文字を区別しません<br>Yes 
+				ならば大文字・小文字を区別します</td>
+			</tr>
+		</table>
+		<h3 id="anc_variable_has_value">&nbsp;</h3>
+		<p>
+		Operand の各項目の意味は下の表のとおりです。</p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>contains</td>
+				<td>Value1 に Value2 で指定した文字列が含まれているか</td>
+			</tr>
+			<tr>
+				<td>does not contain</td>
+				<td>Value1 に Value2 で指定した文字列が含まれていないか</td>
+			</tr>
+			<tr>
+				<td>is equal to</td>
+				<td>Value1 と Value2 が等しいか<br>Value1 == Value2</td>
+			</tr>
+			<tr>
+				<td>is not equal to</td>
+				<td>Value1 と Value2 が等しくないか<br>Value1 != Value2</td>
+			</tr>
+		</table>
+		<h3>&nbsp;</h3>
+		<p>Operand に contain を指定した場合、Value1 が「abc123cde」で、Value2 
+		が「cd」の場合、条件は成り立ちます。</p>
+		<p>Operand に does not contain を指定した場合、Value1 が「abc123cde」で、Value2 
+		が「cd」の場合、条件は成り立ちません。</p>
+		<p>Operand が is equal to で、Value1 が「abc」、Value2 が「ABC」の場合、Case Sensitive 
+		の値により結果が変化します。Case Sensitive が No ならば大文字・小文字を区別しないので、条件は成り立ちます。</p>
+		<p>Case Sensitive が Yes ならば、大文字・小文字を区別するので、条件は成り立ちません。</p>
+		<p>&nbsp;</p>
+		<h3>Variable Has Value</h3>
+		<p>Variable Has Value は変数に値が代入されているかを判定するときに使います。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_variable_has_value.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Variable Name</td>
+				<td>調べたい変数名を入力します<br>変数名を意味する囲いで囲まなくても良いです</td>
+			</tr>
+		</table>
+		<p>
+		&nbsp;</p>
+		<p>
+		Variable Has Value で、値が代入されていないと判定されるのは、以下のとおりです。</p>
+		<ul>
+			<li><a href="../menu/variable_manager.html">Variable Manager</a> 
+			で初期値が指定されていない変数</li>
+			<li>New Variable 命令で初期値が指定されていない変数</li>
+			<li>Set Variable 命令で値を代入していない変数</li>
+		</ul>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_variable_is_numeric">Variable Is Numeric</h3>
+		<p>Variable Is Numeric は、変数に代入されている値が数字かを判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_variable_is_numeric.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Variable Name</td>
+				<td>調べたい変数名を入力します<br>変数名を意味囲いで囲まなくても良いです</td>
+			</tr>
+		</table>
+		<p>
+		&nbsp;</p>
+		<p>
+		Variable Is Numeric で数字と判定されるのは、以下のような値です。</p>
+		<ul>
+			<li>「123」のような整数</li>
+			<li>「1.23」のような小数を含む数</li>
+			<li>「0123」のような表記の数 (プログラミング言語のように 8 進数として扱われません)</li>
+		</ul>
+		<p>Variable Is Numeric で数字と判定されないのは、以下のような値です。</p>
+		<ul>
+			<li>「"123"」のような " で囲まれた数</li>
+			<li>「'123'」のような ' で囲まれた数</li>
+			<li>「0x123」や「0X123」のような 16 進数表記のような数</li>
+		</ul>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_window_name_exists">Window Name Exists</h3>
+		<p>Window Name Exists は、現在パソコンで指定した名前の動いているソフトが動いているかを判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_window_name_exists.png" width="631" class="img-fluid"></p>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_active_window_name_is">Active Window Name Is</h3>
+		<p>Active Window Name Is は現在、手前にあるソフトの名前を判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_active_window_name_is.png" width="631" class="img-fluid"></p>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_file_exists">File Exists</h3>
+		<p>File Exists は指定したファイルが存在するかを判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_file_exists.png" width="631" class="img-fluid"></p>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_folder_exists">Folder Exists</h3>
+		<p>Folder Exists は指定したフォルダーが存在するかを判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_folder_exists.png" width="631" class="img-fluid"></p>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_web_element_exists">Web Element Exists</h3>
+		<p>Web Element Exists はブラウザーに指定した要素が存在するかを判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_web_element_exists.png" width="631" class="img-fluid"></p>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_gui_element_exists">GUI Element Exists</h3>
+		<p>GUI Element Exists はソフトに指定した要素が存在するかを判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_gui_element_exists.png" width="631" class="img-fluid"></p>
+		<section class="bg-warning">
+		<p>
+		バージョン 3.5.0.0 時点では、Window Name を「Current 
+		Window」にしても、現在のウィンドウの意味にはなりません。おそらくバグなのでしょうが、「Current 
+		Window」という名前のウィンドウが存在するかどうかをチェックしてしまいます。</p>
+			<p>
+			そのため、ウィンドウ名を変数にしたり、ウィンドウ名を入力するなど工夫が必要です。</p>
+		</section>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_error_occured">Error Occured</h3>
+		<p>Error Occured は指定した行でエラーが発生したかを判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_error_occured.png" width="631" class="img-fluid"></p>
+		<p>
+		&nbsp;</p>
+		<h3 id="anc_error_did_not_occur">Error Did Not Occur</h3>
+		<p>Error Did Not Occur は指定した行でエラーが発生していないかを判定します。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.3.0/commands/if/begin_if_error_did_not_occured.png" width="631" class="img-fluid"></p>
+		<p>
+		&nbsp;</p>
+		<hr>
+		<section class="bg-light">
+		<h2>参考</h2>
+			<ul>
+				<li><a href="if_else.html">Else</a></li>
+				<li><a href="if_end_if.html">End If</a></li>
+			</ul>
+		</section>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

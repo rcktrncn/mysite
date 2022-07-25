@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "reverse_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>UI Automationでクリックさせる方法 - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigate" aria-controls="#top_navigate" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="top_navigate">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle" href="../first/index.html" id="dropdown_first" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
+					<a class="dropdown-item" href="../first/quickstart.html">簡単な使い方</a>
+					<a class="dropdown-item" href="../first/update.html">アップデート</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle" href="../commands/index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../commands/index.html">一覧</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_api">API Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_data">Data Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_dictionary">Dictionary Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_engine">Engine Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_error">Error Handling Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_excel">Excel Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_folder">Folder Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_if">If Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_image">Image Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_input">Input Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_loop">Loop Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_misc">Misc Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_outlook">Outlook Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_regex">Regex Commands</a>
+	                <a class="dropdown-item" href="../commands/index.html#anc_remote">Remote Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_system">System Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_task">Task Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_text">Text File Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_variable">Variable Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_web">Web Browser Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_word">Word Commands</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
+					</div>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            </li>
+	            <li class="nav-item active">
+	            	<a class="nav-link" href="index.html">逆引き</a>
+	            </li>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+   
+    <div class="container small">
+   	 <nav aria-label="breadcrumb">
+  		<ol class="breadcrumb">
+    		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
+    		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
+    		
+    		<!-- #BeginEditable "breadcrumb2" -->
+    		<!-- #EndEditable -->
+
+    		<li class="breadcrumb-item active" aria-current="page">
+    		<!-- #BeginEditable "breadcrumb1" -->
+    		UI Automation でクリックさせる方法<!-- #EndEditable --></li>
+			
+  		</ol>
+	</nav>
+	<p class="text-right">無料で使える RPA の  
+		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
+   </div>
+
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+		<h1>UI Automation でクリックさせる方法</h1>
+		<p>taskt の<a href="https://github.com/saucepleez/taskt/wiki/Automation-Commands" target="_blank">公式ドキュメント</a>などにも詳細が載っていない 
+		<a href="../commands/input_ui_automation.html">UI Automation 命令</a>でソフト・画面の要素をクリックさせるための手順です。</p>
+		<p>今回は、メモ帳のメニューにある <strong>表示(V)</strong> をクリックさせます。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="625" src="../image/3.5.0/reverse/step_by_step_ui_automation/notepad_click_point.png" width="826"></p>
+		<p>まず、taskt とは別にメモ帳を実行します。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="625" src="../image/3.5.0/reverse/step_by_step_ui_automation/notepad.png" width="826"></p>
+		<p>次に、taskt の Input Commands の <strong>UI Automation</strong> 
+		をダブルクリックします。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/reverse/step_by_step_ui_automation/first.png" width="631"></p>
+		<p>今回はクリックさせるので、Please indicate the action は <strong>Click Element</strong> 
+		にします。</p>
+		<p>次に、Set Search Parameters の下にある <strong>Element Recorder</strong> 
+		をクリックします。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/reverse/step_by_step_ui_automation/click_element.png" width="631"></p>
+		<p>element recorder が別の画面で表示されるので、<img alt=" " height="39" src="../image/3.5.0/reverse/step_by_step_ui_automation/record_button.png" width="39"> 
+		の左にある ▼ をクリックし、<strong>無題 - メモ帳</strong> を一覧の中から選択します。</p>
+		<p>Stop Recording on First Click はチェックを外しておいた方が良い、気がします。</p>
+		<p>次に、<img alt=" " height="39" src="../image/3.5.0/reverse/step_by_step_ui_automation/record_button.png" width="39"> 
+		をクリックします。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="203" src="../image/3.5.0/reverse/step_by_step_ui_automation/element_recorder.png" width="735"></p>
+		<p>メモ帳の画面が手前に表示されます。</p>
+		<p>このとき、パソコンの画面の右下に element recorder という別の画面も表示されています。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="148" src="../image/3.5.0/reverse/step_by_step_ui_automation/wait_element.png" width="524"></p>
+		<p>メモ帳のクリックさせたい <strong>表示(V)</strong> をクリックします。</p>
+		<p>もし、間違えて別の場所をクリックしてしまったときは、再度 <strong>表示(V)</strong> をクリックしてください。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="625" src="../image/3.5.0/reverse/step_by_step_ui_automation/notepad_click_point.png" width="826"></p>
+		<p>右下の画面にクリックしたものの情報が表示されるのですが、あまり気にしなくてよいです。</p>
+		<p>この状態で F2 キーを押します。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="149" src="../image/3.5.0/reverse/step_by_step_ui_automation/recorded_info.png" width="526"></p>
+		<p>element recorder の画面が閉じ、UI Automation 命令の画面が表示されます。</p>
+		<p>クリックした内容に応じて、Set Search Parameters の内容が表示されています。</p>
+		<p>また、Please select the Window to Automate は自動的に「無題 - メモ帳」に変わっています。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/reverse/step_by_step_ui_automation/search_parameters.png" width="631"></p>
+		<p>Set Search Parameters で何を選ぶかは慣れが必要ですが、一般的には AutomationId 
+		か、LocalizedControlType と Name の組み合わせのどちらかになるかと思います。</p>
+		<p>AutomationId を検索条件にするには、<strong>AutomationId</strong> の <strong>
+		Enabled</strong> にチェックを入れます。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/reverse/step_by_step_ui_automation/search_automation_id.png" width="631"></p>
+		<p>検索条件を <strong>LocalizedControlType</strong> と <strong>Name</strong> 
+		の組み合わせにするには、この 2 箇所の <strong>Enabled</strong> にチェックを入れます。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/reverse/step_by_step_ui_automation/search_type_name.png" width="631"></p>
+		<p>最後に、Set Action Parameters の <strong>Click Type</strong> を <strong>
+		Left Click</strong> にします。</p>
+		<p><strong>OK</strong> をクリックして終了です。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/reverse/step_by_step_ui_automation/set_action.png" width="631"></p>
+		<p>これで 1 箇所クリックさせるための設定ができました。</p>
+		<p>あとは実際にスクリプトを動かしてみて、正しく動作するかを確認してください。</p>
+		<p>複数のボタンなどを連続してクリックさせるようなスクリプトを作りたいときは、毎回毎回この作業をやるのは面倒くさいので、はじめに作った UI 
+		Automation 命令をコピペし、要素の検索条件を Inspect ツールなどで調べ、Set Search Parameters 
+		の必要な個所を書き換えた方が良いでしょう。</p>
+		<p>また、UI Automation 命令は 1 つ作るのにも手間がかかり、特定条件下でうまく動作しないこともあるので、個人的には 
+		<a href="../commands/input_send_keystrokes.html">Send Keystrokes 命令</a>によるキーボード操作を使った方が良いと思います。</p>
+		<p>今回の例ならば、<a href="../commands/input_send_keystrokes.html">Send 
+		Keystrokes 命令</a>で「%v」を指定すれば、同じ動作をします。</p>
+		<hr>
+		<section class="bg-light">
+			<h2>参考</h2>
+			<ul>
+				<li>
+				<a href="https://github.com/saucepleez/taskt/wiki/Automation-Commands" target="_blank">
+				Automation Commands</a> (<a href="https://github.com/saucepleez/taskt/wiki/Automation-Commands" target="_blank">https://github.com/saucepleez/taskt/wiki/Automation-Commands</a>)</li>
+				<li>
+				<a href="https://www.atmarkit.co.jp/ait/articles/1404/03/news004.html" target="_blank">
+				Inspectツールを使ってUIを調査するには？</a> (<a href="https://www.atmarkit.co.jp/ait/articles/1404/03/news004.html" target="_blank">https://www.atmarkit.co.jp/ait/articles/1404/03/news004.html</a>)</li>
+				<li><a href="../commands/input_ui_automation.html">UI Automation 
+				命令</a></li>
+				<li><a href="../info/what_means_underline.html">
+				ボタンやメニューのアンダーラインの意味は何？</a></li>
+			</ul>
+		</section>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

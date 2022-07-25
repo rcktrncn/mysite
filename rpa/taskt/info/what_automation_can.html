@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "info_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>tasktが使えるクリックの自動化について - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigate" aria-controls="#top_navigate" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="top_navigate">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle" href="../first/index.html" id="dropdown_first" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
+					<a class="dropdown-item" href="../first/quickstart.html">簡単な使い方</a>
+					<a class="dropdown-item" href="../first/update.html">アップデート</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle" href="../commands/index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../commands/index.html">一覧</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_api">API Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_data">Data Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_dictionary">Dictionary Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_engine">Engine Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_error">Error Handling Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_excel">Excel Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_folder">Folder Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_if">If Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_image">Image Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_input">Input Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_loop">Loop Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_misc">Misc Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_outlook">Outlook Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_regex">Regex Commands</a>
+	                <a class="dropdown-item" href="../commands/index.html#anc_remote">Remote Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_system">System Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_task">Task Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_text">Text File Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_variable">Variable Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_web">Web Browser Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_word">Word Commands</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
+					</div>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            </li>
+				<li class="nav-item active">
+	            	<a class="nav-link" href="index.html">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+   
+    <div class="container small">
+   	 <nav aria-label="breadcrumb">
+  		<ol class="breadcrumb">
+    		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
+    		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
+    		
+    		<!-- #BeginEditable "breadcrumb2" -->
+    		<!-- #EndEditable -->
+
+    		<li class="breadcrumb-item active" aria-current="page">
+    		<!-- #BeginEditable "breadcrumb1" -->
+    		taskt が使えるクリック自動化方法について<!-- #EndEditable --></li>
+			
+  		</ol>
+	</nav>
+	<p class="text-right">無料で使える RPA の  
+		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
+   </div>
+
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+	<h1>taskt が使えるクリック自動化方法について</h1>
+		<p>はじめに、RPA では大きく分けて 3 つクリックを自動化する方法があります。</p>
+		<p>自動化というか、画面上のどこをクリックするかの判断というか、まあ言い方はいろいろありますが、<a href="https://www.itmedia.co.jp/enterprise/articles/1803/08/news012.html" target="_blank">ITmeida 
+		さんのこの記事</a> (<a href="https://www.itmedia.co.jp/enterprise/articles/1803/08/news012.html" target="_blank">https://www.itmedia.co.jp/enterprise/articles/1803/08/news012.html</a>) 
+		が詳しいので、ぜひ読んでください。</p>
+		<p>それで、3 つの方式とは、下のようなものです。</p>
+		<ul>
+			<li>画面上の位置 (座標) からクリックする場所を指定する</li>
+			<li>パソコンの画面を画像認識させて、場所を指定する</li>
+			<li>ソフト (画面) の構造 (要素) を解析し、場所を指定する</li>
+		</ul>
+		<p>taskt ではありがたいことに、一応 3 つすべての方法が利用できます。</p>
+		<p>これら、3 つの特徴をまとめると、こんな感じです。</p>
+		<table class="table">
+			<tr>
+				<td>&nbsp; </td>
+				<th>位置 (座標)</th>
+				<th>画像認識</th>
+				<th>構造 (要素)</th>
+			</tr>
+			<tr>
+				<th>作りやすさ</th>
+				<td>簡単</td>
+				<td>面倒くさい</td>
+				<td>難しい</td>
+			</tr>
+			<tr>
+				<th>正確性</th>
+				<td>低い</td>
+				<td>普通</td>
+				<td>高い</td>
+			</tr>
+			<tr>
+				<th>その他欠点</th>
+				<td>ソフト (画面) の大きさ、位置に影響されやすい</td>
+				<td>ソフト (画面) の大きさや見た目に影響されやすい</td>
+				<td>使えないときがある<br>使える・使えないの判断が難しい</td>
+			</tr>
+		</table>
+		<section>
+		<h2>位置 (座標) による指定</h2>
+			<p>位置 (座標) による指定は、Send Mose Move 命令で行うことができますし、Record 
+			の機能を使うと、自動的にマウスの動きやクリックが Send Mouse Move 命令に変換されます。</p>
+			<p>そのため、taskt では一番簡単に作れるのかもしれません。</p>
+			<p>しかし、位置 (座標) というのは、パソコンの画面の左上を基準にどこをクリックするかという単純な情報でしかありません。</p>
+			<p>
+			<img alt="" class="img-fluid" height="351" src="../image/info/what_automation_can/position.png" width="524" class="img-fluid"></p>
+			<p>そのため、ソフト (画面) の位置が少しでもずれると、目的のボタンなどがクリックできなくなります。</p>
+			<p>この問題を解決するために、Move Window 命令や Resize Window 命令でソフト (画面) 
+			の大きさを事前に設定するという方法があります。</p>
+			<p>
+			しかし、何らかの原因で目的のボタンの上に別のソフトの画面が重なっていると、クリックできなかったりと予期せぬ問題が発生することもあります。</p>
+		</section>
+		<section>
+			<h2>画像認識による指定</h2>
+			<p>画像による認識は Image Recognition 命令を使用します。</p>
+			<p>これは、パソコンの画面全体をから目的の画像を探す方法です。</p>
+			<p>ほとんどのソフトでは、ソフト (画面) 
+			の大きさによってボタンの大きさが変化することはないので、座標を指定するよりは正確にクリックできます。</p>
+			<p>
+			目的のボタンがほかのソフトと重なって見えないというような状況以外は、ほぼうまくいくような気がするかもしれませんが、落とし穴もあります。</p>
+			<p>下のメモ帳の画面の OK ボタンはすべて違いますが、区別がつきますか？</p>
+			<div class="row">
+				<p class="col-lg-4">
+				<img alt="" height="470" src="../image/info/what_automation_can/ok_button1.png" width="425" class="img-fluid"></p>
+				<p class="col-lg-4">
+				<img alt="" height="470" src="../image/info/what_automation_can/ok_button2.png" width="425" class="img-fluid"></p>
+				<p class="col-lg-4">
+				<img alt="" height="470" src="../image/info/what_automation_can/ok_button3.png" width="425" class="img-fluid"></p>
+			</div>
+			<p>
+			左のボタンは外枠が青く、その内側に点線が付いています。中央のボタンは外枠が黒いです。右のボタンは外枠が青いですが、点線がありません。</p>
+			<p>
+			画像認識がどこまでの違いがあっても同じと判断するかは不明ですが、人間には同じに見えるものでも、画像認識では違うと判断されることがあるので注意が必要です。</p>
+			<p>また、Windows 7、Windows 8、Windows 10 と画面やボタンの見た目が異なるので、使っている Windows 
+			ごとに認識させる画像を設定しなおす必要があります。</p>
+		</section>
+		<section>
+			<h2>構造 (要素) による指定</h2>
+			<p>
+			ソフトの画面は、専門的な内容になりますが、さまざまな要素により構成されています。そして、その要素を特定することで、クリックする場所も決めることができます。</p>
+			<p>taskt では <a href="../commands/input_ui_automation.html">UI Automation 
+			命令</a>という命令で、構造 (要素) を指定した操作ができます。</p>
+			<p>構造 (要素) は、ソフト (画面) の大きさによる違いや、Windows 
+			ごとのデザインの違いなどの影響を受けないため、クリックする位置をかなり正確に指定できます。</p>
+			<p>ただし、構造 (要素) を認識できないソフトが存在したり、そもそも taskt の画面で UI Automation 
+			命令を指定するのに知識が必要だったりと、使いこなすことが難しい命令です。</p>
+		</section>
+		<h2>その他の指定方法</h2>
+		<p>例えば、ボタンをクリックするという行為は、ボタンにフォーカスを合わせ Enter キーを押すのと変わりません。</p>
+		<p>ほかにも、あるボタンをクリックする操作が、メニューから呼び出せるかもしれません。保存する画面なら Ctrl + S、ファイルを開く画面なら 
+		Ctrl + O のように、ショートカットキーが存在するかもしれません。</p>
+		<p>このように、マウス操作をキーボード操作 (<a href="../commands/input_send_keystrokes.html">Send Keystrokes 
+		命令</a>、Send Advanced Keystrokes 命令) 
+		に置き換えることにより、ソフト (画面) の大きさや、Windows の違いなどを無視してクリックの操作が自動化できます。</p>
+		<p>特に、Office 2010 以降のリボン画面は、Alt 
+		キーを押すことで、リボンの各種ボタンをクリックしたのと同じ効果が得られるので、RPA を使うことを考える場合、かなり便利です。</p>
+		<p>今後のアップデートで徐々に改善され、マウス操作が正確に簡単にできるようになるのかもしれませんが、現時点 (バージョン 3.2.0.0 
+		時点) マウス操作にこだわるよりも、キーボード操作をさせるようにスクリプトを作った方が、作る時間も正確さも高いものが作れる気がします。</p>
+		<hr>
+		<section class="bg-light">
+			<h2>参考</h2>
+			<ul>
+				<li><a href="../commands/input_send_keystrokes.html">Send 
+				Keystrokes 命令</a></li>
+				<li><a href="../commands/input_ui_automation.html">UI Automation 
+				命令</a></li>
+			</ul>
+		</section>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

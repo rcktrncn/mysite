@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "commands_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>UI Automation - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigate" aria-controls="#top_navigate" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="top_navigate">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle"  href="../first/index.html" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
+					<a class="dropdown-item" href="../first/quickstart.html">簡単な使い方</a>
+					<a class="dropdown-item" href="../first/update.html">アップデート</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown active">
+	              <a class="nav-link dropdown-toggle" href="index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="index.html">一覧</a>
+	              	<a class="dropdown-item" href="index.html#anc_api">API Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_data">Data Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_dictionary">Dictionary Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_engine">Engine Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_error">Error Handling Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_excel">Excel Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_folder">Folder Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_if">If Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_image">Image Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_input">Input Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_loop">Loop Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_misc">Misc Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_outlook">Outlook Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_regex">Regex Commands</a>
+	                <a class="dropdown-item" href="index.html#anc_remote">Remote Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_system">System Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_task">Task Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_text">Text File Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_variable">Variable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_web">Web Browser Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_word">Word Commands</a>
+	              </div>
+	            </li>
+	            
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
+					</div>
+	            </li>
+
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            </li>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+
+	<div class="container small">
+   	 <nav aria-label="breadcrumb">
+  		<ol class="breadcrumb">
+    		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
+    		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">コマンド一覧</a></li>
+    		
+    		<!-- #BeginEditable "breadcrumb2" -->
+    		<!-- #EndEditable -->
+
+    		<li class="breadcrumb-item active" aria-current="page">
+    		<!-- #BeginEditable "breadcrumb1" -->
+    		<a href="index.html#anc_input">Input Commands</a> / UI Automation<!-- #EndEditable --></li>
+			
+  		</ol>
+	</nav>
+	<p class="text-right">無料で使える RPA の  
+		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
+   </div>
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+		<h1>UI Automation</h1>
+		<p>UI Automation はソフト・画面の要素を認識して、クリックなどを行います。</p>
+		<p>条件さえ整えば、画像認識やパソコンの画面の座標を使ったクリックよりも、正確にクリックなどの操作が行えます。</p>
+		<p>
+		<img alt=" " height="618" src="../image/3.5.0/commands/input_ui_automation.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td><a href="#anc_please_indicate_the_action">Please indicate 
+				the action</a></td>
+				<td>要素に対して何を行うかを指定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_please_select_the_window_to_automate">Please 
+				select the Window to Automate</a></td>
+				<td>要素を認識するソフト・画面名を指定します<br>バージョン 3.5.0.0 時点では「Current 
+				Window」は正常に動作しません</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_set_search_parameters">Set Search Parameters</a></td>
+				<td>要素を検索する条件を指定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_set_action_parameters">Set Action Parameters</a></td>
+				<td>検索した要素に対して行う動作を指定します<br>
+				<a href="#anc_please_indicate_the_action">Please indicate the 
+				action</a> の設定により、選べる項目は異なります</td>
+			</tr>
+			<tr>
+				<td>Comment Field (Optional)</td>
+				<td>コメントを入力します<br>入力しなくても良いです</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<h2 id="anc_please_indicate_the_action">Please indicate the action</h2>
+		<p>要素に対して何を行うかを指定します。</p>
+		<p>ここの設定に応じて、<a href="#anc_set_action_parameters">Set Action Parameters</a> 
+		の項目が変化します。</p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td><a href="#anc_click_element">Click Element</a></td>
+				<td>検索した要素をクリックします</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_get_value_from_element">Get Value From Element</a></td>
+				<td>検索した要素の情報を取得します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_check_if_element_exists">Check If Element 
+				Exists</a></td>
+				<td>検索した要素が存在するかどうかを調べます</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<h2 id="anc_please_select_the_window_to_automate">Please select the 
+		Window to Automate</h2>
+		<p>要素を認識するソフト・画面を指定します。</p>
+		<p>右端の ▼ をクリックすると、現在実行中のソフト・画面の一覧が表示されます。</p>
+		<p>モーダルフォームに対する操作でも、<a href="../info/difference_sendkey_uiauto_modal.html">モーダルフォームの名前ではなく、もとのソフト・画面名を指定する必要があります</a>。</p>
+		<p>ソフト・画面名は大文字・小文字、スペースの有無なども含め正確に入力してください</p>
+		<p>存在しないソフト・画面を指定するとエラーになります。</p>
+		<p class="bg-warning">バージョン 3.5.0.0 時点では「Current 
+		Window」を指定しても、現在のソフト・画面という指定にはなりません。</p>
+		<p>
+		<img alt=" " height="618" src="../image/3.5.0/commands/input_ui_element_window_list.png" width="631" class="img-fluid"></p>
+		<p>&nbsp;</p>
+		<h2 id="anc_set_search_parameters">Set Search Parameters</h2>
+		<p>検索する方法を指定します。</p>
+		<p>ここの指定は、Element Recorder をクリックし、taskt が認識したものしか利用できません。</p>
+		<p>Parameter Name が検索条件で、Parameter Value が検索値です。</p>
+		<p>検索したい条件の Enabled のところにチェックを入れます。複数の条件にチェックを入れることも可能です。</p>
+		<p>Parameter Value は変更できるので、ほかの UI Automation 命令をコピペして、Parameter Value 
+		だけを書き換える、という使い方も可能です。</p>
+		<p>
+		<img alt=" " height="618" src="../image/3.5.0/commands/input_ui_element_search_parameters.png" width="631" class="img-fluid"></p>
+		<p>&nbsp;</p>
+		<h2 id="anc_set_action_parameters">Set Action Parameters</h2>
+		<p>検索した要素に対して行う操作です。</p>
+		<p>ここの項目は、<a href="#anc_please_indicate_the_action">Please indicate the 
+		action</a> の設定により異なります。</p>
+		<h3 id="anc_click_element">Click Element</h3>
+		<p>Click Element では、検索した要素をクリックします。</p>
+		<p>
+		<img alt=" " height="618" src="../image/3.5.0/commands/input_ui_automation_click_element.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Click Type</td>
+				<td>クリックの種類を選びます<br>通常は「Left Click」で良いと思います<br>
+				空欄のままでもエラーにはなりませんが、結果的に動作しなくなります</td>
+			</tr>
+			<tr>
+				<td>X Adjustment</td>
+				<td>要素の位置から右方向に何ピクセルずらすした位置をクリックするかの指定です</td>
+			</tr>
+			<tr>
+				<td>Y Adjustment</td>
+				<td>要素の位置から下方向に何ピクセルずらすした位置をクリックするかの指定です</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<p>Click Type の種類は下のようなものがあります。</p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Left Click</td>
+				<td>マウスの左クリック (押して離す) をします</td>
+			</tr>
+			<tr>
+				<td>Middle Click</td>
+				<td>マウスの中クリック (押して離す) をします</td>
+			</tr>
+			<tr>
+				<td>Right Click</td>
+				<td>マウスの右クリック (押して離す) をします</td>
+			</tr>
+			<tr>
+				<td>Left Down</td>
+				<td>マウスの左ボタンを押す (離さない) をします</td>
+			</tr>
+			<tr>
+				<td>Middle Down</td>
+				<td>マウスの中ボタンを押す (離さない) をします</td>
+			</tr>
+			<tr>
+				<td>Right Down</td>
+				<td>マウスの右ボタンを押す (離さない) をします</td>
+			</tr>
+			<tr>
+				<td>Left Up</td>
+				<td>マウスの左ボタンを離す操作をします<br>(押す操作はしません)</td>
+			</tr>
+			<tr>
+				<td>Middle Up</td>
+				<td>マウスの中ボタンを離す操作ををします<br>(押す操作はしません)</td>
+			</tr>
+			<tr>
+				<td>Right Up</td>
+				<td>マウスの右ボタンを離す操作ををします<br>(押す操作はしません)</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<h3 id="anc_get_value_from_element">Get Value From Element</h3>
+		<p>Get Value From Element では検索した要素の情報を取得します。</p>
+		<p>取得できる情報は、<a href="#anc_set_search_parameters">Set Search Parameters</a> 
+		にある情報のみです。</p>
+		<p>バージョン 3.5.0.0 時点では、チェックボックスのチェックの有無や、入力エリアの入力内容の取得などはできません。</p>
+		<p>
+		<img alt=" " height="618" src="../image/3.5.0/commands/input_ui_automation_get_value_from_element.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Get Value From</td>
+				<td>取得する情報の種類を指定します</td>
+			</tr>
+			<tr>
+				<td style="height: 26px">Apply To Variable</td>
+				<td style="height: 26px">取得した情報を入れる変数を指定します</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<h3 id="anc_check_if_element_exists">Check If Element Exists</h3>
+		<p>Check If Element Exists では、指定した要素が存在するかどうか調べ、その結果を取得します。</p>
+		<p>
+		<img alt=" " height="618" src="../image/3.5.0/commands/input_ui_automation_check_if_element_exists.png" width="631" class="img-fluid"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Apply To Variable</td>
+				<td>結果を代入する変数を指定します</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<p>要素の有無によって処理を分けるならば <a href="if_begin_if.html">Begin If 命令</a>、要素が存在する間処理を繰り返すなら 
+		Begin Loop 命令を使った方が良いでしょう。</p>
+		<hr>
+		<h2>参考</h2>
+		<ul>
+			<li><a href="if_begin_if.html">Begin If 命令</a></li>
+			<li><a href="../info/difference_sendkey_uiauto_modal.html">Send 
+			Keystrokes・Activate Windows と UI Automation のモーダルフォームの解釈の違い</a></li>
+			<li><a href="../info/what_automation_can.html">taskt 
+			が使えるクリックの自動化について</a></li>
+		</ul>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

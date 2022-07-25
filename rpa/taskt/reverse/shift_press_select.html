@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "reverse_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>Shift+矢印キーで範囲選択をする - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigate" aria-controls="#top_navigate" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="top_navigate">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle" href="../first/index.html" id="dropdown_first" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
+					<a class="dropdown-item" href="../first/quickstart.html">簡単な使い方</a>
+					<a class="dropdown-item" href="../first/update.html">アップデート</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle" href="../commands/index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../commands/index.html">一覧</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_api">API Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_data">Data Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_dictionary">Dictionary Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_engine">Engine Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_error">Error Handling Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_excel">Excel Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_folder">Folder Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_if">If Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_image">Image Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_input">Input Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_loop">Loop Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_misc">Misc Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_outlook">Outlook Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_regex">Regex Commands</a>
+	                <a class="dropdown-item" href="../commands/index.html#anc_remote">Remote Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_system">System Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_task">Task Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_text">Text File Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_variable">Variable Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_web">Web Browser Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_word">Word Commands</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
+					</div>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            </li>
+	            <li class="nav-item active">
+	            	<a class="nav-link" href="index.html">逆引き</a>
+	            </li>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+   
+    <div class="container small">
+   	 <nav aria-label="breadcrumb">
+  		<ol class="breadcrumb">
+    		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
+    		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">逆引き</a></li>
+    		
+    		<!-- #BeginEditable "breadcrumb2" -->
+    		<!-- #EndEditable -->
+
+    		<li class="breadcrumb-item active" aria-current="page">
+    		<!-- #BeginEditable "breadcrumb1" -->
+    		Shift+矢印キーで範囲選択をする<!-- #EndEditable --></li>
+			
+  		</ol>
+	</nav>
+	<p class="text-right">無料で使える RPA の  
+		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
+   </div>
+
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+		<h1>Shift+矢印キーで範囲選択をする</h1>
+		<p>Word や Excel などで使うことが多い、Shift ＋ 矢印キーでの範囲選択は、taskt でも行うことができます。</p>
+		<p><a href="scripts/shift_press_select.xml">スクリプトのダウンロード</a>
+		<a href="../info/downoad_script.html">
+		<img alt="スクリプトファイルのダウロードと実行" class="auto-style1" height="30" src="../image/question.png" width="30"></a></p>
+		<p>このスクリプトは、下のような動きをします。</p>
+		<ul>
+			<li>メモ帳を実行</li>
+			<li>「Hello My World !」と入力</li>
+			<li>「My」の左にカーソルを移動する</li>
+			<li>「My」を選択し、削除</li>
+		</ul>
+		<p>
+		<img alt="" height="589" src="../image/3.2.0/reverse/shift_press_select/shift_press_select.png" width="979" class="img-fluid"></p>
+		<p>Shift を押しながら、矢印キーを押す操作は、Send Keystrokes 命令で「+{RIGHT}」のように入力してもできません。</p>
+		<p>下の例のように、Send Advanced Keystrokes 命令を使います。</p>
+		<p>Set Keys and Parameters 命令は下のように設定します。</p>
+		<ul>
+			<li>Shift は<strong> Key Down</strong> にする</li>
+			<li>矢印キー (下の画像では Right Arrow) は Key Press (Down + Up) にする</li>
+		</ul>
+		<p>Optional - Return all keys to 'UP' position after execution は Yes 
+		にした方が良いでしょう。</p>
+		<p>
+		<img alt="" height="618" src="../image/3.2.0/reverse/shift_press_select/001.png" width="631" class="img-fluid"></p>
+		<p>Send Advanced Keystrokes 命令が実行された直後、メモ帳は下のような状態になります。</p>
+		<p>
+		<img alt="" height="638" src="../image/3.2.0/reverse/shift_press_select/002.png" width="827" class="img-fluid"></p>
+		<p>ちなみに、Send Keystrokes 命令で「+{RIGHT}」のように指定すると、1 文字だけは選択できる可能性があります。</p>
+		<p>しかし、今回の例のように 3 文字など複数を選択するときは、Send Advanced Keystrokes 命令を使い、Shift キーを 
+		Key Down にしたまま、必要な回数矢印キーを Key Press で入力させる必要があります。</p>
+		<p>最後に、元も子もない話になりますが、Word 
+		などで文章の一部を選択するとき、Shift+矢印キーを使うよりも、検索機能を使った方が便利かもしれません。</p>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StartProcessCommand" CommandID="1945ef40-134c-46d3-bd2e-6161d247fd24" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="notepad" v_WaitForExit="No" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="321229e1-30b5-44a0-b6d8-b0ebc85375fc" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="こんにちは" v_EncryptionOption="Not Encrypted" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="60fa8a49-7ed0-4300-8f21-02dee264b8a0" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="^s" v_EncryptionOption="Not Encrypted" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="ed03316d-bcfa-4157-a9a8-3aeb0c543f6d" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{Folder.Desktop}\hello.txt" v_EncryptionOption="Not Encrypted" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="83858576-1cd3-4e55-84bc-ebb0c6252667" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{ENTER}" v_EncryptionOption="Not Encrypted" />
+    </ScriptAction>
+  </Commands>
+  <Variables />
+</Script>

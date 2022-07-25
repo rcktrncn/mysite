@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"><title></title></head>
+
+<body bgcolor="white" link="#0000aa" vlink="#700070">
+<a href="http://www.mingw.org/download.shtml">http://www.mingw.org/download.shtml</a><br>
+↑<br>
+ここから、「Mingw-4.1.0.exe」をダウンロードする。個人的には、「北陸先端技術大学院大学」の828Kbからのダウンロードがおすすめ。<br>
+<br>
+取りあえず、インストールする。インストールのフォルダはデフォルトの「C:\mingw\」にしてください。<br>
+<br>
+スタートメニュー → プログラム → アクセサリ → コマンドプロンプト<br>
+<br>
+「 cd .. 」を何度か打ち込んで、<br>
+<br>
+c:\&gt;<br>
+<br>
+と表示させる。<br>
+<br>
+「 cd mingw\mingw 」<br>
+<br>
+「 path ../bin;%path% 」<br>
+<br>
+を入力。<br>
+これで、gccが使えるようになる。命令のやり方は、WS室のものと同じ<br>
+<br>
+例：foo.cをコンパイルして、foo.exeを作成する<br>
+&nbsp;&nbsp;&nbsp; gcc -o foo.exe foo.c<br>
+<br>
+例：foo.c、foo2.cをコンパイルして、foo.exeを作成する<br>
+&nbsp;&nbsp;&nbsp; gcc -o foo.exe foo.c foo2.c<br>
+<br>
+例：foo.exeを実行する<br>
+&nbsp;&nbsp;&nbsp; foo<br>
+<br>
+その他、Windowsで覚えておくといいコマンド<br>
+<table cellpadding="2" cellspacing="2" border="1" style="text-align: left; width: 100%;">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">cd<br>
+      </td>
+      <td style="vertical-align: top;">指定したディレクトリーへ移動。WS室のあれの命令と同じ<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">dir<br>
+      </td>
+      <td style="vertical-align: top;">現在のディレクトリーにあるファイルを表示<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">del<br>
+      </td>
+      <td style="vertical-align: top;">指定したファイルを削除<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">mkdir<br>
+      </td>
+      <td style="vertical-align: top;">ディレクトリーの作成<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">path<br>
+      </td>
+      <td style="vertical-align: top;">pathを通す<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">cls<br>
+      </td>
+      <td style="vertical-align: top;">画面をキレイにする<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<a href="http://www.sougasoft.co.jp/">http://www.sougasoft.co.jp/</a><br>
+↑<br>
+一応、愛用しているWin用のCプログラムエディター<br>
+<br>
+それから、Ｃのファイルは、<br>
+c:\mingw\mingw\<br>
+に記録しておくと便利。理由は特にないけれど・・・<br>
+<br>
+<br>
+</body></html>

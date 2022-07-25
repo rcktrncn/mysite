@@ -1,0 +1,678 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+  <title>らんの眼－ソーサリアンオンライン Sorcerian Online 攻略</title>
+</head>
+<body bgcolor="white" link="#0000aa" vlink="#700070">
+<br>
+<hr>
+<a href="../../../index.html">目次</a> <b>&gt;</b> <a href="../../index.html">ゲームについて</a>　<b>&gt;</b> <a href="../index.html">日本Falcom攻略</a> <b>&gt;</b> <a href="index.html">Sorcerian Online</a> <b>&gt;</b> <a href="so-tutrial.html">チュートリアル</a> <b>&gt;</b> マクロ<br>
+<div align="center">
+<a name="top"></a>
+<b>Sorcerian Online</b><br>
+<br>
+<hr width="80%" noshade>
+| <a href="so-main.html">概要</a> | <font color="red">チュートリアル</font> |<br>
+<br>
+| <a href="so-tutrial-macro.html">マクロ に戻る</a> |<br>
+ <hr width="80%" noshade>
+<br>
+<table border="0" cellspacing="1" width="80%" bgcolor="#777777">
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td bgcolor="#eeeeee"><font size="+1"><b>マクロの組み方</b></font><font size="+2">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td height="2"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" width="80%" cellspacing="2" bgcolor="#777777">
+  <tbody>
+    <tr bgcolor="white">
+      <td>
+<br>
+<ul type="disc">
+  <li><a href="#001">マクロの一覧</a></li>
+  <li><a href="#002">シンプルなマクロ</a>
+        <ul type="circle">
+          <li><a href="#002a">Com.</a></li>
+          <li><a href="#002b">Com. + Sub.</a></li>
+          <li><a href="#002c">Com. + n or Com. + Name</a></li>
+          <li><a href="#002d">Com. + Msg or Com. + on/off</a></li>
+        </ul>
+        </li>
+  <li><a href="#003">少し複雑なマクロ</a>
+        <ul type="circle">
+          <li><a href="#003a">Com. + Name + Sub.</a></li>
+          <li><a href="#003b">Com. + Sub. + Msg</a></li>
+        </ul>
+        </li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" width="80%" cellspacing="2" bgcolor="#777777">
+  <tbody>
+    <tr bgcolor="white">
+      <td>
+<br>
+<table border="0" cellspacing="1" width="90%" align="center" bgcolor="#999999">
+  <tbody>
+    <tr>
+      <td width="5%"><a name="001">&nbsp;</a></td>
+      <td bgcolor="#eeeeee"><b>マクロの一覧</b><font size="+1">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td height="2"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" width="90%" align="center">
+  <tbody>
+    <tr>
+      <td>　よく使うと思われるマクロの一覧を示します。Sub. は対象(PC、NPC)を、Name はアイテムなどの名前を、Msg はメッセージを示します。また
+            n は1～30 までの整数を示します。<br>
+            <br>
+            <table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+<tr bgcolor="#dddddd">
+                  <td align="center" width="50%">行動</td>
+                  <td align="center">マクロ</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>ウェイト(ちょっと待つ)</td>
+                  <td>:wait n</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>直接攻撃する</td>
+                  <td>:attack Sub.</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>遠隔攻撃する</td>
+                  <td>:range Sub.</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>休憩状態 ON/OFF</td>
+                  <td>:healing</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>防御</td>
+                  <td>:defense</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>戦闘状態 ON/OFF</td>
+                  <td>:battle on<br>
+                  :battle off<br>
+                  :battle</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>カーソルを合わせる</td>
+                  <td>:target Sub.<br>
+                  :ta Sub.</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>調べる</td>
+                  <td>:check Sub.<br>
+                  :c Sub.</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>トレード</td>
+                  <td>:trade Sub.</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>アイテムを使う</td>
+                  <td>:item Name</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>魔法を使う</td>
+                  <td>:magic Name Sub.<br>
+                  :ma Name Sub.</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>スキルを使う</td>
+                  <td>:skill Name Sub.</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>ログアウト</td>
+                  <td>:logout</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>パーティーチャット</td>
+                  <td>:party Msg<br>
+                  :p Msg</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>広範囲に聞こえるメッセージ<br>
+                  (SHOUT、シャウト)</td>
+                  <td>:shout Msg<br>
+                  :sh Msg</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>普通の会話<br>
+                  (SAY)</td>
+                  <td>:say Msg<br>
+                  :s Msg</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>特定のプレイヤーにのみ伝わるメッセージ<br>
+                  (TELL)</td>
+                  <td>:tell Sub. Msg</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>ギルドチャット</td>
+                  <td>:guild Msg<br>
+                  :g Msg</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>ホストメッセージ</td>
+      <td>:hmes Msg<br>
+                  :hm Msg</td>
+    </tr>
+                <tr bgcolor="white">
+                  <td>パーティーに誘う</td>
+                  <td>:invite Sub.</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>パーティーに参加する</td>
+                  <td>:join</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>ダイス<br>
+                  (さいころを振る)</td>
+                  <td>:dice</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>時間表示</td>
+                  <td>:time</td>
+                </tr>
+                <tr bgcolor="white">
+                  <td>自分のゲームに誘う</td>
+                  <td>:gameinvite Sub.<br>
+                  :gi Sub.</td>
+                </tr>
+              </tbody>
+</table>
+            <br>
+            <table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+<tr bgcolor="#dddddd">
+                  <td align="center" width="50%">対象(Sub.)</td>
+                  <td align="center">記号</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>自分自身</td>
+                  <td align="center">%m<br>
+                  %p1</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>パーティーの2人目</td>
+                  <td align="center">%p2</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>パーティーの3人目</td>
+                  <td align="center">%p3</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>パーティーの4人目</td>
+                  <td align="center">%p4</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>カーソルが合っているキャラクター</td>
+                  <td align="center">%t</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>一番近いNPC</td>
+                  <td align="center">%n</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>一番近い敵</td>
+                  <td align="center">%e</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>一番近くにいる戦闘状態の敵</td>
+                  <td align="center">%be</td>
+                </tr>
+ </tbody>
+</table>
+            </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" width="80%" cellspacing="2" bgcolor="#777777">
+  <tbody>
+    <tr bgcolor="white">
+      <td>
+<br>
+<table border="0" cellspacing="1" width="90%" align="center" bgcolor="#999999">
+  <tbody>
+    <tr>
+      <td width="5%"><a name="002">&nbsp;</a></td>
+      <td bgcolor="#eeeeee"><b>シンプルなマクロ</b><font size="+1">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td height="2"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" width="90%" align="center">
+  <tbody>
+    <tr>
+      <td><a name="002a"><b>1.Com.</b></a><br>
+            　「Com.」とはその<b>コマンドだけを入力すれば動作する</b>マクロです。「Com.」に当てはまるマクロは以下の通りです。<br>
+            <br>
+            <table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="#dddddd">
+      <td width="50%">動作</td>
+      <td>マクロ</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>直接攻撃する</td>
+                  <td bgcolor="#bbffff">:attack</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>遠隔攻撃する</td>
+                  <td bgcolor="#bbffff">:range</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>休憩状態 ON/OFF</td>
+      <td>:healing</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>戦闘状態 ON/OFF</td>
+                  <td bgcolor="#bbffff">:battle</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>防御</td>
+      <td>:defense</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>ログアウト</td>
+      <td>:logout</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>パーティーに参加</td>
+      <td>:join</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>パーティーから脱退</td>
+      <td>:leave</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>パーティーを解散</td>
+      <td>:breakup</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>ダイス<br>
+                  (サイコロを振る)</td>
+      <td>:dice</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>時間を表示</td>
+      <td>:time</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>マップ表示</td>
+                  <td bgcolor="#bbffff">:map</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>オートターゲット ON/OFF</td>
+                  <td bgcolor="#bbffff">:autotarget</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>名前表示 ON/OFF</td>
+      <td>:showname</td>
+    </tr>
+  </tbody>
+</table>
+            <br>
+            　注意しなければならないものは水色の枠のマクロです。「:attack」、「:range」は本来コマンドの次にターゲットを指定しなければなりません。上記のようにターゲットを省略した場合は、<font color="#ff0000">現在ターゲットが合っている対象</font>に攻撃を仕掛けます。<br>
+            　「:battle」、「:map」、「:autotarget」は本来コマンドの次に「on」もしくは「off」を指定しなければなりません。上記のように省略した場合、<font color="#ff0000">トグル動作</font>(on の状態ならばoff を指定し、off の状態ならばon を指定)となります。<br>
+            <br>
+            <div align="center"><img src="img/img165.jpg" border="1"><br>
+            (:join の使用例)</div>
+            <br>
+<hr width="90%" noshade>
+<br>
+            <a name="002b"><b>2.Com. + Sub.</b></a><br>
+            　「Com. + Sub.」とは<b>コマンド(Com.)と対象(Sub.)を指定する</b>ことで動作するマクロです。<font color="#ff0000">コマンド(Com.)と対象(Sub.)の間には<b>半角スペース</b>を入れなければなけません</font>。「Com. + Sub.」に当てはまるマクロは以下の通りです。<br>
+            <br>
+            <table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="#dddddd">
+      <td width="50%">動作</td>
+      <td>マクロ</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>直接攻撃する</td>
+                  <td bgcolor="#bbfffff">:attack Sub.</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>遠隔攻撃する</td>
+                  <td bgcolor="#bbfffff">:range Sub.</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>カーソルを合わせる</td>
+      <td>:target Sub.<br>
+                  :ta Sub.</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>調べる</td>
+      <td>:check Sub.<br>
+                  :c Sub.</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>トレードを行う</td>
+      <td>:trade Sub.</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>プレイヤー検索</td>
+      <td>:search Sub.<br>:sea Sub.</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>ホストゲーム検索</td>
+      <td>:gamelist Sub.<br>
+                  :gl Sub. (l はエル)</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>パーティーに誘う</td>
+      <td>:invite Sub.</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>パーティーリーダー変更</td>
+      <td>:changeleader Sub.<br>
+                  :cl Sub. (l はエル)</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>パーティーから追い出す</td>
+      <td>:kick Sub.</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>自分のゲームに誘う</td>
+      <td>:gameinvite Sub.<br>
+                  :gi Sub.</td>
+    </tr>
+  </tbody>
+</table>
+            <br>
+            　なお、上の表で「Sub.」と表記した部分には、以下の記号を入力してください。ただし、水色の枠の「:attack」、「:range」のみ省略可能です。「Sub.」を省略した場合、すでにターゲットが合っているものが対象となります。<br>
+            <br>
+            <table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+<tr bgcolor="#dddddd">
+                  <td align="center" width="50%">対象(Sub.)</td>
+                  <td align="center">記号</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>自分自身</td>
+                  <td align="center">%m<br>
+                  %p1</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>パーティーの2人目</td>
+                  <td align="center">%p2</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>パーティーの3人目</td>
+                  <td align="center">%p3</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>パーティーの4人目</td>
+                  <td align="center">%p4</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>カーソルが合っているキャラクター</td>
+                  <td align="center">%t</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>一番近いNPC</td>
+                  <td align="center">%n</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>一番近い敵</td>
+                  <td align="center">%e</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>一番近くにいる戦闘状態の敵</td>
+                  <td align="center">%be</td>
+                </tr>
+ </tbody>
+</table>
+            <br>
+            <div align="center"><img src="img/img166.jpg" border="1"><br>
+            (ターゲットの合っているプレイヤーをパーティーに誘う)</div>
+<br>
+<hr width="90%" noshade>
+<br>
+            <a name="002c"><b>3.Com. + n or Com. + Name</b></a><br>
+            　「Com. + n」、「Com. + Name」は<b>コマンド(Com.)の後に整数もしくはアイテム・スキルなどの名称(Name)を入力</b>することで動作するマクロです。<font color="#ff0000">コマンド(Com.)と整数(n)、アイテムなどの名称(Name)の間には<b>半角スペース</b>を入れなければなりません</font>。これに当てはまるマクロは以下の通りです。<br>
+            <br>
+            <table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="#dddddd">
+      <td width="50%">動作</td>
+      <td>マクロ</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>ウェイト<br>
+                  (少し待つ)</td>
+      <td>:wait n</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>アイテムを使う</td>
+      <td>:item Name</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>魔法を使う</td>
+                  <td bgcolor="#bbffff">:magic Name<br>
+                  :ma Name</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>スキルを使う</td>
+                  <td bgcolor="#bbffff">:skill Name</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>感情表現</td>
+                  <td bgcolor="#bbffff">:emotion Name<br>
+                  :emo Name</td>
+                </tr>
+  </tbody>
+</table>
+            <br>
+            　注意しなければならないのは、水色の枠のマクロです。これらのマクロは本来「Com. + Name + Sub.」の形を取っているため、Nameの後に対象を入力しなければなりません。そのため上記のように表記した場合、<font color="#ff0000">すでにカーソルを合わせているものが対象となります</font>。ただし、感情表現だけは例外で対象を省略したときは、自分自身が対象となります。なお、Nameの指定はマクロ編集中に<b>Tabキー</b>を押すことで選ぶことができます。<br>
+            <br>
+            <div align="center"><img src="img/img170.jpg" border="1"><br>
+            (Tabキーを押したとき)<br>
+            <br>
+            <img src="img/img168.jpg" border="1"><br>
+            (3秒間待つ)<br>
+            <br>
+            <img src="img/img167.jpg" border="1"><br>
+            (「乾燥ラビット肉リドニア風」を使う)<br>
+            <br>
+            <img src="img/img169.jpg" border="1"><br>
+            (HEAL-I をターゲットのあったプレイヤーに使う)</div>
+<br>
+<hr width="90%" noshade>
+<br>
+            <a name="002d"><b>4.Com. + Msg or Com. + on/off</b></a><br>
+            　「Com. + Msg」、「Com. + on/off」は<b>コマンドの後にメッセージ、もしくはon・offを指定することで動作</b>するマクロです。<font color="#ff0000">コマンドとメッセージ、もしくはon・offの間には<b>半角スペース</b>を入れなければなりません</font>。これらに当てはまるマクロは以下の通りです。<br>
+            <br>
+            <table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="#dddddd">
+      <td width="50%">動作</td>
+      <td>マクロ</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>戦闘状態 ON/OFF</td>
+                  <td bgcolor="#bbffff">:battle on/off</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>マップ表示 ON/OFF</td>
+                  <td bgcolor="#bbffff">:map on/off</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>オートターゲット ON/OFF</td>
+                  <td bgcolor="#bbffff">:autotarget on/off</td>
+                </tr>
+    <tr bgcolor="white">
+      <td>パーティーチャット</td>
+      <td>:party Msg<br>
+                  :p Msg</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>ギルドチャット</td>
+      <td>:guild Msg<br>
+                  :g Msg</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>広範囲に聞こえるメッセージ<br>
+                  (シャウト、SHOUT)</td>
+      <td>:shout Msg<br>
+                  :sh Msg</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>周辺に聞こえるメッセージ<br>
+                  (Say)</td>
+      <td>:say Msg<br>
+                  :s Msg</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>ホストメッセージ</td>
+      <td>:hmes Msg<br>
+                  :hm Msg</td>
+    </tr>
+  </tbody>
+</table>
+            <br>
+            　水色の枠の「on/off」をしているするマクロは、on/offを省略した場合、トグル動作(on の場合はoff を指定し、off の場合はon
+            を指定)となります。また「Com. + Msg」のマクロでメッセージ(Msg)を何も入力しなくても動作しますが、意味がないのでやめましょう。<br>
+            <br>
+            <div align="center"><img src="img/img172.jpg" border="1"><br>
+            (戦闘状態 ON)<br>
+            <br>
+            <img src="img/img171.jpg" border="1"><br>
+            (パーティーメンバーに「こんにちは」と言う)</div></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" width="80%" cellspacing="2" bgcolor="#777777">
+  <tbody>
+    <tr bgcolor="white">
+      <td>
+<br>
+<table border="0" cellspacing="1" width="90%" align="center" bgcolor="#999999">
+  <tbody>
+    <tr>
+      <td width="5%"><a name="003">&nbsp;</a></td>
+      <td bgcolor="#eeeeee"><b>少し複雑なマクロ</b><font size="+1">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td height="2"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" width="90%" align="center">
+  <tbody>
+    <tr>
+      <td><a name="003a"><b>1.Com. + Name + Sub.</b></a><br>
+            　「Com. + Name + Sub.」とはコマンドの後に<b>スキルなどの名称と使う対象を指定することで動作</b>するマクロです。<font color="#ff0000">コマンド(Com.)、名称(Name)、対象(Sub.)の間にはそれぞれ<b>半角スペース</b>を入れなければなりません</font>。「Com. + Name + Sub.」のマクロは以下の通りです。<br>
+            <br>
+<table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="#dddddd">
+      <td width="50%">動作</td>
+      <td>マクロ</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>魔法を使う</td>
+      <td>:magic Name Sub.<br>
+                  :ma Name Sub.</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>スキルを使う</td>
+      <td>:skill Name Sub.</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>感情表現</td>
+      <td>:emotion Name Sub.<br>
+                  :emo Name Sub.</td>
+    </tr>
+  </tbody>
+</table>
+            <br>
+            　上記のマクロは全て対象(Sub.)を省略することはできますが、省略した場合どうなるかはあえて書きません。またマクロ編集中に<b>Tabキー</b>を押すと名称(Name)の一覧を見ることができます。<br>
+            <br>
+            <div align="center"><img src="img/img170.jpg" border="1"><br>
+            (Tabキーを押したとき)<br>
+            <br>
+            <img src="img/img173.jpg" border="1"><br>
+            (HEAL-I をパーティーの3番目のプレイヤーに使う)</div>
+            <br>
+<hr width="90%" noshade>
+<br>
+            <a name="003b"><b>2.Com. + Sub. + Msg</b></a><br>
+            　「Com. + Sub. + Msg」とはコマンド(Com.)の後に<b>対象(Sub.)、メッセージ(Msg)を入力することで動作</b>するマクロです。<font color="#ff0000">コマンド(Com.)、対象(Sub.)、メッセージ(Msg)の間にはそれぞれ<b>半角スペース</b>を入力しなければなりません</font>。「Com. + Sub. + Msg」のマクロは以下の通りです。<br>
+            <br>
+<table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="#dddddd">
+      <td width="50%">動作</td>
+      <td>マクロ</td>
+    </tr>
+    <tr bgcolor="white">
+      <td>特定のプレイヤーにのみ伝わるメッセージ<br>
+                  (TELL)</td>
+      <td>:tell Sub. Msg</td>
+    </tr>
+  </tbody>
+</table>
+            <br>
+            <div align="center"><img src="img/img174.jpg" border="1"><br>
+            ([GM]SAM に対して「こんにちは」と言う)</div></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+ <hr width="80%" noshade>
+| <a href="so-tutrial-macro.html">マクロ に戻る</a> |<br>
+<br>
+| <a href="so-main.html">概要</a> | <font color="red">チュートリアル</font> |<br>
+<hr width="80%" noshade>
+<br>
+<b>Sorcerian Online</b><br>
+<br>
+| <a href="../../../index.html">目次へ戻る</a> | <a href="#top">ページの上部へ</a> |<br>
+<br>
+<br>
+<br>
+</div>
+<hr>
+</body>
+</html>

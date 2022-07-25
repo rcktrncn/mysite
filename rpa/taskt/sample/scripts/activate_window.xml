@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="28c781a3-1a20-40dd-8d12-5c645a95455b" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Active Window のタイトルを取得し、使用するソフトを切り替える" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="3dc830c3-8ba9-4e15-8bdb-2bb615388b32" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" v_Comment="メモ帳を実行" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StartProcessCommand" CommandID="56ab1509-b20a-48da-9dfd-9e5bfb9387eb" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="notepad" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="5a9fb9e4-0915-4a73-b4b6-7a54a8adc654" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="notepad1" v_Input="[Env.ActiveWindowTitle]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="a6a3d2cd-9df9-4b03-b769-9efb1d71054c" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" v_Comment="ワードパッドを実行" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StartProcessCommand" CommandID="fd22fc0a-9c78-415b-ada4-5ab77d5ec5be" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="write" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="b7a2e5ec-2c9a-4cce-98b2-f3f2052ad96b" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="notepad2" v_Input="[Env.ActiveWindowTitle]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="889ddeb8-39df-4799-b2f7-5f3cf7c14719" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" v_Comment="メモ帳をアクティブにして操作" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ActivateWindowCommand" CommandID="2d0e12a4-5ebe-4c88-b212-b618078247b5" CommandName="ActivateWindowCommand" IsCommented="false" SelectionName="Activate Window" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="[notepad1]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="a6e70e62-43f3-4e73-9994-e7c6dbcd8cc4" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="こんにちは" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="4ba97b79-4858-4267-976e-f8c2382ae86f" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" v_Comment="ワードパッドをアクティブにし操作" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ActivateWindowCommand" CommandID="43328b4e-533d-422c-b55c-426173c0915e" CommandName="ActivateWindowCommand" IsCommented="false" SelectionName="Activate Window" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="[notepad2]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="6e4a0641-9d3a-47ee-a9a4-e8bac329fa83" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="こんばんは" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="08b32227-d380-4dd7-86bb-e91eb07b16cf" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" v_Comment="メモ帳をアクティブにして操作" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ActivateWindowCommand" CommandID="e7229a6d-54c4-4553-b945-8836af399dde" CommandName="ActivateWindowCommand" IsCommented="false" SelectionName="Activate Window" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="[notepad1]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="e5e77b7e-88ed-41af-a27e-d4fc27a79c76" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="おはよう" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="58d6725b-8473-4709-8f78-4a439db4e293" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="17" PauseBeforeExeucution="false" v_Comment="ワードパッドをアクティブにし操作" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ActivateWindowCommand" CommandID="6babcf9e-2edc-46d8-97a8-1d21b2837deb" CommandName="ActivateWindowCommand" IsCommented="false" SelectionName="Activate Window" DefaultPause="0" LineNumber="18" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="[notepad2]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="ea0a5c73-8d8f-4ee1-8e99-8c2a8a8c68e8" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="19" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="おやすみ" />
+    </ScriptAction>
+  </Commands>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>notepad1</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>notepad2</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

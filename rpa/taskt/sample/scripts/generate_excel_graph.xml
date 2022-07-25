@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="e649c81c-a08d-4511-84a5-0ab293fd7800" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="Excel にデータを入力し、グラフを作る" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="cfed7701-0974-4a73-8113-abea95ff44db" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" v_Comment="商品データをリスト [itemList] に入れる" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StringSplitCommand" CommandID="5700821c-998c-4c61-a354-c5d6381a5771" CommandName="StringSplitCommand" IsCommented="false" SelectionName="Split Text" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="items" v_splitCharacter="," v_applyConvertToUserVariableName="[itemList]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="0b187ad6-3999-453f-bef6-a85fd10ee795" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" v_Comment="Excel の実行" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelCreateApplicationCommand" CommandID="7a7bcf7a-e9d0-4b6c-9416-87e7ea4f84ab" CommandName="ExcelOpenApplicationCommand" IsCommented="false" SelectionName="Create Excel Application" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelAddWorkbookCommand" CommandID="cfaf8edf-d02c-420d-9718-a256506bae25" CommandName="ExcelAddWorkbookCommand" IsCommented="false" SelectionName="Add Workbook" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelActivateSheetCommand" CommandID="0fa79a1c-79ea-4046-8196-5da2b3b68164" CommandName="ExcelActivateSheetCommand" IsCommented="false" SelectionName="Activate Sheet" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_SheetName="Sheet1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="02c3e8a4-164e-410b-a7b4-c122434d3dc1" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" v_Comment="メッセージ表示" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="9908b886-278f-4a34-abdf-42a1f75e9a3e" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="OK をクリック後、Excel の画面を一番前にしてください&#xD;&#xA;約 3 秒後から操作を始めます" v_AutoCloseAfter="0" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="PauseCommand" CommandID="e17b451a-dffd-42bb-a40f-6320cb845dc2" CommandName="PauseCommand" IsCommented="false" SelectionName="Pause Script" DefaultPause="0" LineNumber="10" PauseBeforeExeucution="false" CommandEnabled="true" v_PauseLength="3000" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="420d3d7a-8d72-4b69-b584-c408581cb56b" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="11" PauseBeforeExeucution="false" v_Comment="Sheet1 にデータを入力" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="215d3783-26b2-4f72-9e1b-250c10ebef3c" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="12" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="fm" v_Input="[Env.ActiveWindowTitle]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="BeginListLoopCommand" CommandID="cc1d2bf6-98a3-493e-a82b-6f1cd2a33003" CommandName="BeginListLoopCommand" IsCommented="false" SelectionName="Loop List" DefaultPause="0" LineNumber="13" PauseBeforeExeucution="false" CommandEnabled="true" v_LoopParameter="[itemList]" />
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ExcelSetCellCommand" CommandID="2b580e8d-e897-4555-8b51-7fb94690e761" CommandName="ExcelSetCellCommand" IsCommented="false" SelectionName="Set Cell" DefaultPause="0" LineNumber="14" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_TextToSet="[itemList]" v_ExcelCellAddress="A[Loop.CurrentIndex]" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="ExcelSetCellCommand" CommandID="635bc333-7e90-418c-a432-409a507af2d7" CommandName="ExcelSetCellCommand" IsCommented="false" SelectionName="Set Cell" DefaultPause="0" LineNumber="15" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_TextToSet="=Int(Rand()*2000)" v_ExcelCellAddress="B[Loop.CurrentIndex]" />
+      </AdditionalScriptCommands>
+      <AdditionalScriptCommands>
+        <ScriptCommand xsi:type="EndLoopCommand" CommandID="2ce4a050-72f8-46a6-9f6e-2962feffd5a9" CommandName="EndLoopCommand" IsCommented="false" SelectionName="End Loop" DefaultPause="0" LineNumber="16" PauseBeforeExeucution="false" CommandEnabled="true" />
+      </AdditionalScriptCommands>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelGoToCellCommand" CommandID="3b1cd1d6-0794-4c27-a8e3-a53d44b2db1a" CommandName="ExcelGoToCellCommand" IsCommented="false" SelectionName="Go To Cell" DefaultPause="0" LineNumber="17" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_CellLocation="A1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ActivateWindowCommand" CommandID="b81f6cd0-25f5-4934-a5b7-1d5be3d0a0d1" CommandName="ActivateWindowCommand" IsCommented="false" SelectionName="Activate Window" DefaultPause="0" LineNumber="18" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="[fm]" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="284cde8c-5e28-421d-b4af-0e05313cc41d" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="19" PauseBeforeExeucution="false" v_Comment="行の挿入" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="6a12e76e-39cf-481e-acf8-246952b9be5b" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="20" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="%h" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="874a3d34-1b9f-445b-bc47-516a5ce6b608" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="21" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="i2" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="25aa2ac2-f2d8-48ae-bb6c-bde88e232b53" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="22" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="r" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelSetCellCommand" CommandID="8a5ebb54-204d-4165-9a4d-5c85d161c671" CommandName="ExcelSetCellCommand" IsCommented="false" SelectionName="Set Cell" DefaultPause="0" LineNumber="23" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_TextToSet="商品" v_ExcelCellAddress="A1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelSetCellCommand" CommandID="d892713c-00f0-44bc-b76e-d3f539dac420" CommandName="ExcelSetCellCommand" IsCommented="false" SelectionName="Set Cell" DefaultPause="0" LineNumber="24" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_TextToSet="販売" v_ExcelCellAddress="B1" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="7047f4c8-272e-4852-af6e-1d71d84acd32" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="25" PauseBeforeExeucution="false" v_Comment="Sheet1 の名前を変更" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="f3399ab5-32dc-4f8d-b60d-86ee97602684" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="26" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="%h" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="b5a9aec8-7cb9-4bdd-a711-b6c030afd519" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="27" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="o" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="ea68db31-f04f-4767-8bec-2ce630ec9b0c" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="28" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="r" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="309205a6-b216-47b0-91f8-5118c32dc50f" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="29" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="販売記録{ENTER}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="75f8519f-f8a8-4e16-8167-f8fc122b26ef" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="30" PauseBeforeExeucution="false" v_Comment="シートを追加し、名前を販売分析にする" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="a31e7a5c-868c-4d78-9a8f-731444599a44" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="31" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="%h" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="be491c19-98c2-4019-a4ff-2948dafcb9d4" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="32" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="i2" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="8a5c07c8-5a71-4969-814e-f5aa8cef428f" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="33" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="s" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="3d46e5f8-8497-4f77-be4f-dfa9ee5d4605" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="34" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="%h" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="97006ebc-cfdb-4286-83f7-aacb5fc5905d" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="35" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="o" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="7beab60f-98ef-4471-82f9-eb5084f1a74c" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="36" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="r" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="77d80c9d-1c00-4a51-afa6-f5a30697ade4" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="37" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="販売分析{ENTER}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="f75942e0-be5a-4ad5-83b7-52c6587d34df" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="38" PauseBeforeExeucution="false" v_Comment="販売記録のデータをコピー" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelActivateSheetCommand" CommandID="295de695-c847-432c-86b6-aa9d64ac0355" CommandName="ExcelActivateSheetCommand" IsCommented="false" SelectionName="Activate Sheet" DefaultPause="0" LineNumber="39" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_SheetName="販売記録" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="d68db7d3-86ed-4537-94ab-099af0c5af32" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="40" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="^a" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="4b033585-19c0-4848-8d62-0fa0fc163766" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="41" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="^c" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="bfd8b8d7-23ae-492e-8050-759acfaf2270" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="42" PauseBeforeExeucution="false" v_Comment="販売分析に貼り付け" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelActivateSheetCommand" CommandID="89c18b01-16b0-4b00-b174-33e2ed70552a" CommandName="ExcelActivateSheetCommand" IsCommented="false" SelectionName="Activate Sheet" DefaultPause="0" LineNumber="43" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_SheetName="販売分析" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="a13437cd-f81e-4e3b-a420-6d20043424d7" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="44" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="^v" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="c14f4044-65dc-4a90-9853-e8bbe9e40e1a" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="45" PauseBeforeExeucution="false" v_Comment="棒グラフの作成" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="b87d8d16-d834-4c05-8d36-9d2e229860d3" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="46" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="%n" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="51212a64-8a7d-47f5-a329-7c24baa8cda4" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="47" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="c" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="cb8c45e2-9f5b-42cb-a3d3-efe798cedc29" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="48" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{HOME}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="aa209a31-fc83-49cd-9e0a-dbab0555f2fb" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="49" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{ENTER}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="944c8bac-8764-4903-a6c3-e41e828d03e8" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="50" PauseBeforeExeucution="false" v_Comment="グラフタイトルを変更" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="9211d60a-8842-4986-b8ab-674b864a206b" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="51" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="%ja" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="26c27051-9c0b-421a-b2a9-51fbc5c3a3f4" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="52" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="e" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendAdvancedKeyStrokesCommand" CommandID="883a0760-e716-447f-a3f2-d0eb47027d5d" CommandName="SendAdvancedKeyStrokesCommand" IsCommented="false" SelectionName="Send Advanced Keystrokes" DefaultPause="0" LineNumber="53" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window">
+        <v_KeyActions>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SendAdvancedKeyStrokesCommand082519.104201" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element name="SendAdvancedKeyStrokesCommand082519.104201">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Key" type="xs:string" minOccurs="0" />
+                        <xs:element name="Action" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <SendAdvancedKeyStrokesCommand082519.104201 diffgr:id="SendAdvancedKeyStrokesCommand082519.1042011" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <Key>Alt [Menu]</Key>
+                <Action>Key Down</Action>
+              </SendAdvancedKeyStrokesCommand082519.104201>
+              <SendAdvancedKeyStrokesCommand082519.104201 diffgr:id="SendAdvancedKeyStrokesCommand082519.1042012" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                <Key>Down Arrow [Down]</Key>
+                <Action>Key Press (Down + Up)</Action>
+              </SendAdvancedKeyStrokesCommand082519.104201>
+            </DocumentElement>
+          </diffgr:diffgram>
+        </v_KeyActions>
+        <v_KeyUpDefault>Yes</v_KeyUpDefault>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="5af25825-efa1-4c49-afdd-324a701babfb" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="54" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{HOME}{DOWN}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="213b9652-acf4-45a9-9411-e8cc804af3ac" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="55" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{ENTER}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="9558da72-954a-4101-81af-5afce8475d7b" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="56" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{ENTER}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="d4f429db-1aa0-4723-b297-5c42e3a0f4ba" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="57" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="販売実績{ENTER}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="92c6f4ad-506a-4267-a581-83e3622494cb" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="58" PauseBeforeExeucution="false" v_Comment="Excel ファイルを保存し、終了" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelSaveAsCommand" CommandID="a35151fe-03ee-4789-93e9-3fda3dd5cf2b" CommandName="ExcelSaveAsCommand" IsCommented="false" SelectionName="Save Workbook As" DefaultPause="0" LineNumber="59" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_FileName="[Folder.Desktop]/販売集計" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ExcelCloseApplicationCommand" CommandID="d0530209-27c4-4bc0-aa84-48e7c4c99f4a" CommandName="ExcelCloseApplicationCommand" IsCommented="false" SelectionName="Close Excel Application" DefaultPause="0" LineNumber="60" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="ex" v_ExcelSaveOnExit="false" />
+    </ScriptAction>
+  </Commands>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>fm</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>itemList</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+    <ScriptVariable>
+      <VariableName>items</VariableName>
+      <VariableValue xsi:type="xsd:string">お茶,おにぎり,サンドイッチ,ジュース,からあげ</VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>

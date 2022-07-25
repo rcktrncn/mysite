@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendAdvancedKeyStrokesCommand" CommandID="56e47fa8-3413-4e62-9d04-f03f534bd790" CommandName="SendAdvancedKeyStrokesCommand" IsCommented="false" SelectionName="Send Advanced Keystrokes" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window">
+        <v_KeyActions>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SendAdvancedKeyStrokesCommand081619.035817" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element name="SendAdvancedKeyStrokesCommand081619.035817">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="Key" type="xs:string" minOccurs="0" />
+                        <xs:element name="Action" type="xs:string" minOccurs="0" />
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <SendAdvancedKeyStrokesCommand081619.035817 diffgr:id="SendAdvancedKeyStrokesCommand081619.0358171" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <Key>Windows (Left) [LWin]</Key>
+                <Action>Key Down</Action>
+              </SendAdvancedKeyStrokesCommand081619.035817>
+              <SendAdvancedKeyStrokesCommand081619.035817 diffgr:id="SendAdvancedKeyStrokesCommand081619.0358172" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                <Key>R [R]</Key>
+                <Action>Key Press (Down + Up)</Action>
+              </SendAdvancedKeyStrokesCommand081619.035817>
+            </DocumentElement>
+          </diffgr:diffgram>
+        </v_KeyActions>
+        <v_KeyUpDefault>Yes</v_KeyUpDefault>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="44f99ebc-1ecd-4da6-939c-35618b3dd9bb" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="cmd" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="d9a47916-5210-4489-bcf6-978ca550be19" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{ENTER}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="4d2712fe-c8c1-415c-8765-78b452753046" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="dir{ENTER}" />
+    </ScriptAction>
+  </Commands>
+  <Variables />
+</Script>

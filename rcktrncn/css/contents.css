@@ -1,0 +1,38 @@
+/* コンテンツ関係 */
+
+/********************************/
+/* class */
+/********************************/
+/* サブメニューを定義 */
+div.submenu {
+}
+/* コンテンツの固まり */
+div.contentsblock {
+	margin: 2em 0 2em 0;
+}
+
+/********************************/
+/* class 関係 */
+/********************************/
+/* サブメニューの段落を定義 */
+.submenu p {
+	font-size: 90%;
+	border-left: 1em solid #c0c0ff;
+	border-bottom: 1px solid #c0c0ff;
+	
+	padding-left: 1em;
+	line-height: 200%;
+}
+/* コンテンツの表示を定義 */
+.contentsblock h2 {
+	font-size: 130%;
+	border-left: 5px solid #555555;
+	border-bottom: 1px solid #555555;
+	margin: 1.2em 0 0.2em 0;
+	padding-left: 0.3em;
+}
+.contentsblock p {
+	line-height: 150%;
+	padding: 0 0 0 0.5em;
+	/* text-indent: 1em; */
+}

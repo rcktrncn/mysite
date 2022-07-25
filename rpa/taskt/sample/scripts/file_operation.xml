@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="90a38396-160c-4cd4-bd57-de394a620593" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="ファイルのコピーと名前変更" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="33c1059c-0029-4a7d-ad04-64e9c1c1e7ef" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" v_Comment="file_operation.xml を backup フォルダーにコピー" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MoveFileCommand" CommandID="fa0c1838-b27f-4c25-ac22-641f8af7949c" CommandName="MoveFileCommand" IsCommented="false" SelectionName="Move/Copy File" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_OperationType="Copy File" v_SourceFilePath="[Folder.ScriptPath]/file_operation.xml" v_DestinationDirectory="[Folder.ScriptPath]/backup" v_CreateDirectory="Yes" v_DeleteExisting="No" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="bf01dbf3-8975-4048-9305-ead2cd5ac6a1" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" v_Comment="backup フォルダーの file_operation.xml の名前を変更" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="RenameFileCommand" CommandID="bedf2c5f-2654-4483-b288-1458d71feae6" CommandName="RenameFileCommand" IsCommented="false" SelectionName="Rename File" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" CommandEnabled="true" v_SourceFilePath="[Folder.ScriptPath]/backup/file_operation.xml" v_NewName="bk_file_operation.xml" />
+    </ScriptAction>
+  </Commands>
+  <Variables />
+</Script>

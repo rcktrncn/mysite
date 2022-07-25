@@ -1,0 +1,7 @@
+/* らんの眼 CSS */
+/* コンテンツ用 */
+
+@charset 'shift-JIS';
+
+@import url('basic.css');
+@import url('contents.css');

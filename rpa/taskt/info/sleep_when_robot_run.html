@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "info_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>長時間ロボットを動かして、途中でスリープ状態にならないか - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigate" aria-controls="#top_navigate" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="top_navigate">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle" href="../first/index.html" id="dropdown_first" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
+					<a class="dropdown-item" href="../first/quickstart.html">簡単な使い方</a>
+					<a class="dropdown-item" href="../first/update.html">アップデート</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle" href="../commands/index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../commands/index.html">一覧</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_api">API Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_data">Data Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_dictionary">Dictionary Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_engine">Engine Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_error">Error Handling Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_excel">Excel Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_folder">Folder Operation Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_if">If Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_image">Image Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_input">Input Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_loop">Loop Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_misc">Misc Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_outlook">Outlook Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_regex">Regex Commands</a>
+	                <a class="dropdown-item" href="../commands/index.html#anc_remote">Remote Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_system">System Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_task">Task Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_text">Text File Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_variable">Variable Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_web">Web Browser Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="../commands/index.html#anc_word">Word Commands</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
+					</div>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            </li>
+				<li class="nav-item active">
+	            	<a class="nav-link" href="index.html">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+   
+    <div class="container small">
+   	 <nav aria-label="breadcrumb">
+  		<ol class="breadcrumb">
+    		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
+    		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">小ネタ</a></li>
+    		
+    		<!-- #BeginEditable "breadcrumb2" -->
+    		<!-- #EndEditable -->
+
+    		<li class="breadcrumb-item active" aria-current="page">
+    		<!-- #BeginEditable "breadcrumb1" -->
+    		長時間ロボットを動かして、途中でスリープ状態にならないか<!-- #EndEditable --></li>
+			
+  		</ol>
+	</nav>
+	<p class="text-right">無料で使える RPA の  
+		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
+   </div>
+
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+	<h1>長時間ロボットを動かして、途中でスリープ状態にならないか</h1>
+		<p>たとえば、非常に時間のかかる長いスクリプトを実行していたり、同じ処理を何百回も行わせるためにロボットを動かしていたとします。</p>
+		<p>このときユーザーから見ると、ロボットが動いている間、パソコンには触れていません。</p>
+		<p>パソコンに一定時間触れていないと、スリープ状態になってしまい、ロボットが作業を完了できないかと不安になるかもしれません。</p>
+		<p>しかし、基本的にはこの心配は不要かと思います。</p>
+		<p>ユーザーから見ると、パソコンには一切触れていません。しかし、パソコン側から見ると、マウスやキーボード操作を行っている状態です。</p>
+		<p>そのため、ロボット実行中はよほど特殊な状況でない限り、途中でスリープ状態になり作業が完了できなくなる恐れはありません。</p>
+		<p>ロボット実行中にスリープ状態になる状況とは、下のようなものが考えられます。</p>
+		<ul>
+			<li>Pause Script でスリープ状態になるくらい長時間停止させた</li>
+			<li>マウス、キーボード操作をしないスクリプトを長時間実行させた</li>
+			<li>スリープするようにスクリプトを作った</li>
+			<li>実は作業が完了しており、その後長時間放置した</li>
+		</ul>
+		<hr>
+		<section class="bg-light">
+			<h2>参考</h2>
+			<ul>
+				<li><a href="can_i_use_when_robot_run.html">ロボット実行中にほかの操作をしてもいいか</a></li>
+			</ul>
+		</section>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

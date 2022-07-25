@@ -1,0 +1,506 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "commands_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>コマンド一覧 - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigate" aria-controls="#top_navigate" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="top_navigate">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle"  href="../first/index.html" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
+					<a class="dropdown-item" href="../first/quickstart.html">簡単な使い方</a>
+					<a class="dropdown-item" href="../first/update.html">アップデート</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown active">
+	              <a class="nav-link dropdown-toggle" href="index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="index.html">一覧</a>
+	              	<a class="dropdown-item" href="index.html#anc_api">API Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_data">Data Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_dictionary">Dictionary Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_engine">Engine Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_error">Error Handling Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_excel">Excel Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_folder">Folder Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_if">If Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_image">Image Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_input">Input Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_loop">Loop Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_misc">Misc Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_outlook">Outlook Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_regex">Regex Commands</a>
+	                <a class="dropdown-item" href="index.html#anc_remote">Remote Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_system">System Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_task">Task Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_text">Text File Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_variable">Variable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_web">Web Browser Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_word">Word Commands</a>
+	              </div>
+	            </li>
+	            
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
+					</div>
+	            </li>
+
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            </li>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+
+	<div class="container small">
+   	 <nav aria-label="breadcrumb">
+  		<ol class="breadcrumb">
+    		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
+    		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">コマンド一覧</a></li>
+    		
+    		<!-- #BeginEditable "breadcrumb2" -->
+    		<!-- #EndEditable -->
+
+    		<li class="breadcrumb-item active" aria-current="page">
+    		<!-- #BeginEditable "breadcrumb1" -->
+    		<!-- #EndEditable --></li>
+			
+  		</ol>
+	</nav>
+	<p class="text-right">無料で使える RPA の  
+		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
+   </div>
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+		<h1>コマンド一覧</h1>
+		<p>taskt のコマンドを 1 つずつ説明する予定です。</p>
+		<p>使い方が分からないものは説明しません。</p>
+		<section>
+		<h2 id="anc_api">API Commands (API を操作する)</h2>
+		<p>Windows API とか操作するコマンドだと思います。</p>
+		<ul>
+			<li>Excecute DLL (DLL を呼び出す)</li>
+			<li>Excecute REST API</li>
+			<li>HTTP Request (HTTP リクエストを送る)</li>
+			<li>HTTP Result Query</li>
+		</ul>
+		</section>
+		<section>
+		<h2 id="anc_data">Data Commands (文字や日付などのデータを操作する)</h2>
+		<ul>
+			<li>Date Calculation (日付の計算をする)</li>
+			<li>Format Data (日付の書式を変更する)</li>
+			<li>Get List Count (リストの要素数を取得する、バージョン 3.5.0.0 で追加)</li>
+			<li>Get List Item (リストの個別の要素を取得する、バージョン 3.5.0.0 で追加)</li>
+			<li>Get Word Count (単語の数を数える)</li>
+			<li>Get Word Length (文字数を数える)</li>
+			<li>Log Data</li>
+			<li>Math Calculation (数値計算をする、バージョン 3.4.0.0 で追加)</li>
+			<li>Modify Variable (大文字・小文字・Base64 変換など)</li>
+			<li>Parse Dataset Row</li>
+			<li>Parse JSON Array (JSON の配列を taskt のリストに変換する)</li>
+			<li>Parse JSON Object (JSON をパースする)</li>
+			<li>Parse JSON Item (JSON から値を取得する、バージョン 3.4.0.0 か 3.5.0.0 で追加)</li>
+			<li>Parse JSON Model (バージョン 3.4.0.0 で追加)</li>
+			<li>PDF Extraction</li>
+			<li>RegEx Extraction (正規表現)</li>
+			<li>Replace Text (文字を置換する)</li>
+			<li>Split Text (文字を分割する)</li>
+			<li>Substring (文字の一部を取り出す)</li>
+			<li>Text Extraction (文字を検索し、特定の範囲を取り出す)</li>
+		</ul>
+		</section>
+		<section>
+		<h2 id="anc_database">Database Commands (データベースを操作する)</h2>
+		<p>データベースを操作できるのではないでしょうか……。</p>
+		<ul>
+			<li>Define Database Connection</li>
+			<li>Execute Database Query</li>
+		</ul>
+		</section>
+		<section>
+		<h2 id="anc_datatable">DataTable Commands</h2>
+			<p>よくわかりません。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Add DataRow</li>
+				<li>Create DataTable</li>
+				<li>Filter DataTable</li>
+				<li>Get DataRow (バージョン 3.5.0.0 で追加)</li>
+				<li>Get DataRow Count (バージョン 3.5.0.0 で追加)</li>
+				<li>Get DataRow Value (バージョン 3.5.0.0 で追加)</li>
+				<li>Remove DataRow</li>
+				<li>Write DataRow Value (バージョン 3.5.0.0 で追加)</li>
+			</ul>
+		</section>
+		<section>
+		<h2 id="anc_dictionary">Dictionary Commands</h2>
+			<p>よくわかりません。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Add Dictionary Item</li>
+				<li>Create Dictionary</li>
+				<li>Get Dictionary Item</li>
+				<li>Load Dictionary</li>
+			</ul>
+		</section>
+		<section>
+		<h2 id="anc_engine">Engine Commands (taskt のロボットに関する処理)</h2>
+		<ul>
+			<li>Error Handling (エラーが発生したときの処理)</li>
+			<li>Get BotStore Data</li>
+			<li>Pause Script (次の命令まで一定時間待つ)</li>
+			<li>Set Engine Delay (命令と命令の間隔を変える)</li>
+			<li>Set Engine Preference (自動計算の設定を変更する、バージョン 3.4.0.0 で追加)</li>
+			<li>Show Engine Context</li>
+			<li>Stopwatch (時間を測る)</li>
+			<li>Upload BotStore Data</li>
+		</ul>
+		</section>
+		<section>
+		<h2 id="anc_error">Error Handling Commands (例外処理、エラー発生時の処理)</h2>
+		<p>プログラマー的な説明だと例外処理です。</p>
+		<ul>
+			<li>Catch Exception (catch)</li>
+			<li>End Try (例外処理の終了)</li>
+			<li>Finally (finally)</li>
+			<li>Throw Exception (例外を発生させる?、バージョン 3.5.0.0 で追加)</li>
+			<li>Try (例外処理の開始)</li>
+		</ul>
+		</section>
+		<section>
+		<h2 id="anc_excel">Excel Commands (Excel を操作する)</h2>
+		<p>Excel を操作するときの命令です。</p>
+		<ul>
+			<li><a href="excel_active_sheet.html">Activate Sheet</a> (シートを選択する)</li>
+			<li><a href="excel_add_workbook.html">Add Workbook</a> (ワークブックを追加する)</li>
+			<li>Append Cell (作業中のセルの 1 つ下に書き込む、バージョン 3.4.0.0 で追加)</li>
+			<li>Append Row (バージョン 3.4.0.0 で追加)</li>
+			<li><a href="excel_close_excel_application.html">Close Excel Application</a> (Excel を終了する)</li>
+			<li>Create Dataset (データセットを作る?)</li>
+			<li><a href="excel_create_excel_application.html">Create Excel Application</a> (Excel を実行する)</li>
+			<li><a href="excel_delete_cell.html">Delete Cell</a> (セルの中身を消す)</li>
+			<li><a href="excel_delete_row.html">Delete Row</a> (行を消す)</li>
+			<li><a href="excel_get_cell.html">Get Cell</a> (セルの値を取得する)</li>
+			<li><a href="excel_get_last_row_index.html">Get Last Row Index</a> (最後の行が何行目か調べる)</li>
+			<li>Get Range (指定した範囲の値をまとめて取得する、バージョン 3.4.0.0 で追加)</li>
+			<li>Get Range As Datatable (バージョン 3.4.0.0 で追加)</li>
+			<li><a href="excel_go_to_cell.html">Go To Cell</a> (指定したセルにカーソルを移動する)</li>
+			<li><a href="excel_open_workbook.html">Open Workbook</a> (Excel ファイルを開く)</li>
+			<li><a href="excel_run_macro.html">Run Macro</a> (マクロを実行する)</li>
+			<li><a href="excel_save_workbook.html">Save Workbook</a> (Excel ファイルを保存する)</li>
+			<li><a href="excel_save_workbook_as.html">Save Workbook As</a> (Excel ファイルを名前を付けて保存する)</li>
+			<li><a href="excel_set_cell.html">Set Cell</a> (セルに値を書き込む)</li>
+			<li>Split Range By Column (バージョン 3.5.0.0 で追加)</li>
+			<li>Write Range (バージョン 3.4.0.0 で追加)</li>
+			<li>Write Row (バージョン 3.5.0.0 で追加)</li>
+		</ul>
+		</section>
+		<section>
+		<h2 id="anc_file">File Operation Commands (ファイルを操作する)</h2>
+		<p>ファイルの移動、コピー、削除などを行います。</p>
+		<ul>
+			<li>Delete File (ファイルを削除する)</li>
+			<li>File Extraction (バージョン 3.5.0.0 で追加)</li>
+			<li>Get Files (バージョン 3.5.0.0 で追加)</li>
+			<li>Move/Copy File (ファイルの移動、コピーをする)</li>
+			<li>Rename File (ファイル名を変更する)</li>
+			<li>Wait For File (ファイルが存在するまで一定時間待つ)</li>
+		</ul>
+		</section>
+		<section>
+		<h2 id="anc_folder">Folder Operation Commands (フォルダーを操作する)</h2>
+			<p>フォルダーの作成、削除などを行います。バージョン 3.5.0.0 で追加されました。</p>
+			<ul>
+				<li>Create Folder (フォルダーを作成する)</li>
+				<li>Delete Folder (フォルダーを削除する)</li>
+				<li>Get Folders</li>
+				<li>Move/Copy Folder (フォルダーの移動、コピーをする)</li>
+				<li>Rename Folder (フォルダーの名前を変更する)</li>
+			</ul>
+		</section>
+		<section>
+		<h2 id="anc_ie">IE Browser Commands (Internet Explorer を操作する)</h2>
+		<p>Internet Explorer を操作する命令だと思います。</p>
+			<ul>
+				<li>Close Browser (Internet Explorer を閉じる)</li>
+				<li>Create Browser (Internet Explorer を実行する)</li>
+				<li>Element Action (ウェブページに対する操作)</li>
+				<li>Find Browser</li>
+				<li>Navigate to URL (指定したURL へ移動)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_if">If Commands (if 文、条件分岐)</h2>
+			<p>プログラミング的な説明だと if 文、条件分岐です。</p>
+			<ul>
+				<li><a href="if_begin_if.html">Begin If</a> (if 開始)</li>
+				<li>Begin Multi If (複数条件の if、バージョン 3.4.0.0 で追加)</li>
+				<li><a href="if_else.html">Else</a> (else)</li>
+				<li><a href="if_end_if.html">End If</a> (if 終了)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_image">Image Commands (画像関係の処理)</h2>
+			<p>画像認識やスクリーンショットの命令です。</p>
+			<ul>
+				<li>Image Recognition (画像認識)</li>
+				<li>Perform OCR</li>
+				<li>Take Screenshot (スクリーンショットを撮る)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_input">Input Commands (キーボードやマウスの操作)</h2>
+			<p>キーボード操作や、マウス操作の命令です。</p>
+			<ul>
+				<li>Prompt for HTML Input</li>
+				<li>Prompt for Input (入力画面を表示する)</li>
+				<li>Send Advanced Keystrokes (高度なキーボード操作)</li>
+				<li><a href="input_send_keystrokes.html">Send Keystrokes</a> (キーボード操作)</li>
+				<li>Send Mouse Click (マウスのクリックなどの操作)</li>
+				<li>Send Mouse Move (マウスカーソルを動かす操作)</li>
+				<li><a href="input_ui_automation.html">UI Automation</a> (画面の要素を認識して処理する)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_loop">Loop Commands (繰り返し、ループの処理)</h2>
+			<p>プログラミング的な説明だと、ループです。繰り返し何かを実行するときの命令です。</p>
+			<ul>
+				<li>Begin Loop (バージョン 3.5.0.0 で追加)</li>
+				<li>Begin Multi Loop (バージョン 3.5.0.0 で追加)</li>
+				<li>End Loop (ループ終了)</li>
+				<li>Exit Loop (ループを強制的に抜ける、break)</li>
+				<li>Loop Continuously (無限ループ)</li>
+				<li>Loop Excel Dataset (Excel のデータセットを見ながらループを繰り返す、<strong>バージョン 
+				3.4.0.0 で廃止</strong>)</li>
+				<li>Loop List (配列・リストの先頭から末尾までのループ、for-each、for-in)</li>
+				<li>Loop Number Of Times (指定した回数繰り返すループ)</li>
+				<li>Next Loop</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_misc">Misc Commands (その他、ほかのところに分類できない命令)</h2>
+			<p>いろいろな命令です。</p>
+			<ul>
+				<li>Add Code Comment (コメント、説明を挿入する)</li>
+				<li>Encryption Command (バージョン 3.4.0.0 で追加)</li>
+				<li>Get Clipboard Text (クリップボードにある文字を取得する)</li>
+				<li>Send SMTP Email (SMTP でメールを送る)</li>
+				<li>Sequence Command (シーケンスを作る、命令をまとめる)</li>
+				<li>Set Clipboard Text (クリップボードに文字を記録する)</li>
+				<li>Show Message (メッセージを表示する、ダイアログを表示する)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_nlg">NLG Commands</h2>
+		<p>よくわかりません。</p>
+			<ul>
+				<li>Create NLG Instance</li>
+				<li>Generate NLG Phrase</li>
+				<li>Set NLG Parameter</li>
+			</ul>
+		</section>
+		<section>
+		<h2 id="anc_outlook">Outlook Commands</h2>
+			<p>Outlook を操作する命令だと思います。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Delete Outlook Emails (Outlook のメールを削除する?、バージョン 3.5.0.0 で追加)</li>
+				<li>Forward Outlook Emails (Outlook のメールを転送する?、バージョン 3.5.0.0 
+				で追加)</li>
+				<li>Get Outlook Emails (バージョン 3.5.0.0 で追加)</li>
+				<li>Move/Copy Outlook Emails (Outlook のメールの移動・コピーをする?、バージョン 
+				3.5.0.0 で追加)</li>
+				<li>Reply To Outlook Emails (Oulook のメールへ返信する?、バージョン 3.5.0.0 
+				で追加)</li>
+				<li>Send Outlook Email (Outlook でメールを送信する?)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_program">Programs/Process Commands 
+			(プログラム・ソフトウェアを操作する命令)</h2>
+			<p>ほかのソフト (プログラム) を操作するための命令です。</p>
+			<ul>
+				<li>Run Custom Code (C# のソースコードを実行する)</li>
+				<li>Run Script (バッチファイルを実行する?)</li>
+				<li>Run Process (ソフト・プログラムを実行する)</li>
+				<li>Stop Process (ソフト・プログラムを終了する)</li>
+			</ul>
+			</section>
+		<section>
+		    <h2 id="anc_regex">Regex Commands</h2>
+			<p>よくわかりません。名前からして正規表現に関するものだと思います。バージョン 3.4.0.0 で追加されました。</p>
+			<ul>
+				<li>Get Regex Matches</li>
+			</ul>
+		  </section>
+
+			<section>
+			<h2 id="anc_remote">Remote Commands</h2>
+			<p>よくわかりません。バージョン 3.3.0.0 で追加されました。</p>
+			<ul>
+				<li>Remote API</li>
+				<li>Remote Task</li>
+			</ul>
+		
+		</section>
+		<section>
+			<h2 id="anc_system">System Commands (OS・パソコン本体に関係する命令)</h2>
+			<p>OS (Windows) の情報や、パソコンの情報を取得したりできます。</p>
+			<ul>
+				<li>Environment Variable (OS の環境変数を取得する)</li>
+				<li>Launch Remote Desktop (リモート・デスクトップ を実行する)</li>
+				<li>OS Variable (Windows が持っている情報を取得する)</li>
+				<li>System Action (Windows の再起動、終了などをする)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_task">Task Commands</h2>
+			<p>よくわかりません。</p>
+			<ul>
+				<li>Run Task</li>
+				<li>Stop Current Task</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_text">Text File Commands (テキストファイルを操作する命令)</h2>
+			<p>テキストファイル (メモ帳などで作れるファイル) を操作する命令です。</p>
+			<ul>
+				<li>Read Text File (テキストファイルを開く、読み込む)</li>
+				<li>Write Text File (テキストファイルを保存する)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_variable">Variable Commands (変数に関する命令)</h2>
+			<p>変数を操作するときの命令です。</p>
+			<ul>
+				<li>Add To Variable (リスト・配列に要素を追加する)</li>
+				<li>New Variable (新しい変数を作る、変数の宣言)</li>
+				<li>Set Variable (変数に値を入れる、値の代入)</li>
+				<li>Set Variable Index (リスト・配列の要素番号を操作する、リスト・配列のインデックス操作)</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_web">Web Browser Commands (ウェブブラウザーを操作する命令)</h2>
+			<p>ウェブブラウザーを操作する命令です。バージョン 3.2.0.0 の時点で Chrome と Internet Explorer に対応しているみたいです。</p>
+			<p>別途 Chrome をパソコンにインストールしてください。</p>
+			<p>Selenium を使っているので、検索エンジンで調べるときに、taskt で調べるよりも、Selenium 
+			で調べた方が有用な情報が見つかるかもしれません。</p>
+			<ul>
+				<li>Close Browser (ウェブブラウザーを終了する)</li>
+				<li>Create Browser (ウェブブラウザーを実行する)</li>
+				<li>Element Action (ウェブページの要素に対する操作)</li>
+				<li>Execute Script (JavaScript を実行する)</li>
+				<li>Get Browser Info (ウェブブラウザーが持っている情報を取得する)</li>
+				<li>Navigate Back (前のページに戻る)</li>
+				<li>Navigate Forwared (先のページに進む)</li>
+				<li>Navigate to URL (指定した URL のページへ移動)</li>
+				<li>Refresh (ウェブページを再読み込みする)</li>
+				<li>Switch Browser Frame (ウェブページ中の対象フレームを変更する、バージョン 3.3.0.0 
+				で追加)</li>
+				<li>Switch Browser Window</li>
+			</ul>
+		</section>
+		<section>
+			<h2 id="anc_window">Window Commands (ソフト・画面に対する操作)</h2>
+			<p>ソフト (プログラム) の画面に対する操作ができます。</p>
+			<ul>
+				<li>Activate Window (ソフトをアクティブにする、ソフトの画面を一番前にする)</li>
+				<li>Close Window (ソフトを閉じる)</li>
+				<li>Move Window (ソフトの画面を移動する)</li>
+				<li>Resize Window (ソフトの画面の大きさを変更する)</li>
+				<li>Set Window State (ソフトの最大化、最小化をする)</li>
+				<li>Wait For Window To Exist (ソフトの画面が表示されるまで一定時間待つ)</li>
+			</ul>
+		</section>
+		<section>
+		<h2 id="anc_word">Word Commands</h2>
+			<p>Word を操作するコマンドです。バージョン 3.5.0.0 で追加されました。</p>
+			<ul>
+				<li>Add Document</li>
+				<li>Append DataTable</li>
+				<li>Append Image (画像を挿入する?)</li>
+				<li>Append Text (文字を挿入する?)</li>
+				<li>Close Word Application (Word を閉じる)</li>
+				<li>Create Word Application (Word を開く)</li>
+				<li>Export To PDF (PDF 形式でファイルを出力する?)</li>
+				<li>Open Document (Word のファイルを開く)</li>
+				<li>Read Document</li>
+				<li>Replace Text</li>
+				<li>Save Document (Word のファイルを上書き保存する)</li>
+				<li>Save Document As (Word のファイルを名前を付けて保存する)</li>
+			</ul>
+		</section>
+		<hr>
+		<section class="bg-light">
+		<h2>参考</h2>
+			<ul>
+				<li>
+				<a href="http://oss.infoscience.co.jp/seleniumhq/index.html" target="_blank">
+				Selenium</a> (<a href="http://oss.infoscience.co.jp/seleniumhq/index.html" target="_blank">http://oss.infoscience.co.jp/seleniumhq/index.html</a>)</li>
+				<li>
+				<a href="https://www.google.com/intl/ja_jp/chrome/" target="_blank">
+				Google Chrome</a> (<a href="https://www.google.com/intl/ja_jp/chrome/" target="_blank">https://www.google.com/intl/ja_jp/chrome/</a>)</li>
+			</ul>
+		</section>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

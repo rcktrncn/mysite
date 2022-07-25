@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- #BeginTemplate "commands_default.dwt" -->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- #BeginEditable "doctitle" -->
+<title>Send Keystrokes - taskt - らんの眼</title>
+	<!-- #EndEditable -->
+	
+</head>
+
+<body>
+
+    <div class="container">
+		<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+	        <a class="navbar-brand" href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_navigate" aria-controls="#top_navigate" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="collapse navbar-collapse" id="top_navigate">
+	          <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	              <a class="nav-link" href="../index.html">taskt <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item dropdown">
+	              <a class="nav-link dropdown-toggle"  href="../first/index.html" id="dropdown08" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">はじめに</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="../first/about.html">taskt とは？</a>
+	              	<a class="dropdown-item" href="../first/install.html">インストールと実行</a>
+					<a class="dropdown-item" href="../first/quickstart.html">簡単な使い方</a>
+					<a class="dropdown-item" href="../first/update.html">アップデート</a>
+	              </div>
+	            </li>
+	            <li class="nav-item dropdown active">
+	              <a class="nav-link dropdown-toggle" href="index.html" id="dropdown_commands" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">コマンド一覧</a>
+	              <div class="dropdown-menu">
+	              	<a class="dropdown-item" href="index.html">一覧</a>
+	              	<a class="dropdown-item" href="index.html#anc_api">API Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_data">Data Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_database">Database Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_datatable">DataTable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_dictionary">Dictionary Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_engine">Engine Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_error">Error Handling Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_excel">Excel Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_file">File Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_folder">Folder Operation Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_if">If Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_image">Image Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_input">Input Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_loop">Loop Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_misc">Misc Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_nlg">NLG Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_outlook">Outlook Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_program">Program/Process Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_regex">Regex Commands</a>
+	                <a class="dropdown-item" href="index.html#anc_remote">Remote Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_system">System Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_task">Task Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_text">Text File Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_variable">Variable Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_web">Web Browser Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_window">Window Commands</a>
+	              	<a class="dropdown-item" href="index.html#anc_word">Word Commands</a>
+	              </div>
+	            </li>
+	            
+	            <li class="nav-item dropdown">
+	            	<a class="nav-link dropdown-toggle" href="../menu/index.html" id="dropdown_menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他機能</a>
+					<div class="dropdown-menu">
+					  <a class="dropdown-item" href="../menu/file_actions.html">File Actions</a>
+					  <a class="dropdown-item" href="../menu/options.html">Options</a>
+					  <a class="dropdown-item" href="../menu/script_actions.html">Script Actions</a>
+					</div>
+	            </li>
+
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../sample/index.html">サンプル</a>
+	            </li>
+	            <li class="nav-item">
+	            	<a class="nav-link" href="../reverse/index.html">逆引き</a>
+	            </li>
+				<li class="nav-item">
+	            	<a class="nav-link" href="../info/index.html">小ネタ</a>
+	            </li>
+	          </ul>
+	        </div>
+		</nav>
+   </div>
+
+	<div class="container small">
+   	 <nav aria-label="breadcrumb">
+  		<ol class="breadcrumb">
+    		<li class="breadcrumb-item"><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></li>
+    		<li class="breadcrumb-item"><a href="../index.html">taskt</a></li>
+    		<li class="breadcrumb-item"><a href="index.html">コマンド一覧</a></li>
+    		
+    		<!-- #BeginEditable "breadcrumb2" -->
+    		<!-- #EndEditable -->
+
+    		<li class="breadcrumb-item active" aria-current="page">
+    		<!-- #BeginEditable "breadcrumb1" -->
+    		<a href="index.html#anc_input">Input Commands</a> / Send Keystrokes<!-- #EndEditable --></li>
+			
+  		</ol>
+	</nav>
+	<p class="text-right">無料で使える RPA の  
+		<a href="http://www.taskt.net/" target="_blank">taskt</a> の使い方を紹介しています</p>
+   </div>
+
+	<div class="container">
+	<!-- #BeginEditable "nav" -->
+		<h1>Send Keystrokes</h1>
+		<p>ソフト・画面にキーボード入力を送ります。</p>
+		<p>通常の文字入力だけではなく、変数の値を送ったり、ショートカットキーを送ることもできます。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/commands/input_send_keystrokes.png" width="631"></p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td><a href="#anc_please_enter_the_window_name">Please Enter the Window name</a></td>
+				<td>キーボード入力を送るソフト・画面を指定します<br>「Current 
+				Window」を指定すると、現在一番手前にあるソフト・画面へ送ります</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_please_enter_text_to_send">Please Enter text to send</a></td>
+				<td>キーボード入力の内容を指定します</td>
+			</tr>
+			<tr>
+				<td><a href="#anc_encrypt_text">Encrypt Text</a></td>
+				<td>キーボード入力を暗号化するかを指定します</td>
+			</tr>
+			<tr>
+				<td>Comment Field (Optional)</td>
+				<td>コメントを入力します<br>入力しなくてもよいです</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<h2 id="anc_please_enter_the_window_name">Please Enter the Window name</h2>
+		<p>Please Enter the Window name ではキーボード入力を送るソフト・画面を指定します。</p>
+		<p>右端の ▼ をクリックすると、ソフト・画面の一覧が表示されます。</p>
+		<p>キーボード入力を送ると、そのソフト・画面は一番手前に来ることが多いので、1 回目はソフト・画面名を指定し、それ以降は「Current 
+		Window」を指定すれば良いでしょう。</p>
+		<p>ソフト・画面の名前は、全角・半角、大文字・小文字などを区別しますので、正確に入力してください。ただし、<a href="../info/difference_sendkey_uiauto_window_name.html">ソフト・画面名の一部だけを入力しても、指定することができます</a>。</p>
+		<p>存在しないソフト・画面を指定するとエラーになります。</p>
+		<p>ここの項目を空欄にしてもエラーにはなりませんが、<a href="../info/send_keystrokes_no_window.html">キーボード入力はどこにも送られません</a>。</p>
+		<p>モーダルフォームが表示されている場合、<a href="../info/difference_sendkey_uiauto_modal.html">モーダルフォームの名前でも、ソフト・画面の名前でもどちらでも良いです</a>。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/commands/input_send_keystrokes_window_list.png" width="631"></p>
+		<p>&nbsp;</p>
+		<h2 id="anc_enter_the_text_to_send">Please Enter the text to send</h2>
+		<p>ソフト・画面に送るキーボード情報を指定します。</p>
+		<p>文章のような文字入力を送る場合、下のようにします。この例では「test」という文字を送っています。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/commands/input_send_keystrokes_send_text.png" width="631"></p>
+		<p>変数の値を送るには、変数名を { } で囲みます。下の例では、変数 var の値を送ります。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/commands/input_send_keystrokes_send_variable.png" width="631"></p>
+		<p>文字以外のキーボード入力を送るには、下のように指定します。下の例では Enter キーを押したことになります。</p>
+		<p>キーの名前は、<a href="../reverse/type_like_enter_tab.html">このページを参照してください</a>。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/commands/input_send_keystrokes_send_key.png" width="631"></p>
+		<p>Ctrl+S のようなショートカットキーを入力するには、下のように指定します。</p>
+		<p>ショートカットキーの入力方法は、<a href="../reverse/how_shortcut_send.html">このページを参照してください</a>。</p>
+		<p>
+		<img alt=" " class="img-fluid" height="618" src="../image/3.5.0/commands/input_send_keystrokes_send_shortcut.png" width="631"></p>
+		<p>&nbsp;</p>
+		<h2 id="anc_encrypt_text">Encrypt Text</h2>
+		<p>キーボード入力を暗号化するかどうかの設定らしいです。</p>
+		<p>詳しいことはよくわかりません。</p>
+		<table class="table">
+			<tr>
+				<th>項目</th>
+				<th>意味</th>
+			</tr>
+			<tr>
+				<td>Not Encrypted</td>
+				<td>暗号化しない</td>
+			</tr>
+			<tr>
+				<td>Encrypted</td>
+				<td>暗号化する</td>
+			</tr>
+		</table>
+		<p>&nbsp;</p>
+		<p>Encrypt Text はバージョン 3.4.0.0 で追加されました。</p>
+		<hr>
+		<h2>参考</h2>
+		<ul>
+			<li><a href="../reverse/type_like_enter_tab.html">
+			数字やアルファベット以外の特殊なキーを入力する</a></li>
+			<li><a href="../reverse/how_shortcut_send.html">ショートカットキーを使う</a></li>
+			<li><a href="../info/send_keystrokes_no_window.html">Send Keystrokes 
+			で対象のソフト・画面を指定しないとどうなるか</a></li>
+			<li><a href="../info/difference_sendkey_uiauto_window_name.html">
+			Send Keystrokes・Activate Window と UI Automation のソフト・画面名の解釈の違い</a></li>
+			<li><a href="../info/difference_sendkey_uiauto_modal.html">Send 
+			Keystrokes・Activate Window と UI Automation のモーダルフォームの解釈の違い</a></li>
+		</ul>
+	<!-- #EndEditable -->
+	</div>
+
+	<div class="container">
+		<p><a href="https://rcktrncn.github.io/mysite/index.html">らんの眼</a></p>
+	</div>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+
+<!-- #EndTemplate -->
+
+</html>

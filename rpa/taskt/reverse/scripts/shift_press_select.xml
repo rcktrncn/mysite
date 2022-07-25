@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="e1aab959-149f-4dd9-803c-c6a67ee932e9" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" v_Comment="メモ帳を実行" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="StartProcessCommand" CommandID="e8b9b922-7545-45b3-8032-d6100f1d9da4" CommandName="StartProcessCommand" IsCommented="false" SelectionName="Start Process" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true" v_ProgramName="notepad" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="0cab0dc1-85db-4166-aae9-6756f6bf2594" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" v_Comment="Hello My World ! と入力" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="b2326eb6-b0fe-4689-849d-5077239c5a9a" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="4" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="Hello My World !" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="42bfe658-58f3-45cf-a2b4-50f5941725c7" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="5" PauseBeforeExeucution="false" v_Comment="My の左側にカーソルを移動" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="bf921f43-056a-43c0-9c1f-8aff22e2880c" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="6" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{HOME}{RIGHT 6}" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="CommentCommand" CommandID="b1acfb3a-ef82-4080-af5e-b3c04c1ed5d8" CommandName="CommentCommand" IsCommented="false" SelectionName="Add Code Comment" DefaultPause="0" LineNumber="7" PauseBeforeExeucution="false" v_Comment="My を選択し、削除" CommandEnabled="true" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendAdvancedKeyStrokesCommand" CommandID="306ebd6d-517e-4443-9982-03b2d06f1a4e" CommandName="SendAdvancedKeyStrokesCommand" IsCommented="false" SelectionName="Send Advanced Keystrokes" DefaultPause="0" LineNumber="8" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window">
+        <v_KeyActions>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="SendAdvancedKeyStrokesCommand082719.093739">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Key" type="xs:string" minOccurs="0" />
+                  <xs:element name="Action" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="SendAdvancedKeyStrokesCommand082719.093739" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="SendAdvancedKeyStrokesCommand082719.093739" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <SendAdvancedKeyStrokesCommand082719.093739 diffgr:id="SendAdvancedKeyStrokesCommand082719.0937391" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+                <Key>Shift [ShiftKey]</Key>
+                <Action>Key Down</Action>
+              </SendAdvancedKeyStrokesCommand082719.093739>
+              <SendAdvancedKeyStrokesCommand082719.093739 diffgr:id="SendAdvancedKeyStrokesCommand082719.0937392" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+                <Key>Right Arrow [Right]</Key>
+                <Action>Key Press (Down + Up)</Action>
+              </SendAdvancedKeyStrokesCommand082719.093739>
+              <SendAdvancedKeyStrokesCommand082719.093739 diffgr:id="SendAdvancedKeyStrokesCommand082719.0937393" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+                <Key>Right Arrow [Right]</Key>
+                <Action>Key Press (Down + Up)</Action>
+              </SendAdvancedKeyStrokesCommand082719.093739>
+              <SendAdvancedKeyStrokesCommand082719.093739 diffgr:id="SendAdvancedKeyStrokesCommand082719.0937394" msdata:rowOrder="3" diffgr:hasChanges="inserted">
+                <Key>Right Arrow [Right]</Key>
+                <Action>Key Press (Down + Up)</Action>
+              </SendAdvancedKeyStrokesCommand082719.093739>
+            </DocumentElement>
+          </diffgr:diffgram>
+        </v_KeyActions>
+        <v_KeyUpDefault>Yes</v_KeyUpDefault>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SendKeysCommand" CommandID="42743f82-a327-4336-8c54-9b0312cf7e2a" CommandName="SendKeysCommand" IsCommented="false" SelectionName="Send Keystrokes" DefaultPause="0" LineNumber="9" PauseBeforeExeucution="false" CommandEnabled="true" v_WindowName="Current Window" v_TextToSend="{DELETE}" />
+    </ScriptAction>
+  </Commands>
+  <Variables />
+</Script>

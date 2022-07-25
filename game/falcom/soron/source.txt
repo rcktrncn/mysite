@@ -1,0 +1,143 @@
+<table border="0" width="80%" cellspacing="2" bgcolor="#777777">
+  <tbody>
+    <tr bgcolor="white">
+      <td>
+<br>
+<ul type="disc">
+  <li>sample00</li>
+  <li>sample01
+        <ul type="circle">
+          <li>sample02</li>
+        </ul>
+        </li>
+  <li>sample03</li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table border="0" cellspacing="1" width="80%" bgcolor="#777777">
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td bgcolor="#eeeeee"><font size="+1"><b>基本の基本</b></font><font size="+2">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td height="2"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table width="70%" border="0" cellspacing="2" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="white">
+      <td width="50%"><a href="so-tutrial-basic001.html">インストール</a><font size="+1">&nbsp;</font></td>
+      <td><a href="so-tutrial-basic002.html">ログイン</a><font size="+1">&nbsp;</font></td>
+    </tr>
+    <tr align="center" bgcolor="white">
+      <td><a href="so-tutrial-basic003.html">キャラクター作成</a><font size="+1">&nbsp;</font></td>
+      <td><a href="so-tutrial-basic004.html">ホームでの準備</a><font size="+1">&nbsp;</font></td>
+    </tr>
+    <tr align="center" bgcolor="white">
+      <td><a href="so-tutrial-basic005.html">町での準備</a><font size="+1">&nbsp;</font></td>
+      <td><a href="so-tutrial-basic006.html">戦闘(ソロ)</a><font size="+1">&nbsp;</font></td>
+    </tr>
+    <tr align="center" bgcolor="white">
+      <td><a href="so-tutrial-basic007.html">町に戻って</a><font size="+1">&nbsp;</font></td>
+      <td><a href="so-tutrial-basic008.html">ゲーム終了</a><font size="+1">&nbsp;</font></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<table border="0" width="80%" cellspacing="2" bgcolor="#777777">
+  <tbody>
+    <tr bgcolor="white">
+      <td>
+<br>
+<table border="0" cellspacing="1" width="90%" align="center" bgcolor="#999999">
+  <tbody>
+    <tr>
+      <td width="5%">&nbsp;</td>
+      <td bgcolor="#eeeeee"><b>インストール</b><font size="+1">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td height="2"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+<table border="0" width="90%" align="center">
+  <tbody>
+    <tr>
+      <td>　インストール。</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<>　<>
+
+<table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="white">
+      <td width="50%"></td>
+      <td></td>
+    </tr>
+    <tr align="center" bgcolor="white">
+      <td></td>
+      <td></td>
+    </tr>
+    <tr align="center" bgcolor="white">
+      <td></td>
+      <td></td>
+    </tr>
+    <tr align="center" bgcolor="white">
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table width="70%" border="0" cellspacing="1" bgcolor="#777777">
+  <tbody>
+    <tr align="center" bgcolor="#dddddd">
+      <td width="50%"></td>
+      <td></td>
+    </tr>
+    <tr bgcolor="white">
+      <td></td>
+      <td></td>
+    </tr>
+    <tr bgcolor="white">
+      <td></td>
+      <td></td>
+    </tr>
+    <tr bgcolor="white">
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+
+    <tr bgcolor="white">
+      <td></td>
+      <td></td>
+    </tr>
+
+
+<br>
+<hr width="90%" noshade>
+<br>
+

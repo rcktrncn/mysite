@@ -1,0 +1,134 @@
+/* 基本的な見栄え */
+
+/********************************/
+/* 基本タグ */
+/********************************/
+body {
+}
+/* リストの項目 */
+li {
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
+/* テーブル */
+table {
+	border: 2px solid black;
+}
+th {
+	border: 1px solid black;
+	background-color: #cccccc;
+	
+	font-weight: bold;
+	text-align: center;
+	padding: 0.3em;
+}
+td {
+	border: 1px solid black;
+	padding: 0.3em;
+}
+/* 段落内部 */
+p i {
+	padding-right: 0.25em;
+}
+p b {
+	padding-left: 0.25em;
+	padding-right: 0.25em;
+}
+/* HR */
+hr {
+	margin: 0.5em 0 1em 0;
+	width: 100%;
+	border-width: 3px 0 0 0;
+	border-style: double;
+	border-color: #333333;
+}
+
+/********************************/
+/* id */
+/********************************/
+/* コンテンツ全体を囲むブロック */
+div#rootblock {
+	width: 80%;
+	margin: 2% 10% 5% 10%;
+}
+/* パンくずの部分 */
+div#topicpath {
+}
+/* ヘッダー部分 */
+div#header {
+	margin: 1em 0 1em 0;
+}
+/* コンテンツ部分 */
+div#maincontents {
+}
+/* フッター部分 */
+div#footer {
+	margin: 2em 0 1em 0;
+}
+
+/********************************/
+/* id 関係 */
+/********************************/
+/* パンくずの段落定義 */
+#topicpath p {
+	font-size: 80%;
+	color: #222222;
+	border-left: 3px double #f4f4ff;
+	padding-left: 0.5em;
+}
+/* ヘッダーの見出し 1 を定義 */
+#header h1 {
+	font-size: 2em;
+	line-height: 130%;
+	margin: 0;
+	padding: 0 0 0 0.5em;
+}
+#header h1#sitename {	/* 見出しの小さい方 */
+	font-size: 1.5em;
+	font-weight: normal;
+	padding: 0;
+}
+#header a {	/* ヘッダーの通常リンク */
+	text-decoration: none;
+}
+#header a:hover {
+	text-decoration: underline;
+	background-color: #f4f4ff;
+}
+/* フッター定義*/
+#footer p {
+	font-size: 90%;
+	text-align: center;
+}
+/* コンテンツ内部の区切り */
+#maincontents hr {
+	border: 1px solid #222222;
+}
+
+/********************************/
+/* class */
+/********************************/
+/* メニュー部分全体を定義 */
+div.navi {
+	width: 80%;
+}
+/* メニューに使う表の定義 */
+table.menu {
+	width: 100%;	/* コンテンツ範囲 (全体の 80%) の中の 100% */
+	border-color: #333333;
+	/* text-align: center; */
+	border-collapse: collapse;
+}
+
+/********************************/
+/* class 関係 */
+/********************************/
+/* メニューの表の中身を定義 */
+.menu td {	/* 通常のセル */
+	width: 33%;
+	border: 1px solid #2a0000;
+	padding: 0.5em;
+}
+.menu tfoot {	/* 表フッター */
+	background-color: #eeeeee;
+}

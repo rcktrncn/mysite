@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="VariableCommand" CommandID="e5b71a8f-3541-4f4b-b6ea-85d895907cd8" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="foo" v_Input="123" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="SequenceCommand" CommandID="c0de1a46-14af-43ba-9228-f85ee385c187" CommandName="SequenceCommand" IsCommented="false" SelectionName="Sequence Command" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" CommandEnabled="true">
+        <v_scriptActions>
+          <ScriptCommand xsi:type="VariableCommand" CommandID="237e366e-689c-4267-a2a9-a3a1dc9af337" CommandName="VariableCommand" IsCommented="false" SelectionName="Set Variable" DefaultPause="0" LineNumber="0" PauseBeforeExeucution="false" CommandEnabled="true" v_userVariableName="foo" v_Input="345" />
+        </v_scriptActions>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="MessageBoxCommand" CommandID="386d858e-6ee0-4ca3-828e-19f80eba75f1" CommandName="MessageBoxCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="[foo]" v_AutoCloseAfter="0" />
+    </ScriptAction>
+  </Commands>
+  <Variables>
+    <ScriptVariable>
+      <VariableName>foo</VariableName>
+      <VariableValue xsi:type="xsd:string"></VariableValue>
+    </ScriptVariable>
+  </Variables>
+</Script>
